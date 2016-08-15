@@ -1,0 +1,1258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.tray &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.tray</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Tray.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="Tray"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.tray.Tray">[docs]</a><span class="k">class</span> <span class="nc">Tray</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Tray - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_controller_slots&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_drive_slots&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_id&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;non_redundant_access&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;part_number&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;serial_number&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_name&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;manufacturer_date&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fru_type&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_id_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_id_conflict&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_version_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_miswire&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drv_mh_speed_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;unsupported_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;working_channel&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;max_speed&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_technology_type&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_group_error&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;uncertified_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;locate_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_hardware_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;has_configurable_tray_id&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;front_end_interface_technology&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_technologies&#39;</span><span class="p">:</span> <span class="s1">&#39;list[str]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_drive_compartments&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_drive_slots_per_compartment&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_attributes&#39;</span><span class="p">:</span> <span class="s1">&#39;list[TrayAttribute]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;is_misconfigured&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_factory_defaults_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;physical_location&#39;</span><span class="p">:</span> <span class="s1">&#39;Location&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_drawers&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_layout&#39;</span><span class="p">:</span> <span class="s1">&#39;DriveLayout&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;factory_defaults_data&#39;</span><span class="p">:</span> <span class="s1">&#39;FactoryDefaultsVersionData&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;locate_in_progress&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;has_tray_identity_indicator&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;orientation&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_controller_slots&#39;</span><span class="p">:</span> <span class="s1">&#39;numControllerSlots&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_drive_slots&#39;</span><span class="p">:</span> <span class="s1">&#39;numDriveSlots&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_id&#39;</span><span class="p">:</span> <span class="s1">&#39;trayId&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;trayRef&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;non_redundant_access&#39;</span><span class="p">:</span> <span class="s1">&#39;nonRedundantAccess&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;part_number&#39;</span><span class="p">:</span> <span class="s1">&#39;partNumber&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;serial_number&#39;</span><span class="p">:</span> <span class="s1">&#39;serialNumber&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_name&#39;</span><span class="p">:</span> <span class="s1">&#39;vendorName&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;manufacturer_date&#39;</span><span class="p">:</span> <span class="s1">&#39;manufacturerDate&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fru_type&#39;</span><span class="p">:</span> <span class="s1">&#39;fruType&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_id_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;trayIDMismatch&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_id_conflict&#39;</span><span class="p">:</span> <span class="s1">&#39;trayIDConflict&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_version_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;esmVersionMismatch&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_miswire&#39;</span><span class="p">:</span> <span class="s1">&#39;esmMiswire&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drv_mh_speed_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;drvMHSpeedMismatch&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;unsupported_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;unsupportedTray&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;working_channel&#39;</span><span class="p">:</span> <span class="s1">&#39;workingChannel&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;max_speed&#39;</span><span class="p">:</span> <span class="s1">&#39;maxSpeed&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_technology_type&#39;</span><span class="p">:</span> <span class="s1">&#39;trayTechnologyType&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_group_error&#39;</span><span class="p">:</span> <span class="s1">&#39;esmGroupError&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;uncertified_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;uncertifiedTray&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;locate_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;locateTray&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_hardware_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;esmHardwareMismatch&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;has_configurable_tray_id&#39;</span><span class="p">:</span> <span class="s1">&#39;hasConfigurableTrayId&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;front_end_interface_technology&#39;</span><span class="p">:</span> <span class="s1">&#39;frontEndInterfaceTechnology&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_technologies&#39;</span><span class="p">:</span> <span class="s1">&#39;driveTechnologies&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_drive_compartments&#39;</span><span class="p">:</span> <span class="s1">&#39;numDriveCompartments&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_drive_slots_per_compartment&#39;</span><span class="p">:</span> <span class="s1">&#39;numDriveSlotsPerCompartment&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_attributes&#39;</span><span class="p">:</span> <span class="s1">&#39;trayAttributes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;is_misconfigured&#39;</span><span class="p">:</span> <span class="s1">&#39;isMisconfigured&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esm_factory_defaults_mismatch&#39;</span><span class="p">:</span> <span class="s1">&#39;esmFactoryDefaultsMismatch&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;physical_location&#39;</span><span class="p">:</span> <span class="s1">&#39;physicalLocation&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;num_drawers&#39;</span><span class="p">:</span> <span class="s1">&#39;numDrawers&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_layout&#39;</span><span class="p">:</span> <span class="s1">&#39;driveLayout&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;factory_defaults_data&#39;</span><span class="p">:</span> <span class="s1">&#39;factoryDefaultsData&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;locate_in_progress&#39;</span><span class="p">:</span> <span class="s1">&#39;locateInProgress&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;has_tray_identity_indicator&#39;</span><span class="p">:</span> <span class="s1">&#39;hasTrayIdentityIndicator&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;id&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_orientation</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_controller_slots</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_drive_slots</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_ref</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_non_redundant_access</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_part_number</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_serial_number</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_name</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_manufacturer_date</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fru_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_id_mismatch</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_id_conflict</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_version_mismatch</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_miswire</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drv_mh_speed_mismatch</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unsupported_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_working_channel</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_max_speed</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_technology_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_group_error</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_uncertified_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_locate_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_hardware_mismatch</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_has_configurable_tray_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_front_end_interface_technology</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_technologies</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_drive_compartments</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_drive_slots_per_compartment</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_attributes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_misconfigured</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_factory_defaults_mismatch</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_physical_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_drawers</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_layout</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_factory_defaults_data</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_locate_in_progress</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_has_tray_identity_indicator</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the type of this Tray.</span>
+<span class="sd">        An indication of the type of the tray.</span>
+
+<span class="sd">        :return: The type of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_type</span>
+
+    <span class="nd">@type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the type of this Tray.</span>
+<span class="sd">        An indication of the type of the tray.</span>
+
+<span class="sd">        :param type: The type of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;sym1000&quot;</span><span class="p">,</span> <span class="s2">&quot;sym2000&quot;</span><span class="p">,</span> <span class="s2">&quot;sym2772&quot;</span><span class="p">,</span> <span class="s2">&quot;pciraid&quot;</span><span class="p">,</span> <span class="s2">&quot;generic&quot;</span><span class="p">,</span> <span class="s2">&quot;sym2200&quot;</span><span class="p">,</span> <span class="s2">&quot;sym1200&quot;</span><span class="p">,</span> <span class="s2">&quot;sym2882&quot;</span><span class="p">,</span> <span class="s2">&quot;sym1500&quot;</span><span class="p">,</span> <span class="s2">&quot;fc4600&quot;</span><span class="p">,</span> <span class="s2">&quot;ss3600&quot;</span><span class="p">,</span> <span class="s2">&quot;md1000&quot;</span><span class="p">,</span> <span class="s2">&quot;md3000&quot;</span><span class="p">,</span> <span class="s2">&quot;xbb2&quot;</span><span class="p">,</span> <span class="s2">&quot;fc6900&quot;</span><span class="p">,</span> <span class="s2">&quot;md1200&quot;</span><span class="p">,</span> <span class="s2">&quot;md1220&quot;</span><span class="p">,</span> <span class="s2">&quot;de1600&quot;</span><span class="p">,</span> <span class="s2">&quot;de5600&quot;</span><span class="p">,</span> <span class="s2">&quot;de6600&quot;</span><span class="p">,</span> <span class="s2">&quot;de7600&quot;</span><span class="p">,</span> <span class="s2">&quot;de6650&quot;</span><span class="p">,</span> <span class="s2">&quot;sc12&quot;</span><span class="p">,</span> <span class="s2">&quot;sc24&quot;</span><span class="p">,</span> <span class="s2">&quot;de212c&quot;</span><span class="p">,</span> <span class="s2">&quot;de224c&quot;</span><span class="p">,</span> <span class="s2">&quot;de460c&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">type</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `type`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_type</span> <span class="o">=</span> <span class="nb">type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">orientation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the orientation of this Tray.</span>
+<span class="sd">        An indication of the physical orientation (horizontal or vertical) of the tray.</span>
+
+<span class="sd">        :return: The orientation of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_orientation</span>
+
+    <span class="nd">@orientation</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">orientation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">orientation</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the orientation of this Tray.</span>
+<span class="sd">        An indication of the physical orientation (horizontal or vertical) of the tray.</span>
+
+<span class="sd">        :param orientation: The orientation of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;horizontal&quot;</span><span class="p">,</span> <span class="s2">&quot;vertical&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">orientation</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `orientation`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_orientation</span> <span class="o">=</span> <span class="n">orientation</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">num_controller_slots</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the num_controller_slots of this Tray.</span>
+<span class="sd">        The number of slots available for holding RAID controller boards (i.e., set to zero for a drive-only tray).</span>
+
+<span class="sd">        :return: The num_controller_slots of this Tray.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_num_controller_slots</span>
+
+    <span class="nd">@num_controller_slots</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">num_controller_slots</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_controller_slots</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the num_controller_slots of this Tray.</span>
+<span class="sd">        The number of slots available for holding RAID controller boards (i.e., set to zero for a drive-only tray).</span>
+
+<span class="sd">        :param num_controller_slots: The num_controller_slots of this Tray.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_controller_slots</span> <span class="o">=</span> <span class="n">num_controller_slots</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">num_drive_slots</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the num_drive_slots of this Tray.</span>
+<span class="sd">        The total number of slots available for holding disk drives.</span>
+
+<span class="sd">        :return: The num_drive_slots of this Tray.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_num_drive_slots</span>
+
+    <span class="nd">@num_drive_slots</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">num_drive_slots</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_drive_slots</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the num_drive_slots of this Tray.</span>
+<span class="sd">        The total number of slots available for holding disk drives.</span>
+
+<span class="sd">        :param num_drive_slots: The num_drive_slots of this Tray.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_drive_slots</span> <span class="o">=</span> <span class="n">num_drive_slots</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tray_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tray_id of this Tray.</span>
+<span class="sd">        The tray identifier value, which is typically set using physical switches on the tray itself.</span>
+
+<span class="sd">        :return: The tray_id of this Tray.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tray_id</span>
+
+    <span class="nd">@tray_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tray_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tray_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tray_id of this Tray.</span>
+<span class="sd">        The tray identifier value, which is typically set using physical switches on the tray itself.</span>
+
+<span class="sd">        :param tray_id: The tray_id of this Tray.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_id</span> <span class="o">=</span> <span class="n">tray_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tray_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tray_ref of this Tray.</span>
+<span class="sd">        The identifier value for this tray. Other objects may use this reference value to refer to the tray.</span>
+
+<span class="sd">        :return: The tray_ref of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tray_ref</span>
+
+    <span class="nd">@tray_ref</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tray_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tray_ref</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tray_ref of this Tray.</span>
+<span class="sd">        The identifier value for this tray. Other objects may use this reference value to refer to the tray.</span>
+
+<span class="sd">        :param tray_ref: The tray_ref of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_ref</span> <span class="o">=</span> <span class="n">tray_ref</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">non_redundant_access</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the non_redundant_access of this Tray.</span>
+<span class="sd">        True, if the tray does not have redundant access.</span>
+
+<span class="sd">        :return: The non_redundant_access of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_non_redundant_access</span>
+
+    <span class="nd">@non_redundant_access</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">non_redundant_access</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">non_redundant_access</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the non_redundant_access of this Tray.</span>
+<span class="sd">        True, if the tray does not have redundant access.</span>
+
+<span class="sd">        :param non_redundant_access: The non_redundant_access of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_non_redundant_access</span> <span class="o">=</span> <span class="n">non_redundant_access</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">part_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the part_number of this Tray.</span>
+<span class="sd">        The part number of the tray from VPD data.</span>
+
+<span class="sd">        :return: The part_number of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_part_number</span>
+
+    <span class="nd">@part_number</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">part_number</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">part_number</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the part_number of this Tray.</span>
+<span class="sd">        The part number of the tray from VPD data.</span>
+
+<span class="sd">        :param part_number: The part_number of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_part_number</span> <span class="o">=</span> <span class="n">part_number</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">serial_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the serial_number of this Tray.</span>
+<span class="sd">        The serial number of the tray.</span>
+
+<span class="sd">        :return: The serial_number of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_serial_number</span>
+
+    <span class="nd">@serial_number</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">serial_number</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">serial_number</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the serial_number of this Tray.</span>
+<span class="sd">        The serial number of the tray.</span>
+
+<span class="sd">        :param serial_number: The serial_number of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_serial_number</span> <span class="o">=</span> <span class="n">serial_number</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vendor_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vendor_name of this Tray.</span>
+<span class="sd">        The name of the manufacturer of the tray.</span>
+
+<span class="sd">        :return: The vendor_name of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_name</span>
+
+    <span class="nd">@vendor_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vendor_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vendor_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vendor_name of this Tray.</span>
+<span class="sd">        The name of the manufacturer of the tray.</span>
+
+<span class="sd">        :param vendor_name: The vendor_name of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_name</span> <span class="o">=</span> <span class="n">vendor_name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">manufacturer_date</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the manufacturer_date of this Tray.</span>
+<span class="sd">        The date the tray was manufactured.</span>
+
+<span class="sd">        :return: The manufacturer_date of this Tray.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_manufacturer_date</span>
+
+    <span class="nd">@manufacturer_date</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">manufacturer_date</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manufacturer_date</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the manufacturer_date of this Tray.</span>
+<span class="sd">        The date the tray was manufactured.</span>
+
+<span class="sd">        :param manufacturer_date: The manufacturer_date of this Tray.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_manufacturer_date</span> <span class="o">=</span> <span class="n">manufacturer_date</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fru_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fru_type of this Tray.</span>
+<span class="sd">        The field replaceable unit type of the tray.</span>
+
+<span class="sd">        :return: The fru_type of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fru_type</span>
+
+    <span class="nd">@fru_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fru_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fru_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fru_type of this Tray.</span>
+<span class="sd">        The field replaceable unit type of the tray.</span>
+
+<span class="sd">        :param fru_type: The fru_type of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fru_type</span> <span class="o">=</span> <span class="n">fru_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tray_id_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tray_id_mismatch of this Tray.</span>
+<span class="sd">        True if the IDs on the ESMs do not match.</span>
+
+<span class="sd">        :return: The tray_id_mismatch of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tray_id_mismatch</span>
+
+    <span class="nd">@tray_id_mismatch</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tray_id_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tray_id_mismatch</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tray_id_mismatch of this Tray.</span>
+<span class="sd">        True if the IDs on the ESMs do not match.</span>
+
+<span class="sd">        :param tray_id_mismatch: The tray_id_mismatch of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_id_mismatch</span> <span class="o">=</span> <span class="n">tray_id_mismatch</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tray_id_conflict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tray_id_conflict of this Tray.</span>
+<span class="sd">        True if this tray ID conflicts with that of another tray.</span>
+
+<span class="sd">        :return: The tray_id_conflict of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tray_id_conflict</span>
+
+    <span class="nd">@tray_id_conflict</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tray_id_conflict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tray_id_conflict</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tray_id_conflict of this Tray.</span>
+<span class="sd">        True if this tray ID conflicts with that of another tray.</span>
+
+<span class="sd">        :param tray_id_conflict: The tray_id_conflict of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_id_conflict</span> <span class="o">=</span> <span class="n">tray_id_conflict</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">esm_version_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the esm_version_mismatch of this Tray.</span>
+<span class="sd">        True if the ESM firmware versions do not match.</span>
+
+<span class="sd">        :return: The esm_version_mismatch of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_esm_version_mismatch</span>
+
+    <span class="nd">@esm_version_mismatch</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">esm_version_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">esm_version_mismatch</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the esm_version_mismatch of this Tray.</span>
+<span class="sd">        True if the ESM firmware versions do not match.</span>
+
+<span class="sd">        :param esm_version_mismatch: The esm_version_mismatch of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_version_mismatch</span> <span class="o">=</span> <span class="n">esm_version_mismatch</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">esm_miswire</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the esm_miswire of this Tray.</span>
+<span class="sd">        True if this tray has an ESM join miswire.</span>
+
+<span class="sd">        :return: The esm_miswire of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_esm_miswire</span>
+
+    <span class="nd">@esm_miswire</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">esm_miswire</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">esm_miswire</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the esm_miswire of this Tray.</span>
+<span class="sd">        True if this tray has an ESM join miswire.</span>
+
+<span class="sd">        :param esm_miswire: The esm_miswire of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_miswire</span> <span class="o">=</span> <span class="n">esm_miswire</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drv_mh_speed_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drv_mh_speed_mismatch of this Tray.</span>
+<span class="sd">        True if this tray has a drive-side minihub speed mismatch.</span>
+
+<span class="sd">        :return: The drv_mh_speed_mismatch of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drv_mh_speed_mismatch</span>
+
+    <span class="nd">@drv_mh_speed_mismatch</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drv_mh_speed_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drv_mh_speed_mismatch</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drv_mh_speed_mismatch of this Tray.</span>
+<span class="sd">        True if this tray has a drive-side minihub speed mismatch.</span>
+
+<span class="sd">        :param drv_mh_speed_mismatch: The drv_mh_speed_mismatch of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drv_mh_speed_mismatch</span> <span class="o">=</span> <span class="n">drv_mh_speed_mismatch</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">unsupported_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the unsupported_tray of this Tray.</span>
+<span class="sd">        True if this tray is an unrecognized/unsupported hardware type.</span>
+
+<span class="sd">        :return: The unsupported_tray of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_unsupported_tray</span>
+
+    <span class="nd">@unsupported_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">unsupported_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unsupported_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the unsupported_tray of this Tray.</span>
+<span class="sd">        True if this tray is an unrecognized/unsupported hardware type.</span>
+
+<span class="sd">        :param unsupported_tray: The unsupported_tray of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unsupported_tray</span> <span class="o">=</span> <span class="n">unsupported_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">working_channel</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the working_channel of this Tray.</span>
+<span class="sd">        The channel to the tray that is still operational (if nonRedundantAccess is True).</span>
+
+<span class="sd">        :return: The working_channel of this Tray.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_working_channel</span>
+
+    <span class="nd">@working_channel</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">working_channel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">working_channel</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the working_channel of this Tray.</span>
+<span class="sd">        The channel to the tray that is still operational (if nonRedundantAccess is True).</span>
+
+<span class="sd">        :param working_channel: The working_channel of this Tray.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_working_channel</span> <span class="o">=</span> <span class="n">working_channel</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">max_speed</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the max_speed of this Tray.</span>
+<span class="sd">        The maximum speed of the drive channels,</span>
+
+<span class="sd">        :return: The max_speed of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_max_speed</span>
+
+    <span class="nd">@max_speed</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">max_speed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">max_speed</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the max_speed of this Tray.</span>
+<span class="sd">        The maximum speed of the drive channels,</span>
+
+<span class="sd">        :param max_speed: The max_speed of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;speedUnknown&quot;</span><span class="p">,</span> <span class="s2">&quot;speed1gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed2gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed4gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed10gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed15gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed3gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed10meg&quot;</span><span class="p">,</span> <span class="s2">&quot;speed100meg&quot;</span><span class="p">,</span> <span class="s2">&quot;speed2pt5Gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed5gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed20gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed30gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed60gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed8gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed6gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed40gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed16gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed56gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed12gig&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">max_speed</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `max_speed`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_max_speed</span> <span class="o">=</span> <span class="n">max_speed</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tray_technology_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tray_technology_type of this Tray.</span>
+<span class="sd">        The interface technology. This field is deprecated. Equivalent information is available in the driveTechnologies and frontEndInterfaceTechnology fields.</span>
+
+<span class="sd">        :return: The tray_technology_type of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tray_technology_type</span>
+
+    <span class="nd">@tray_technology_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tray_technology_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tray_technology_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tray_technology_type of this Tray.</span>
+<span class="sd">        The interface technology. This field is deprecated. Equivalent information is available in the driveTechnologies and frontEndInterfaceTechnology fields.</span>
+
+<span class="sd">        :param tray_technology_type: The tray_technology_type of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span> <span class="s2">&quot;scsiScsi&quot;</span><span class="p">,</span> <span class="s2">&quot;fibreFibre&quot;</span><span class="p">,</span> <span class="s2">&quot;fibreSata&quot;</span><span class="p">,</span> <span class="s2">&quot;fibrePata&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">tray_technology_type</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `tray_technology_type`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_technology_type</span> <span class="o">=</span> <span class="n">tray_technology_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">esm_group_error</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the esm_group_error of this Tray.</span>
+<span class="sd">        True if SBOD ESM trays are not properly clustered.</span>
+
+<span class="sd">        :return: The esm_group_error of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_esm_group_error</span>
+
+    <span class="nd">@esm_group_error</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">esm_group_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">esm_group_error</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the esm_group_error of this Tray.</span>
+<span class="sd">        True if SBOD ESM trays are not properly clustered.</span>
+
+<span class="sd">        :param esm_group_error: The esm_group_error of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_group_error</span> <span class="o">=</span> <span class="n">esm_group_error</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">uncertified_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the uncertified_tray of this Tray.</span>
+<span class="sd">        True if this tray is an uncertified hardware type.</span>
+
+<span class="sd">        :return: The uncertified_tray of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_uncertified_tray</span>
+
+    <span class="nd">@uncertified_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">uncertified_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uncertified_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the uncertified_tray of this Tray.</span>
+<span class="sd">        True if this tray is an uncertified hardware type.</span>
+
+<span class="sd">        :param uncertified_tray: The uncertified_tray of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_uncertified_tray</span> <span class="o">=</span> <span class="n">uncertified_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">locate_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the locate_tray of this Tray.</span>
+<span class="sd">        True if this tray supports a locate operation.</span>
+
+<span class="sd">        :return: The locate_tray of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_locate_tray</span>
+
+    <span class="nd">@locate_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">locate_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">locate_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the locate_tray of this Tray.</span>
+<span class="sd">        True if this tray supports a locate operation.</span>
+
+<span class="sd">        :param locate_tray: The locate_tray of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_locate_tray</span> <span class="o">=</span> <span class="n">locate_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">esm_hardware_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the esm_hardware_mismatch of this Tray.</span>
+<span class="sd">        True if the ESM hardware components in the tray are mismatched.</span>
+
+<span class="sd">        :return: The esm_hardware_mismatch of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_esm_hardware_mismatch</span>
+
+    <span class="nd">@esm_hardware_mismatch</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">esm_hardware_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">esm_hardware_mismatch</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the esm_hardware_mismatch of this Tray.</span>
+<span class="sd">        True if the ESM hardware components in the tray are mismatched.</span>
+
+<span class="sd">        :param esm_hardware_mismatch: The esm_hardware_mismatch of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_hardware_mismatch</span> <span class="o">=</span> <span class="n">esm_hardware_mismatch</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">has_configurable_tray_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the has_configurable_tray_id of this Tray.</span>
+<span class="sd">        True if the tray ID can be set using the updateTray procedure.</span>
+
+<span class="sd">        :return: The has_configurable_tray_id of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_has_configurable_tray_id</span>
+
+    <span class="nd">@has_configurable_tray_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">has_configurable_tray_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">has_configurable_tray_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the has_configurable_tray_id of this Tray.</span>
+<span class="sd">        True if the tray ID can be set using the updateTray procedure.</span>
+
+<span class="sd">        :param has_configurable_tray_id: The has_configurable_tray_id of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_has_configurable_tray_id</span> <span class="o">=</span> <span class="n">has_configurable_tray_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">front_end_interface_technology</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the front_end_interface_technology of this Tray.</span>
+<span class="sd">        The front-end I/O interface technology of the tray.</span>
+
+<span class="sd">        :return: The front_end_interface_technology of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_front_end_interface_technology</span>
+
+    <span class="nd">@front_end_interface_technology</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">front_end_interface_technology</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">front_end_interface_technology</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the front_end_interface_technology of this Tray.</span>
+<span class="sd">        The front-end I/O interface technology of the tray.</span>
+
+<span class="sd">        :param front_end_interface_technology: The front_end_interface_technology of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;notImplemented&quot;</span><span class="p">,</span> <span class="s2">&quot;scsi&quot;</span><span class="p">,</span> <span class="s2">&quot;fc&quot;</span><span class="p">,</span> <span class="s2">&quot;sata&quot;</span><span class="p">,</span> <span class="s2">&quot;sas&quot;</span><span class="p">,</span> <span class="s2">&quot;iscsi&quot;</span><span class="p">,</span> <span class="s2">&quot;ib&quot;</span><span class="p">,</span> <span class="s2">&quot;fcoe&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">front_end_interface_technology</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `front_end_interface_technology`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_front_end_interface_technology</span> <span class="o">=</span> <span class="n">front_end_interface_technology</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drive_technologies</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drive_technologies of this Tray.</span>
+<span class="sd">        A list of drive technologies that are present in the tray.</span>
+
+<span class="sd">        :return: The drive_technologies of this Tray.</span>
+<span class="sd">        :rtype: list[str]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drive_technologies</span>
+
+    <span class="nd">@drive_technologies</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drive_technologies</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drive_technologies</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drive_technologies of this Tray.</span>
+<span class="sd">        A list of drive technologies that are present in the tray.</span>
+
+<span class="sd">        :param drive_technologies: The drive_technologies of this Tray.</span>
+<span class="sd">        :type: list[str]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_technologies</span> <span class="o">=</span> <span class="n">drive_technologies</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">num_drive_compartments</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the num_drive_compartments of this Tray.</span>
+<span class="sd">        The number of drive compartments in the tray. Some drive trays are subdivided into \&quot;compartments,\&quot; each having the same number of drive slots. Looking at the front of such an enclosure, multiple compartments are arranged side by side along one dimension, while drives within a compartment are arranged side by side along the other dimension, allowing for greater overall drive density within the constraints of a given enclosure form factor. (Even when arranged as a series of compartments, drive slot numbering is still relative to the entire tray.)</span>
+
+<span class="sd">        :return: The num_drive_compartments of this Tray.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_num_drive_compartments</span>
+
+    <span class="nd">@num_drive_compartments</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">num_drive_compartments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_drive_compartments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the num_drive_compartments of this Tray.</span>
+<span class="sd">        The number of drive compartments in the tray. Some drive trays are subdivided into \&quot;compartments,\&quot; each having the same number of drive slots. Looking at the front of such an enclosure, multiple compartments are arranged side by side along one dimension, while drives within a compartment are arranged side by side along the other dimension, allowing for greater overall drive density within the constraints of a given enclosure form factor. (Even when arranged as a series of compartments, drive slot numbering is still relative to the entire tray.)</span>
+
+<span class="sd">        :param num_drive_compartments: The num_drive_compartments of this Tray.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_drive_compartments</span> <span class="o">=</span> <span class="n">num_drive_compartments</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">num_drive_slots_per_compartment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the num_drive_slots_per_compartment of this Tray.</span>
+<span class="sd">        The number of drive slots within an individual drive compartment.</span>
+
+<span class="sd">        :return: The num_drive_slots_per_compartment of this Tray.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_num_drive_slots_per_compartment</span>
+
+    <span class="nd">@num_drive_slots_per_compartment</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">num_drive_slots_per_compartment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_drive_slots_per_compartment</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the num_drive_slots_per_compartment of this Tray.</span>
+<span class="sd">        The number of drive slots within an individual drive compartment.</span>
+
+<span class="sd">        :param num_drive_slots_per_compartment: The num_drive_slots_per_compartment of this Tray.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_drive_slots_per_compartment</span> <span class="o">=</span> <span class="n">num_drive_slots_per_compartment</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tray_attributes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tray_attributes of this Tray.</span>
+<span class="sd">        The tray attribute data (see setTrayAttributes procedure).</span>
+
+<span class="sd">        :return: The tray_attributes of this Tray.</span>
+<span class="sd">        :rtype: list[TrayAttribute]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tray_attributes</span>
+
+    <span class="nd">@tray_attributes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tray_attributes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tray_attributes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tray_attributes of this Tray.</span>
+<span class="sd">        The tray attribute data (see setTrayAttributes procedure).</span>
+
+<span class="sd">        :param tray_attributes: The tray_attributes of this Tray.</span>
+<span class="sd">        :type: list[TrayAttribute]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_attributes</span> <span class="o">=</span> <span class="n">tray_attributes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_misconfigured</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the is_misconfigured of this Tray.</span>
+<span class="sd">        True, if the tray has invalid configuration settings.</span>
+
+<span class="sd">        :return: The is_misconfigured of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_misconfigured</span>
+
+    <span class="nd">@is_misconfigured</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">is_misconfigured</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">is_misconfigured</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the is_misconfigured of this Tray.</span>
+<span class="sd">        True, if the tray has invalid configuration settings.</span>
+
+<span class="sd">        :param is_misconfigured: The is_misconfigured of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_misconfigured</span> <span class="o">=</span> <span class="n">is_misconfigured</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">esm_factory_defaults_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the esm_factory_defaults_mismatch of this Tray.</span>
+<span class="sd">        True, if the two ESMs in the tray are reporting different version information for their factory default settings.</span>
+
+<span class="sd">        :return: The esm_factory_defaults_mismatch of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_esm_factory_defaults_mismatch</span>
+
+    <span class="nd">@esm_factory_defaults_mismatch</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">esm_factory_defaults_mismatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">esm_factory_defaults_mismatch</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the esm_factory_defaults_mismatch of this Tray.</span>
+<span class="sd">        True, if the two ESMs in the tray are reporting different version information for their factory default settings.</span>
+
+<span class="sd">        :param esm_factory_defaults_mismatch: The esm_factory_defaults_mismatch of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_factory_defaults_mismatch</span> <span class="o">=</span> <span class="n">esm_factory_defaults_mismatch</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">physical_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the physical_location of this Tray.</span>
+<span class="sd">        The physical location of the tray. The parent reference in Location identifies the storage array itself, and the position field is the tray position number as identified in setSATrayPositions procedure call, or the constant TRAY_POSITION_UNKNOWN.</span>
+
+<span class="sd">        :return: The physical_location of this Tray.</span>
+<span class="sd">        :rtype: Location</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_physical_location</span>
+
+    <span class="nd">@physical_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">physical_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">physical_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the physical_location of this Tray.</span>
+<span class="sd">        The physical location of the tray. The parent reference in Location identifies the storage array itself, and the position field is the tray position number as identified in setSATrayPositions procedure call, or the constant TRAY_POSITION_UNKNOWN.</span>
+
+<span class="sd">        :param physical_location: The physical_location of this Tray.</span>
+<span class="sd">        :type: Location</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_physical_location</span> <span class="o">=</span> <span class="n">physical_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">num_drawers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the num_drawers of this Tray.</span>
+<span class="sd">        The total number of drawers available in the tray.</span>
+
+<span class="sd">        :return: The num_drawers of this Tray.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_num_drawers</span>
+
+    <span class="nd">@num_drawers</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">num_drawers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_drawers</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the num_drawers of this Tray.</span>
+<span class="sd">        The total number of drawers available in the tray.</span>
+
+<span class="sd">        :param num_drawers: The num_drawers of this Tray.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_drawers</span> <span class="o">=</span> <span class="n">num_drawers</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drive_layout</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drive_layout of this Tray.</span>
+<span class="sd">        If the tray contains drawers, this field specifies the layout within the drawer. Otherwise, this field specifies the layout for the tray.</span>
+
+<span class="sd">        :return: The drive_layout of this Tray.</span>
+<span class="sd">        :rtype: DriveLayout</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drive_layout</span>
+
+    <span class="nd">@drive_layout</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drive_layout</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drive_layout</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drive_layout of this Tray.</span>
+<span class="sd">        If the tray contains drawers, this field specifies the layout within the drawer. Otherwise, this field specifies the layout for the tray.</span>
+
+<span class="sd">        :param drive_layout: The drive_layout of this Tray.</span>
+<span class="sd">        :type: DriveLayout</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_layout</span> <span class="o">=</span> <span class="n">drive_layout</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">factory_defaults_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the factory_defaults_data of this Tray.</span>
+<span class="sd">        This field contains information about the version of the tray&#39;s factory default settings.</span>
+
+<span class="sd">        :return: The factory_defaults_data of this Tray.</span>
+<span class="sd">        :rtype: FactoryDefaultsVersionData</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_factory_defaults_data</span>
+
+    <span class="nd">@factory_defaults_data</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">factory_defaults_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">factory_defaults_data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the factory_defaults_data of this Tray.</span>
+<span class="sd">        This field contains information about the version of the tray&#39;s factory default settings.</span>
+
+<span class="sd">        :param factory_defaults_data: The factory_defaults_data of this Tray.</span>
+<span class="sd">        :type: FactoryDefaultsVersionData</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_factory_defaults_data</span> <span class="o">=</span> <span class="n">factory_defaults_data</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">locate_in_progress</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the locate_in_progress of this Tray.</span>
+<span class="sd">        Indicates that a locate operation for the device is currently active. The device will show a visual indication to aid an operator in locating the tray.</span>
+
+<span class="sd">        :return: The locate_in_progress of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_locate_in_progress</span>
+
+    <span class="nd">@locate_in_progress</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">locate_in_progress</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">locate_in_progress</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the locate_in_progress of this Tray.</span>
+<span class="sd">        Indicates that a locate operation for the device is currently active. The device will show a visual indication to aid an operator in locating the tray.</span>
+
+<span class="sd">        :param locate_in_progress: The locate_in_progress of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_locate_in_progress</span> <span class="o">=</span> <span class="n">locate_in_progress</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">has_tray_identity_indicator</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the has_tray_identity_indicator of this Tray.</span>
+<span class="sd">        The device contains 7-segment indicators used to display the Tray Identity.</span>
+
+<span class="sd">        :return: The has_tray_identity_indicator of this Tray.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_has_tray_identity_indicator</span>
+
+    <span class="nd">@has_tray_identity_indicator</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">has_tray_identity_indicator</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">has_tray_identity_indicator</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the has_tray_identity_indicator of this Tray.</span>
+<span class="sd">        The device contains 7-segment indicators used to display the Tray Identity.</span>
+
+<span class="sd">        :param has_tray_identity_indicator: The has_tray_identity_indicator of this Tray.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_has_tray_identity_indicator</span> <span class="o">=</span> <span class="n">has_tray_identity_indicator</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the id of this Tray.</span>
+
+
+<span class="sd">        :return: The id of this Tray.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_id</span>
+
+    <span class="nd">@id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the id of this Tray.</span>
+
+
+<span class="sd">        :param id: The id of this Tray.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id</span> <span class="o">=</span> <span class="nb">id</span>
+
+<div class="viewcode-block" id="Tray.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.tray.Tray.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="Tray.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.tray.Tray.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

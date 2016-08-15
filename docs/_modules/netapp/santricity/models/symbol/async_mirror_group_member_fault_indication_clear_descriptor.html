@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.async_mirror_group_member_fault_indication_clear_descriptor &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.async_mirror_group_member_fault_indication_clear_descriptor</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">AsyncMirrorGroupMemberFaultIndicationClearDescriptor.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="AsyncMirrorGroupMemberFaultIndicationClearDescriptor"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.async_mirror_group_member_fault_indication_clear_descriptor.AsyncMirrorGroupMemberFaultIndicationClearDescriptor">[docs]</a><span class="k">class</span> <span class="nc">AsyncMirrorGroupMemberFaultIndicationClearDescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        AsyncMirrorGroupMemberFaultIndicationClearDescriptor - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;member&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;indication&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;member&#39;</span><span class="p">:</span> <span class="s1">&#39;member&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;indication&#39;</span><span class="p">:</span> <span class="s1">&#39;indication&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_indication</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">member</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the member of this AsyncMirrorGroupMemberFaultIndicationClearDescriptor.</span>
+<span class="sd">        The AMG member with condition to be cleared / acknowledged.</span>
+
+<span class="sd">        :return: The member of this AsyncMirrorGroupMemberFaultIndicationClearDescriptor.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_member</span>
+
+    <span class="nd">@member</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">member</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">member</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the member of this AsyncMirrorGroupMemberFaultIndicationClearDescriptor.</span>
+<span class="sd">        The AMG member with condition to be cleared / acknowledged.</span>
+
+<span class="sd">        :param member: The member of this AsyncMirrorGroupMemberFaultIndicationClearDescriptor.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member</span> <span class="o">=</span> <span class="n">member</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">indication</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the indication of this AsyncMirrorGroupMemberFaultIndicationClearDescriptor.</span>
+<span class="sd">        The type of indication to clear.</span>
+
+<span class="sd">        :return: The indication of this AsyncMirrorGroupMemberFaultIndicationClearDescriptor.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_indication</span>
+
+    <span class="nd">@indication</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">indication</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">indication</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the indication of this AsyncMirrorGroupMemberFaultIndicationClearDescriptor.</span>
+<span class="sd">        The type of indication to clear.</span>
+
+<span class="sd">        :param indication: The indication of this AsyncMirrorGroupMemberFaultIndicationClearDescriptor.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;unknownFailure&quot;</span><span class="p">,</span> <span class="s2">&quot;failedFan&quot;</span><span class="p">,</span> <span class="s2">&quot;failedPowerSupply&quot;</span><span class="p">,</span> <span class="s2">&quot;failedMinihub&quot;</span><span class="p">,</span> <span class="s2">&quot;failedEsm&quot;</span><span class="p">,</span> <span class="s2">&quot;batteryNearExpiration&quot;</span><span class="p">,</span> <span class="s2">&quot;failedBattery&quot;</span><span class="p">,</span> <span class="s2">&quot;nominalTempExceeded&quot;</span><span class="p">,</span> <span class="s2">&quot;maxTempExceeded&quot;</span><span class="p">,</span> <span class="s2">&quot;upsOnBattery&quot;</span><span class="p">,</span> <span class="s2">&quot;nonPreferredPath&quot;</span><span class="p">,</span> <span class="s2">&quot;memParityError&quot;</span><span class="p">,</span> <span class="s2">&quot;failedDriveScsiChannel&quot;</span><span class="p">,</span> <span class="s2">&quot;degradedVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;failedVolumeInterruptedWrite&quot;</span><span class="p">,</span> <span class="s2">&quot;failedModifyingVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;failedModifyingMultiRaid&quot;</span><span class="p">,</span> <span class="s2">&quot;failedVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;failedVolumeMultiRaid&quot;</span><span class="p">,</span> <span class="s2">&quot;impairedVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;failedVolumeAwaitingInit&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeHotSpareInUse&quot;</span><span class="p">,</span> <span class="s2">&quot;offlineVolumeGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;failedDrive&quot;</span><span class="p">,</span> <span class="s2">&quot;impendingDriveFailureRiskHigh&quot;</span><span class="p">,</span> <span class="s2">&quot;impendingDriveFailureRiskMed&quot;</span><span class="p">,</span> <span class="s2">&quot;impendingDriveFailureRiskLow&quot;</span><span class="p">,</span> <span class="s2">&quot;uncertifiedDrive&quot;</span><span class="p">,</span> <span class="s2">&quot;offlineCtl&quot;</span><span class="p">,</span> <span class="s2">&quot;passiveCtl&quot;</span><span class="p">,</span> <span class="s2">&quot;partitionsNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;esmCodeVersionMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;lostRedundancyDrive&quot;</span><span class="p">,</span> <span class="s2">&quot;lostRedundancyTray&quot;</span><span class="p">,</span> <span class="s2">&quot;lostRedundancyEsm&quot;</span><span class="p">,</span> <span class="s2">&quot;trayidMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;trayidConflict&quot;</span><span class="p">,</span> <span class="s2">&quot;failedTransceiverModule&quot;</span><span class="p">,</span> <span class="s2">&quot;channelMiswire&quot;</span><span class="p">,</span> <span class="s2">&quot;nonFruBatteryNearExpiration&quot;</span><span class="p">,</span> <span class="s2">&quot;nonFruFailedBattery&quot;</span><span class="p">,</span> <span class="s2">&quot;rpaErrCtl&quot;</span><span class="p">,</span> <span class="s2">&quot;repositoryOverThreshold&quot;</span><span class="p">,</span> <span class="s2">&quot;repositoryFull&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;unsupportedMinihub&quot;</span><span class="p">,</span> <span class="s2">&quot;esmMiswire&quot;</span><span class="p">,</span> <span class="s2">&quot;ghostVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;rvmNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;metadataOffline&quot;</span><span class="p">,</span> <span class="s2">&quot;mirrorDualPrimary&quot;</span><span class="p">,</span> <span class="s2">&quot;mirrorDualSecondary&quot;</span><span class="p">,</span> <span class="s2">&quot;mirrorUnsynchronized&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteNoLun&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteNoArray&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteNoFabric&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteWwnChangeFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;fanUnknownStat&quot;</span><span class="p">,</span> <span class="s2">&quot;powerSupplyUnknownStat&quot;</span><span class="p">,</span> <span class="s2">&quot;esmUnknownStat&quot;</span><span class="p">,</span> <span class="s2">&quot;tempSensorUnknownStat&quot;</span><span class="p">,</span> <span class="s2">&quot;transModUnknownStat&quot;</span><span class="p">,</span> <span class="s2">&quot;driveBypassedSpeedMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;driveBypassedCauseUnknown&quot;</span><span class="p">,</span> <span class="s2">&quot;minihubSpeedMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;removedEsm&quot;</span><span class="p">,</span> <span class="s2">&quot;removedBattery&quot;</span><span class="p">,</span> <span class="s2">&quot;nonFruRemovedBattery&quot;</span><span class="p">,</span> <span class="s2">&quot;volcopyFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;volcopyNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;channelDegraded&quot;</span><span class="p">,</span> <span class="s2">&quot;unsupportedTray&quot;</span><span class="p">,</span> <span class="s2">&quot;speedNegError&quot;</span><span class="p">,</span> <span class="s2">&quot;usmDatabaseFull&quot;</span><span class="p">,</span> <span class="s2">&quot;usmUnreadableSectorsExist&quot;</span><span class="p">,</span> <span class="s2">&quot;pathDegraded&quot;</span><span class="p">,</span> <span class="s2">&quot;netSetupError&quot;</span><span class="p">,</span> <span class="s2">&quot;mismatchedDriveType&quot;</span><span class="p">,</span> <span class="s2">&quot;ctlMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;failedDiscreteLine&quot;</span><span class="p">,</span> <span class="s2">&quot;channelFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;linkSpeedDetectionMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;uncertifiedEsm&quot;</span><span class="p">,</span> <span class="s2">&quot;removedFan&quot;</span><span class="p">,</span> <span class="s2">&quot;removedPowerSupply&quot;</span><span class="p">,</span> <span class="s2">&quot;removedTempSensor&quot;</span><span class="p">,</span> <span class="s2">&quot;removedIccCru&quot;</span><span class="p">,</span> <span class="s2">&quot;removedSupportCru&quot;</span><span class="p">,</span> <span class="s2">&quot;failedIccCru&quot;</span><span class="p">,</span> <span class="s2">&quot;failedSupportCru&quot;</span><span class="p">,</span> <span class="s2">&quot;batteryUnknownStat&quot;</span><span class="p">,</span> <span class="s2">&quot;driveTraysNotGroupedTogether&quot;</span><span class="p">,</span> <span class="s2">&quot;goldKeyNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;mismatchedMdtSettings&quot;</span><span class="p">,</span> <span class="s2">&quot;mismatchedGoldKeySettings&quot;</span><span class="p">,</span> <span class="s2">&quot;ctlMiswire&quot;</span><span class="p">,</span> <span class="s2">&quot;supportCruNoinput&quot;</span><span class="p">,</span> <span class="s2">&quot;submodelNotSupported&quot;</span><span class="p">,</span> <span class="s2">&quot;submodelNotSet&quot;</span><span class="p">,</span> <span class="s2">&quot;submodelMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;failedBatterySystem&quot;</span><span class="p">,</span> <span class="s2">&quot;removedBatteryPack&quot;</span><span class="p">,</span> <span class="s2">&quot;batteryConfigMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;esmHardwareMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;hostBoardFault&quot;</span><span class="p">,</span> <span class="s2">&quot;ddcAvailable&quot;</span><span class="p">,</span> <span class="s2">&quot;replacedDriveWrongType&quot;</span><span class="p">,</span> <span class="s2">&quot;redundantPsRequired&quot;</span><span class="p">,</span> <span class="s2">&quot;driveTraysNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;sasDeviceLimitExceeded&quot;</span><span class="p">,</span> <span class="s2">&quot;sasPortMiswired&quot;</span><span class="p">,</span> <span class="s2">&quot;sasPortDegraded&quot;</span><span class="p">,</span> <span class="s2">&quot;sasPortFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;corruptVpdEeprom&quot;</span><span class="p">,</span> <span class="s2">&quot;failedI2cBus&quot;</span><span class="p">,</span> <span class="s2">&quot;enclosureMisconfigured&quot;</span><span class="p">,</span> <span class="s2">&quot;featureBundleNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;driveBypassedSinglePort&quot;</span><span class="p">,</span> <span class="s2">&quot;esmFactoryDefaultsMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;hostBoardUnknownStat&quot;</span><span class="p">,</span> <span class="s2">&quot;failedHostIoCard&quot;</span><span class="p">,</span> <span class="s2">&quot;batteryWarn&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeGroupPartiallyComplete&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeGroupIncomplete&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeGroupMissing&quot;</span><span class="p">,</span> <span class="s2">&quot;hotspareDriveMissing&quot;</span><span class="p">,</span> <span class="s2">&quot;driveIncompatibleUprevDacstore&quot;</span><span class="p">,</span> <span class="s2">&quot;driveIncompatibleDownrevDacstore&quot;</span><span class="p">,</span> <span class="s2">&quot;iccCruUnknownStat&quot;</span><span class="p">,</span> <span class="s2">&quot;removedAlarm&quot;</span><span class="p">,</span> <span class="s2">&quot;supportCruUnknownStat&quot;</span><span class="p">,</span> <span class="s2">&quot;performanceTierNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;raid6NotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;driveIncompatibleSectorSize&quot;</span><span class="p">,</span> <span class="s2">&quot;foreignDriveInconsistent&quot;</span><span class="p">,</span> <span class="s2">&quot;foreignDriveRefersToNativeDrive&quot;</span><span class="p">,</span> <span class="s2">&quot;nativeVgRefersToForeignDrive&quot;</span><span class="p">,</span> <span class="s2">&quot;nativeVgForeignDriveMutualRef&quot;</span><span class="p">,</span> <span class="s2">&quot;vgCloned&quot;</span><span class="p">,</span> <span class="s2">&quot;foreignDriveHasInconsistentRole&quot;</span><span class="p">,</span> <span class="s2">&quot;vgDrivePartOfMultipleVgs&quot;</span><span class="p">,</span> <span class="s2">&quot;incompatibleFailedLegacyDrive&quot;</span><span class="p">,</span> <span class="s2">&quot;unsupportedCacheMemorySize&quot;</span><span class="p">,</span> <span class="s2">&quot;dedicatedMirrorChannelFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;vgHasDrivePartOfMultipleVgs&quot;</span><span class="p">,</span> <span class="s2">&quot;ddfDriveOtherVendor&quot;</span><span class="p">,</span> <span class="s2">&quot;multipleConfigDatabasesDetected&quot;</span><span class="p">,</span> <span class="s2">&quot;adoptionFailedRaidLevelUnsupported&quot;</span><span class="p">,</span> <span class="s2">&quot;dbAdoptionHardLimitExceeded&quot;</span><span class="p">,</span> <span class="s2">&quot;legacyVgNotOptimal&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheMemSizeMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;altCtlrBoardIdUnreadable&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheBackupDeviceFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheBackupDeviceWriteProtected&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheBackupDeviceInsufficientCapacity&quot;</span><span class="p">,</span> <span class="s2">&quot;expiredBattery&quot;</span><span class="p">,</span> <span class="s2">&quot;expiredIntegratedBattery&quot;</span><span class="p">,</span> <span class="s2">&quot;procMemTooSmallForCache&quot;</span><span class="p">,</span> <span class="s2">&quot;batteryOvertemp&quot;</span><span class="p">,</span> <span class="s2">&quot;invalidHostTypeIndex&quot;</span><span class="p">,</span> <span class="s2">&quot;insufficientProcMemory&quot;</span><span class="p">,</span> <span class="s2">&quot;ctlFailedCacheBackupDev&quot;</span><span class="p">,</span> <span class="s2">&quot;removedController&quot;</span><span class="p">,</span> <span class="s2">&quot;degradedHostIoCard&quot;</span><span class="p">,</span> <span class="s2">&quot;ldFwVersionMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;ldIncompatibleDatabase&quot;</span><span class="p">,</span> <span class="s2">&quot;hostBoardIdMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;iccMissing&quot;</span><span class="p">,</span> <span class="s2">&quot;linkSpeedMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;unsupportedHostBoard&quot;</span><span class="p">,</span> <span class="s2">&quot;writebackCachingDisabled&quot;</span><span class="p">,</span> <span class="s2">&quot;securityGetKey&quot;</span><span class="p">,</span> <span class="s2">&quot;securityKeyInconsistent&quot;</span><span class="p">,</span> <span class="s2">&quot;securityNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;mixedDriveEnclosureMiswire&quot;</span><span class="p">,</span> <span class="s2">&quot;unsuccessIsolationRedunMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;thresExcdedMismatchCorrected&quot;</span><span class="p">,</span> <span class="s2">&quot;inactiveHostPort&quot;</span><span class="p">,</span> <span class="s2">&quot;inactiveInitiator&quot;</span><span class="p">,</span> <span class="s2">&quot;protectionInformationNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;protectionInformationNotSupported&quot;</span><span class="p">,</span> <span class="s2">&quot;replacedInsufficientDriveCapacity&quot;</span><span class="p">,</span> <span class="s2">&quot;drawerFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;drawerOpened&quot;</span><span class="p">,</span> <span class="s2">&quot;ssdNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;ssdAtEndOfLife&quot;</span><span class="p">,</span> <span class="s2">&quot;fibreTrunkMiswire&quot;</span><span class="p">,</span> <span class="s2">&quot;fibreTrunkIncompatibleEsm&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;securityGetNewKey&quot;</span><span class="p">,</span> <span class="s2">&quot;externalKmsNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;sbbValidationFailure&quot;</span><span class="p">,</span> <span class="s2">&quot;invalidPowerSupply&quot;</span><span class="p">,</span> <span class="s2">&quot;enclosureThermalShutdown&quot;</span><span class="p">,</span> <span class="s2">&quot;wbCachingForciblyDisabled&quot;</span><span class="p">,</span> <span class="s2">&quot;driveUnsupportedProtocolConnection&quot;</span><span class="p">,</span> <span class="s2">&quot;failedTwiBus&quot;</span><span class="p">,</span> <span class="s2">&quot;mismatchedMidplaneEeproms&quot;</span><span class="p">,</span> <span class="s2">&quot;driveUnsupportedCapacity&quot;</span><span class="p">,</span> <span class="s2">&quot;evaluationLicenseExpirationImminent&quot;</span><span class="p">,</span> <span class="s2">&quot;externalKmsKeyInvalid&quot;</span><span class="p">,</span> <span class="s2">&quot;multipleMismatchedKeyIdsFound&quot;</span><span class="p">,</span> <span class="s2">&quot;securityKeyValidationLock&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheDataLoss&quot;</span><span class="p">,</span> <span class="s2">&quot;baseControllerDiagFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;featureNotCompliant&quot;</span><span class="p">,</span> <span class="s2">&quot;driveIncompatiblePiType&quot;</span><span class="p">,</span> <span class="s2">&quot;drawerDegraded&quot;</span><span class="p">,</span> <span class="s2">&quot;offlineCtlIocFail&quot;</span><span class="p">,</span> <span class="s2">&quot;invalidSataFlashConfiguration&quot;</span><span class="p">,</span> <span class="s2">&quot;iocDiagFail&quot;</span><span class="p">,</span> <span class="s2">&quot;sasPhyDisabledLocalWidePortDegraded&quot;</span><span class="p">,</span> <span class="s2">&quot;sasPhyDisabledSharedWidePortDegraded&quot;</span><span class="p">,</span> <span class="s2">&quot;drawerInvalid&quot;</span><span class="p">,</span> <span class="s2">&quot;drawerRemoved&quot;</span><span class="p">,</span> <span class="s2">&quot;driveUnsupportedInterposerFwVersion&quot;</span><span class="p">,</span> <span class="s2">&quot;redundancyGroupNotConsistentDuringReconfig&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotRollbackPaused&quot;</span><span class="p">,</span> <span class="s2">&quot;pitRollbackPaused&quot;</span><span class="p">,</span> <span class="s2">&quot;pitGroupRepositoryOverThreshold&quot;</span><span class="p">,</span> <span class="s2">&quot;pitViewRepositoryOverThreshold&quot;</span><span class="p">,</span> <span class="s2">&quot;pitGroupRepositoryFull&quot;</span><span class="p">,</span> <span class="s2">&quot;pitViewRepositoryFull&quot;</span><span class="p">,</span> <span class="s2">&quot;pitGroupFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;pitViewFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;pitPurged&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmDegradedMirrorGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmFailedMirror&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmSyncIntervalTimeOverThreshold&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmRepositoryOverWarnThreshold&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmMirrorGroupRoleConflict&quot;</span><span class="p">,</span> <span class="s2">&quot;incompatibleVolumeGroupSecurity&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmOrphanGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmOrphanMember&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmMirrorGroupRecoveryPointLost&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPoolPartiallyPresent&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPoolIncomplete&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPoolMissing&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPoolReconstructionDriveCountBelowThreshold&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPoolUtilizationWarning&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPoolUtilizationCritical&quot;</span><span class="p">,</span> <span class="s2">&quot;pendingPitCreationFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;pendingCgpitCreationFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;tpvRepositoryOverThreshold&quot;</span><span class="p">,</span> <span class="s2">&quot;tpvRepositoryFull&quot;</span><span class="p">,</span> <span class="s2">&quot;tpvFailed&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmSecondaryRepositoryFull&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmSyncInternallySuspended&quot;</span><span class="p">,</span> <span class="s2">&quot;databaseRecoveryMode&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmPrimaryRepositoryFull&quot;</span><span class="p">,</span> <span class="s2">&quot;incompatibleSataDrive&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPoolCapacityDepleted&quot;</span><span class="p">,</span> <span class="s2">&quot;driveIncompatibleModelNumberUnsupported&quot;</span><span class="p">,</span> <span class="s2">&quot;flashCacheNonOptimalDrives&quot;</span><span class="p">,</span> <span class="s2">&quot;flashCacheHotSpareInUse&quot;</span><span class="p">,</span> <span class="s2">&quot;allDrivesBypassedIncompatibleNvsram&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPoolDriveFailure&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPoolInsufficientMemory&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmOrphanIncompleteMember&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmSyncPausedAltState&quot;</span><span class="p">,</span> <span class="s2">&quot;arvmRoleChangePaused&quot;</span><span class="p">,</span> <span class="s2">&quot;driveIncompatibleAlignmentForEmulationDrive&quot;</span><span class="p">,</span> <span class="s2">&quot;lossOfExternalRedundancy&quot;</span><span class="p">,</span> <span class="s2">&quot;rvmWriteModeInconsistent&quot;</span><span class="p">,</span> <span class="s2">&quot;sasHostMiswire&quot;</span><span class="p">,</span> <span class="s2">&quot;sasCrossMiswire&quot;</span><span class="p">,</span> <span class="s2">&quot;sasLoopMiswire&quot;</span><span class="p">,</span> <span class="s2">&quot;copyThenFailWaitingOnHotSpare&quot;</span><span class="p">,</span> <span class="s2">&quot;missingDriveLockdown&quot;</span><span class="p">,</span> <span class="s2">&quot;hicConfigurationOoc&quot;</span><span class="p">,</span> <span class="s2">&quot;copyThenFailWaitingOnDdpCapacity&quot;</span><span class="p">,</span> <span class="s2">&quot;piErrorServiceMode&quot;</span><span class="p">,</span> <span class="s2">&quot;piErrorLockdown&quot;</span><span class="p">,</span> <span class="s2">&quot;sasPortDiscoveryError&quot;</span><span class="p">,</span> <span class="s2">&quot;netNtpResolutionFail&quot;</span><span class="p">,</span> <span class="s2">&quot;netNtpQueryFail&quot;</span><span class="p">,</span> <span class="s2">&quot;netNtpServiceUnavailable&quot;</span><span class="p">,</span> <span class="s2">&quot;multipathConfigurationError&quot;</span><span class="p">,</span> <span class="s2">&quot;hostRedundancyLost&quot;</span><span class="p">,</span> <span class="s2">&quot;excessiveRebootsDetected&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheNotFlushedOnOnlyCtlr&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">indication</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `indication`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_indication</span> <span class="o">=</span> <span class="n">indication</span>
+
+<div class="viewcode-block" id="AsyncMirrorGroupMemberFaultIndicationClearDescriptor.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.async_mirror_group_member_fault_indication_clear_descriptor.AsyncMirrorGroupMemberFaultIndicationClearDescriptor.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="AsyncMirrorGroupMemberFaultIndicationClearDescriptor.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.async_mirror_group_member_fault_indication_clear_descriptor.AsyncMirrorGroupMemberFaultIndicationClearDescriptor.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

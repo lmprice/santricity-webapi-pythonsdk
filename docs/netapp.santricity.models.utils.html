@@ -1,0 +1,595 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.utils package &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="index.html" />
+    <link rel="up" title="netapp.santricity.models package" href="netapp.santricity.models.html" />
+    <link rel="next" title="netapp.santricity.models.v2 package" href="netapp.santricity.models.v2.html" />
+    <link rel="prev" title="netapp.santricity.models.symbol package" href="netapp.santricity.models.symbol.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="netapp.santricity.models.v2.html" title="netapp.santricity.models.v2 package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="netapp.santricity.models.symbol.html" title="netapp.santricity.models.symbol package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="netapp.html" >netapp package</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="netapp.santricity.html" >netapp.santricity package</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="netapp.santricity.models.html" accesskey="U">netapp.santricity.models package</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">netapp.santricity.models.utils package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-netapp.santricity.models.utils.about_response">netapp.santricity.models.utils.about_response module</a></li>
+<li><a class="reference internal" href="#module-netapp.santricity.models.utils.build_info_component">netapp.santricity.models.utils.build_info_component module</a></li>
+<li><a class="reference internal" href="#module-netapp.santricity.models.utils.build_info_response">netapp.santricity.models.utils.build_info_response module</a></li>
+<li><a class="reference internal" href="#module-netapp.santricity.models.utils.login_request">netapp.santricity.models.utils.login_request module</a></li>
+<li><a class="reference internal" href="#module-netapp.santricity.models.utils.login_response">netapp.santricity.models.utils.login_response module</a></li>
+<li><a class="reference internal" href="#module-netapp.santricity.models.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="netapp.santricity.models.symbol.html"
+                        title="previous chapter">netapp.santricity.models.symbol package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="netapp.santricity.models.v2.html"
+                        title="next chapter">netapp.santricity.models.v2 package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/netapp.santricity.models.utils.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="netapp-santricity-models-utils-package">
+<h1>netapp.santricity.models.utils package<a class="headerlink" href="#netapp-santricity-models-utils-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-netapp.santricity.models.utils.about_response">
+<span id="netapp-santricity-models-utils-about-response-module"></span><h2>netapp.santricity.models.utils.about_response module<a class="headerlink" href="#module-netapp.santricity.models.utils.about_response" title="Permalink to this headline">¶</a></h2>
+<p>AboutResponse.py</p>
+<blockquote>
+<div><p>The Clear BSD License</p>
+<p>Copyright (c) – 2016, NetApp, Inc. All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</p>
+<ul class="simple">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+<li>Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+</ul>
+<p>NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#8217;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &#8220;AS IS&#8221; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</div></blockquote>
+<dl class="class">
+<dt id="netapp.santricity.models.utils.about_response.AboutResponse">
+<em class="property">class </em><code class="descclassname">netapp.santricity.models.utils.about_response.</code><code class="descname">AboutResponse</code><a class="reference internal" href="_modules/netapp/santricity/models/utils/about_response.html#AboutResponse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.about_response.AboutResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>NOTE: This class is auto generated by the swagger code generator program.
+Do not edit the class manually.</p>
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.about_response.AboutResponse.controller_position">
+<code class="descname">controller_position</code><a class="headerlink" href="#netapp.santricity.models.utils.about_response.AboutResponse.controller_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the controller_position of this AboutResponse.
+Managing controller position</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The controller_position of this AboutResponse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.about_response.AboutResponse.running_as_proxy">
+<code class="descname">running_as_proxy</code><a class="headerlink" href="#netapp.santricity.models.utils.about_response.AboutResponse.running_as_proxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the running_as_proxy of this AboutResponse.
+True if the REST API is running as a proxy, false if it is embedded on a storage system</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The running_as_proxy of this AboutResponse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.about_response.AboutResponse.system_id">
+<code class="descname">system_id</code><a class="headerlink" href="#netapp.santricity.models.utils.about_response.AboutResponse.system_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the system_id of this AboutResponse.
+A unique id of this REST API install</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The system_id of this AboutResponse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.about_response.AboutResponse.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/about_response.html#AboutResponse.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.about_response.AboutResponse.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the model properties as a dict</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.about_response.AboutResponse.to_str">
+<code class="descname">to_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/about_response.html#AboutResponse.to_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.about_response.AboutResponse.to_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the string representation of the model</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.about_response.AboutResponse.version">
+<code class="descname">version</code><a class="headerlink" href="#netapp.santricity.models.utils.about_response.AboutResponse.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the version of this AboutResponse.
+Product Version</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The version of this AboutResponse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-netapp.santricity.models.utils.build_info_component">
+<span id="netapp-santricity-models-utils-build-info-component-module"></span><h2>netapp.santricity.models.utils.build_info_component module<a class="headerlink" href="#module-netapp.santricity.models.utils.build_info_component" title="Permalink to this headline">¶</a></h2>
+<p>BuildInfoComponent.py</p>
+<blockquote>
+<div><p>The Clear BSD License</p>
+<p>Copyright (c) – 2016, NetApp, Inc. All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</p>
+<ul class="simple">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+<li>Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+</ul>
+<p>NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#8217;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &#8220;AS IS&#8221; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</div></blockquote>
+<dl class="class">
+<dt id="netapp.santricity.models.utils.build_info_component.BuildInfoComponent">
+<em class="property">class </em><code class="descclassname">netapp.santricity.models.utils.build_info_component.</code><code class="descname">BuildInfoComponent</code><a class="reference internal" href="_modules/netapp/santricity/models/utils/build_info_component.html#BuildInfoComponent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.build_info_component.BuildInfoComponent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>NOTE: This class is auto generated by the swagger code generator program.
+Do not edit the class manually.</p>
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.build_info_component.BuildInfoComponent.name">
+<code class="descname">name</code><a class="headerlink" href="#netapp.santricity.models.utils.build_info_component.BuildInfoComponent.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the name of this BuildInfoComponent.
+Component name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The name of this BuildInfoComponent.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.build_info_component.BuildInfoComponent.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/build_info_component.html#BuildInfoComponent.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.build_info_component.BuildInfoComponent.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the model properties as a dict</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.build_info_component.BuildInfoComponent.to_str">
+<code class="descname">to_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/build_info_component.html#BuildInfoComponent.to_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.build_info_component.BuildInfoComponent.to_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the string representation of the model</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.build_info_component.BuildInfoComponent.version">
+<code class="descname">version</code><a class="headerlink" href="#netapp.santricity.models.utils.build_info_component.BuildInfoComponent.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the version of this BuildInfoComponent.
+Component version</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The version of this BuildInfoComponent.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-netapp.santricity.models.utils.build_info_response">
+<span id="netapp-santricity-models-utils-build-info-response-module"></span><h2>netapp.santricity.models.utils.build_info_response module<a class="headerlink" href="#module-netapp.santricity.models.utils.build_info_response" title="Permalink to this headline">¶</a></h2>
+<p>BuildInfoResponse.py</p>
+<blockquote>
+<div><p>The Clear BSD License</p>
+<p>Copyright (c) – 2016, NetApp, Inc. All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</p>
+<ul class="simple">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+<li>Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+</ul>
+<p>NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#8217;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &#8220;AS IS&#8221; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</div></blockquote>
+<dl class="class">
+<dt id="netapp.santricity.models.utils.build_info_response.BuildInfoResponse">
+<em class="property">class </em><code class="descclassname">netapp.santricity.models.utils.build_info_response.</code><code class="descname">BuildInfoResponse</code><a class="reference internal" href="_modules/netapp/santricity/models/utils/build_info_response.html#BuildInfoResponse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.build_info_response.BuildInfoResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>NOTE: This class is auto generated by the swagger code generator program.
+Do not edit the class manually.</p>
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.build_info_response.BuildInfoResponse.components">
+<code class="descname">components</code><a class="headerlink" href="#netapp.santricity.models.utils.build_info_response.BuildInfoResponse.components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the components of this BuildInfoResponse.
+Build information for server components</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The components of this BuildInfoResponse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list[BuildInfoComponent]</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.build_info_response.BuildInfoResponse.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/build_info_response.html#BuildInfoResponse.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.build_info_response.BuildInfoResponse.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the model properties as a dict</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.build_info_response.BuildInfoResponse.to_str">
+<code class="descname">to_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/build_info_response.html#BuildInfoResponse.to_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.build_info_response.BuildInfoResponse.to_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the string representation of the model</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-netapp.santricity.models.utils.login_request">
+<span id="netapp-santricity-models-utils-login-request-module"></span><h2>netapp.santricity.models.utils.login_request module<a class="headerlink" href="#module-netapp.santricity.models.utils.login_request" title="Permalink to this headline">¶</a></h2>
+<p>LoginRequest.py</p>
+<blockquote>
+<div><p>The Clear BSD License</p>
+<p>Copyright (c) – 2016, NetApp, Inc. All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</p>
+<ul class="simple">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+<li>Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+</ul>
+<p>NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#8217;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &#8220;AS IS&#8221; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</div></blockquote>
+<dl class="class">
+<dt id="netapp.santricity.models.utils.login_request.LoginRequest">
+<em class="property">class </em><code class="descclassname">netapp.santricity.models.utils.login_request.</code><code class="descname">LoginRequest</code><a class="reference internal" href="_modules/netapp/santricity/models/utils/login_request.html#LoginRequest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.login_request.LoginRequest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>NOTE: This class is auto generated by the swagger code generator program.
+Do not edit the class manually.</p>
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.login_request.LoginRequest.password">
+<code class="descname">password</code><a class="headerlink" href="#netapp.santricity.models.utils.login_request.LoginRequest.password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the password of this LoginRequest.
+Password.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The password of this LoginRequest.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.login_request.LoginRequest.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/login_request.html#LoginRequest.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.login_request.LoginRequest.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the model properties as a dict</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.login_request.LoginRequest.to_str">
+<code class="descname">to_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/login_request.html#LoginRequest.to_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.login_request.LoginRequest.to_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the string representation of the model</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.login_request.LoginRequest.user_id">
+<code class="descname">user_id</code><a class="headerlink" href="#netapp.santricity.models.utils.login_request.LoginRequest.user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the user_id of this LoginRequest.
+User ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The user_id of this LoginRequest.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.login_request.LoginRequest.xsrf_protected">
+<code class="descname">xsrf_protected</code><a class="headerlink" href="#netapp.santricity.models.utils.login_request.LoginRequest.xsrf_protected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the xsrf_protected of this LoginRequest.
+XSRF protected.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The xsrf_protected of this LoginRequest.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">optional</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-netapp.santricity.models.utils.login_response">
+<span id="netapp-santricity-models-utils-login-response-module"></span><h2>netapp.santricity.models.utils.login_response module<a class="headerlink" href="#module-netapp.santricity.models.utils.login_response" title="Permalink to this headline">¶</a></h2>
+<p>LoginResponse.py</p>
+<blockquote>
+<div><p>The Clear BSD License</p>
+<p>Copyright (c) – 2016, NetApp, Inc. All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</p>
+<ul class="simple">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+<li>Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+</ul>
+<p>NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#8217;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &#8220;AS IS&#8221; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</div></blockquote>
+<dl class="class">
+<dt id="netapp.santricity.models.utils.login_response.LoginResponse">
+<em class="property">class </em><code class="descclassname">netapp.santricity.models.utils.login_response.</code><code class="descname">LoginResponse</code><a class="reference internal" href="_modules/netapp/santricity/models/utils/login_response.html#LoginResponse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.login_response.LoginResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>NOTE: This class is auto generated by the swagger code generator program.
+Do not edit the class manually.</p>
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.login_response.LoginResponse.global_inventory_change_count">
+<code class="descname">global_inventory_change_count</code><a class="headerlink" href="#netapp.santricity.models.utils.login_response.LoginResponse.global_inventory_change_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the global_inventory_change_count of this LoginResponse.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The global_inventory_change_count of this LoginResponse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.login_response.LoginResponse.last_known_event">
+<code class="descname">last_known_event</code><a class="headerlink" href="#netapp.santricity.models.utils.login_response.LoginResponse.last_known_event" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the last_known_event of this LoginResponse.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The last_known_event of this LoginResponse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.login_response.LoginResponse.roles">
+<code class="descname">roles</code><a class="headerlink" href="#netapp.santricity.models.utils.login_response.LoginResponse.roles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the roles of this LoginResponse.
+Roles assigned to the user</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The roles of this LoginResponse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list[str]</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.login_response.LoginResponse.to_dict">
+<code class="descname">to_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/login_response.html#LoginResponse.to_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.login_response.LoginResponse.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the model properties as a dict</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="netapp.santricity.models.utils.login_response.LoginResponse.to_str">
+<code class="descname">to_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/netapp/santricity/models/utils/login_response.html#LoginResponse.to_str"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#netapp.santricity.models.utils.login_response.LoginResponse.to_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the string representation of the model</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="netapp.santricity.models.utils.login_response.LoginResponse.user_id">
+<code class="descname">user_id</code><a class="headerlink" href="#netapp.santricity.models.utils.login_response.LoginResponse.user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the user_id of this LoginResponse.
+The user Id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The user_id of this LoginResponse.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Required/optional:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">required</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-netapp.santricity.models.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-netapp.santricity.models.utils" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="netapp.santricity.models.v2.html" title="netapp.santricity.models.v2 package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="netapp.santricity.models.symbol.html" title="netapp.santricity.models.symbol package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="netapp.html" >netapp package</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="netapp.santricity.html" >netapp.santricity package</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="netapp.santricity.models.html" >netapp.santricity.models package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

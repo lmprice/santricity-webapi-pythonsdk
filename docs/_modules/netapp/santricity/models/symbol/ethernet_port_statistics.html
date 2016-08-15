@@ -1,0 +1,994 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.ethernet_port_statistics &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.ethernet_port_statistics</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">EthernetPortStatistics.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="EthernetPortStatistics"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.ethernet_port_statistics.EthernetPortStatistics">[docs]</a><span class="k">class</span> <span class="nc">EthernetPortStatistics</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        EthernetPortStatistics - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;interfaces&#39;</span><span class="p">:</span> <span class="s1">&#39;list[str]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;bytes_transmitted&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;bytes_received&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;packets_transmitted&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;packets_received&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;carrier_sense_errors&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;single_collision_frames&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;multiple_collision_frames&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;late_collisions&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;deferred_transmissions&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;frame_too_longs&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_multicast_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_broadcast_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_pause_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_control_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_frame_excess_deferral_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_frame_abort_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_frame_collision_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_frame_dropped_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_jumbo_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_unknown_control_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_pause_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_control_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_frame_length_error_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_jabber_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_frame_droped_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_frame_crc_error_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_frame_encoding_error_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_small_frame_error_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_multicast_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_broadcast_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;interfaces&#39;</span><span class="p">:</span> <span class="s1">&#39;interfaces&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;bytes_transmitted&#39;</span><span class="p">:</span> <span class="s1">&#39;bytesTransmitted&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;bytes_received&#39;</span><span class="p">:</span> <span class="s1">&#39;bytesReceived&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;packets_transmitted&#39;</span><span class="p">:</span> <span class="s1">&#39;packetsTransmitted&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;packets_received&#39;</span><span class="p">:</span> <span class="s1">&#39;packetsReceived&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;carrier_sense_errors&#39;</span><span class="p">:</span> <span class="s1">&#39;carrierSenseErrors&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;single_collision_frames&#39;</span><span class="p">:</span> <span class="s1">&#39;singleCollisionFrames&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;multiple_collision_frames&#39;</span><span class="p">:</span> <span class="s1">&#39;multipleCollisionFrames&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;late_collisions&#39;</span><span class="p">:</span> <span class="s1">&#39;lateCollisions&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;deferred_transmissions&#39;</span><span class="p">:</span> <span class="s1">&#39;deferredTransmissions&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;frame_too_longs&#39;</span><span class="p">:</span> <span class="s1">&#39;frameTooLongs&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_multicast_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;txMulticastFrameCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_broadcast_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;txBroadcastFrameCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_pause_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;txPauseFrameCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_control_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;txControlFrameCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_frame_excess_deferral_count&#39;</span><span class="p">:</span> <span class="s1">&#39;txFrameExcessDeferralCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_frame_abort_count&#39;</span><span class="p">:</span> <span class="s1">&#39;txFrameAbortCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_frame_collision_count&#39;</span><span class="p">:</span> <span class="s1">&#39;txFrameCollisionCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_frame_dropped_count&#39;</span><span class="p">:</span> <span class="s1">&#39;txFrameDroppedCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tx_jumbo_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;txJumboFrameCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_unknown_control_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxUnknownControlFrameCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_pause_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxPauseFrameCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_control_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxControlFrameCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_frame_length_error_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxFrameLengthErrorCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_jabber_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxJabberCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_frame_droped_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxFrameDropedCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_frame_crc_error_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxFrameCrcErrorCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_frame_encoding_error_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxFrameEncodingErrorCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_small_frame_error_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxSmallFrameErrorCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_multicast_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxMulticastFrameCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rx_broadcast_frame_count&#39;</span><span class="p">:</span> <span class="s1">&#39;rxBroadcastFrameCount&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_interfaces</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_transmitted</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_received</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_packets_transmitted</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_packets_received</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_carrier_sense_errors</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_single_collision_frames</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_multiple_collision_frames</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_late_collisions</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_deferred_transmissions</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_frame_too_longs</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_multicast_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_broadcast_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_pause_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_control_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_excess_deferral_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_abort_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_collision_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_dropped_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_jumbo_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_unknown_control_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_pause_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_control_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_length_error_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_jabber_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_droped_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_crc_error_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_encoding_error_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_small_frame_error_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_multicast_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_broadcast_frame_count</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">interfaces</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the interfaces of this EthernetPortStatistics.</span>
+<span class="sd">        The interface(s) for which the statistics apply. In some cases, the statistics may be aggregated across multiple interfaces. Even though this is shown as an array, it will only be a single instance.</span>
+
+<span class="sd">        :return: The interfaces of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: list[str]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_interfaces</span>
+
+    <span class="nd">@interfaces</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">interfaces</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interfaces</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the interfaces of this EthernetPortStatistics.</span>
+<span class="sd">        The interface(s) for which the statistics apply. In some cases, the statistics may be aggregated across multiple interfaces. Even though this is shown as an array, it will only be a single instance.</span>
+
+<span class="sd">        :param interfaces: The interfaces of this EthernetPortStatistics.</span>
+<span class="sd">        :type: list[str]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_interfaces</span> <span class="o">=</span> <span class="n">interfaces</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">bytes_transmitted</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the bytes_transmitted of this EthernetPortStatistics.</span>
+<span class="sd">        The total number of bytes transmitted.</span>
+
+<span class="sd">        :return: The bytes_transmitted of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_transmitted</span>
+
+    <span class="nd">@bytes_transmitted</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">bytes_transmitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bytes_transmitted</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the bytes_transmitted of this EthernetPortStatistics.</span>
+<span class="sd">        The total number of bytes transmitted.</span>
+
+<span class="sd">        :param bytes_transmitted: The bytes_transmitted of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_transmitted</span> <span class="o">=</span> <span class="n">bytes_transmitted</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">bytes_received</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the bytes_received of this EthernetPortStatistics.</span>
+<span class="sd">        The total number of bytes received.</span>
+
+<span class="sd">        :return: The bytes_received of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_received</span>
+
+    <span class="nd">@bytes_received</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">bytes_received</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bytes_received</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the bytes_received of this EthernetPortStatistics.</span>
+<span class="sd">        The total number of bytes received.</span>
+
+<span class="sd">        :param bytes_received: The bytes_received of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bytes_received</span> <span class="o">=</span> <span class="n">bytes_received</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">packets_transmitted</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the packets_transmitted of this EthernetPortStatistics.</span>
+<span class="sd">        Total number of packets transmitted.</span>
+
+<span class="sd">        :return: The packets_transmitted of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_packets_transmitted</span>
+
+    <span class="nd">@packets_transmitted</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">packets_transmitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packets_transmitted</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the packets_transmitted of this EthernetPortStatistics.</span>
+<span class="sd">        Total number of packets transmitted.</span>
+
+<span class="sd">        :param packets_transmitted: The packets_transmitted of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_packets_transmitted</span> <span class="o">=</span> <span class="n">packets_transmitted</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">packets_received</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the packets_received of this EthernetPortStatistics.</span>
+<span class="sd">        Total number of packets received.</span>
+
+<span class="sd">        :return: The packets_received of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_packets_received</span>
+
+    <span class="nd">@packets_received</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">packets_received</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packets_received</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the packets_received of this EthernetPortStatistics.</span>
+<span class="sd">        Total number of packets received.</span>
+
+<span class="sd">        :param packets_received: The packets_received of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_packets_received</span> <span class="o">=</span> <span class="n">packets_received</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">carrier_sense_errors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the carrier_sense_errors of this EthernetPortStatistics.</span>
+<span class="sd">        The number of times the carrier sense condition was lost or never asserted when attempting to transmit a frame.</span>
+
+<span class="sd">        :return: The carrier_sense_errors of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_carrier_sense_errors</span>
+
+    <span class="nd">@carrier_sense_errors</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">carrier_sense_errors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">carrier_sense_errors</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the carrier_sense_errors of this EthernetPortStatistics.</span>
+<span class="sd">        The number of times the carrier sense condition was lost or never asserted when attempting to transmit a frame.</span>
+
+<span class="sd">        :param carrier_sense_errors: The carrier_sense_errors of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_carrier_sense_errors</span> <span class="o">=</span> <span class="n">carrier_sense_errors</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">single_collision_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the single_collision_frames of this EthernetPortStatistics.</span>
+<span class="sd">        The number of successfully-transmitted frames for which transmission is inhibited by a single collision.</span>
+
+<span class="sd">        :return: The single_collision_frames of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_single_collision_frames</span>
+
+    <span class="nd">@single_collision_frames</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">single_collision_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">single_collision_frames</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the single_collision_frames of this EthernetPortStatistics.</span>
+<span class="sd">        The number of successfully-transmitted frames for which transmission is inhibited by a single collision.</span>
+
+<span class="sd">        :param single_collision_frames: The single_collision_frames of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_single_collision_frames</span> <span class="o">=</span> <span class="n">single_collision_frames</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">multiple_collision_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the multiple_collision_frames of this EthernetPortStatistics.</span>
+<span class="sd">        The number of successfully-transmitted frames for which transmission is inhibited by multiple collisions.</span>
+
+<span class="sd">        :return: The multiple_collision_frames of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_multiple_collision_frames</span>
+
+    <span class="nd">@multiple_collision_frames</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">multiple_collision_frames</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">multiple_collision_frames</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the multiple_collision_frames of this EthernetPortStatistics.</span>
+<span class="sd">        The number of successfully-transmitted frames for which transmission is inhibited by multiple collisions.</span>
+
+<span class="sd">        :param multiple_collision_frames: The multiple_collision_frames of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_multiple_collision_frames</span> <span class="o">=</span> <span class="n">multiple_collision_frames</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">late_collisions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the late_collisions of this EthernetPortStatistics.</span>
+<span class="sd">        The number of times a collision is detected later than 512 bit-times into the transmission of a packet.</span>
+
+<span class="sd">        :return: The late_collisions of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_late_collisions</span>
+
+    <span class="nd">@late_collisions</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">late_collisions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">late_collisions</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the late_collisions of this EthernetPortStatistics.</span>
+<span class="sd">        The number of times a collision is detected later than 512 bit-times into the transmission of a packet.</span>
+
+<span class="sd">        :param late_collisions: The late_collisions of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_late_collisions</span> <span class="o">=</span> <span class="n">late_collisions</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">deferred_transmissions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the deferred_transmissions of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames for which the first transmission attempt is delayed because the medium is busy.</span>
+
+<span class="sd">        :return: The deferred_transmissions of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_deferred_transmissions</span>
+
+    <span class="nd">@deferred_transmissions</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">deferred_transmissions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deferred_transmissions</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the deferred_transmissions of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames for which the first transmission attempt is delayed because the medium is busy.</span>
+
+<span class="sd">        :param deferred_transmissions: The deferred_transmissions of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_deferred_transmissions</span> <span class="o">=</span> <span class="n">deferred_transmissions</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">frame_too_longs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the frame_too_longs of this EthernetPortStatistics.</span>
+<span class="sd">        The number of received frames that exceed the maximum permitted frame size.</span>
+
+<span class="sd">        :return: The frame_too_longs of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_frame_too_longs</span>
+
+    <span class="nd">@frame_too_longs</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">frame_too_longs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">frame_too_longs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the frame_too_longs of this EthernetPortStatistics.</span>
+<span class="sd">        The number of received frames that exceed the maximum permitted frame size.</span>
+
+<span class="sd">        :param frame_too_longs: The frame_too_longs of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_frame_too_longs</span> <span class="o">=</span> <span class="n">frame_too_longs</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tx_multicast_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tx_multicast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of multicast frames transmitted over the interface.</span>
+
+<span class="sd">        :return: The tx_multicast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tx_multicast_frame_count</span>
+
+    <span class="nd">@tx_multicast_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tx_multicast_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx_multicast_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tx_multicast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of multicast frames transmitted over the interface.</span>
+
+<span class="sd">        :param tx_multicast_frame_count: The tx_multicast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_multicast_frame_count</span> <span class="o">=</span> <span class="n">tx_multicast_frame_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tx_broadcast_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tx_broadcast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of broadcast frames transmitted over the interface.</span>
+
+<span class="sd">        :return: The tx_broadcast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tx_broadcast_frame_count</span>
+
+    <span class="nd">@tx_broadcast_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tx_broadcast_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx_broadcast_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tx_broadcast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of broadcast frames transmitted over the interface.</span>
+
+<span class="sd">        :param tx_broadcast_frame_count: The tx_broadcast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_broadcast_frame_count</span> <span class="o">=</span> <span class="n">tx_broadcast_frame_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tx_pause_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tx_pause_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of pause frames transmitted over the interface.</span>
+
+<span class="sd">        :return: The tx_pause_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tx_pause_frame_count</span>
+
+    <span class="nd">@tx_pause_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tx_pause_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx_pause_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tx_pause_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of pause frames transmitted over the interface.</span>
+
+<span class="sd">        :param tx_pause_frame_count: The tx_pause_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_pause_frame_count</span> <span class="o">=</span> <span class="n">tx_pause_frame_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tx_control_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tx_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of control frames transmitted over the interface.</span>
+
+<span class="sd">        :return: The tx_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tx_control_frame_count</span>
+
+    <span class="nd">@tx_control_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tx_control_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx_control_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tx_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of control frames transmitted over the interface.</span>
+
+<span class="sd">        :param tx_control_frame_count: The tx_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_control_frame_count</span> <span class="o">=</span> <span class="n">tx_control_frame_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tx_frame_excess_deferral_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tx_frame_excess_deferral_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames which experienced deferred transmission for an excessive period of time.</span>
+
+<span class="sd">        :return: The tx_frame_excess_deferral_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_excess_deferral_count</span>
+
+    <span class="nd">@tx_frame_excess_deferral_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tx_frame_excess_deferral_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx_frame_excess_deferral_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tx_frame_excess_deferral_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames which experienced deferred transmission for an excessive period of time.</span>
+
+<span class="sd">        :param tx_frame_excess_deferral_count: The tx_frame_excess_deferral_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_excess_deferral_count</span> <span class="o">=</span> <span class="n">tx_frame_excess_deferral_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tx_frame_abort_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tx_frame_abort_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of aborts that occurred while transmitting.</span>
+
+<span class="sd">        :return: The tx_frame_abort_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_abort_count</span>
+
+    <span class="nd">@tx_frame_abort_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tx_frame_abort_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx_frame_abort_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tx_frame_abort_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of aborts that occurred while transmitting.</span>
+
+<span class="sd">        :param tx_frame_abort_count: The tx_frame_abort_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_abort_count</span> <span class="o">=</span> <span class="n">tx_frame_abort_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tx_frame_collision_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tx_frame_collision_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames that could not be sent due to a single or multiple collisions.</span>
+
+<span class="sd">        :return: The tx_frame_collision_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_collision_count</span>
+
+    <span class="nd">@tx_frame_collision_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tx_frame_collision_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx_frame_collision_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tx_frame_collision_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames that could not be sent due to a single or multiple collisions.</span>
+
+<span class="sd">        :param tx_frame_collision_count: The tx_frame_collision_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_collision_count</span> <span class="o">=</span> <span class="n">tx_frame_collision_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tx_frame_dropped_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tx_frame_dropped_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames that were dropped because the transmit FIFO was full.</span>
+
+<span class="sd">        :return: The tx_frame_dropped_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_dropped_count</span>
+
+    <span class="nd">@tx_frame_dropped_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tx_frame_dropped_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx_frame_dropped_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tx_frame_dropped_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames that were dropped because the transmit FIFO was full.</span>
+
+<span class="sd">        :param tx_frame_dropped_count: The tx_frame_dropped_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_frame_dropped_count</span> <span class="o">=</span> <span class="n">tx_frame_dropped_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tx_jumbo_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tx_jumbo_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of jumbo frames transmitted over the interface.</span>
+
+<span class="sd">        :return: The tx_jumbo_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tx_jumbo_frame_count</span>
+
+    <span class="nd">@tx_jumbo_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tx_jumbo_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tx_jumbo_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tx_jumbo_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of jumbo frames transmitted over the interface.</span>
+
+<span class="sd">        :param tx_jumbo_frame_count: The tx_jumbo_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tx_jumbo_frame_count</span> <span class="o">=</span> <span class="n">tx_jumbo_frame_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_unknown_control_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_unknown_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of control frames received with unknown op codes.</span>
+
+<span class="sd">        :return: The rx_unknown_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_unknown_control_frame_count</span>
+
+    <span class="nd">@rx_unknown_control_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_unknown_control_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_unknown_control_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_unknown_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of control frames received with unknown op codes.</span>
+
+<span class="sd">        :param rx_unknown_control_frame_count: The rx_unknown_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_unknown_control_frame_count</span> <span class="o">=</span> <span class="n">rx_unknown_control_frame_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_pause_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_pause_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of pause frames received over the interface.</span>
+
+<span class="sd">        :return: The rx_pause_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_pause_frame_count</span>
+
+    <span class="nd">@rx_pause_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_pause_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_pause_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_pause_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of pause frames received over the interface.</span>
+
+<span class="sd">        :param rx_pause_frame_count: The rx_pause_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_pause_frame_count</span> <span class="o">=</span> <span class="n">rx_pause_frame_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_control_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of control frames received over the interface.</span>
+
+<span class="sd">        :return: The rx_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_control_frame_count</span>
+
+    <span class="nd">@rx_control_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_control_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_control_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of control frames received over the interface.</span>
+
+<span class="sd">        :param rx_control_frame_count: The rx_control_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_control_frame_count</span> <span class="o">=</span> <span class="n">rx_control_frame_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_frame_length_error_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_frame_length_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames received with 802.3 frame length errors.</span>
+
+<span class="sd">        :return: The rx_frame_length_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_length_error_count</span>
+
+    <span class="nd">@rx_frame_length_error_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_frame_length_error_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_frame_length_error_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_frame_length_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames received with 802.3 frame length errors.</span>
+
+<span class="sd">        :param rx_frame_length_error_count: The rx_frame_length_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_length_error_count</span> <span class="o">=</span> <span class="n">rx_frame_length_error_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_jabber_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_jabber_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of jabber errors detected.</span>
+
+<span class="sd">        :return: The rx_jabber_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_jabber_count</span>
+
+    <span class="nd">@rx_jabber_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_jabber_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_jabber_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_jabber_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of jabber errors detected.</span>
+
+<span class="sd">        :param rx_jabber_count: The rx_jabber_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_jabber_count</span> <span class="o">=</span> <span class="n">rx_jabber_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_frame_droped_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_frame_droped_count of this EthernetPortStatistics.</span>
+<span class="sd">        Received frames that were dropped.</span>
+
+<span class="sd">        :return: The rx_frame_droped_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_droped_count</span>
+
+    <span class="nd">@rx_frame_droped_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_frame_droped_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_frame_droped_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_frame_droped_count of this EthernetPortStatistics.</span>
+<span class="sd">        Received frames that were dropped.</span>
+
+<span class="sd">        :param rx_frame_droped_count: The rx_frame_droped_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_droped_count</span> <span class="o">=</span> <span class="n">rx_frame_droped_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_frame_crc_error_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_frame_crc_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames received and discarded with a CRC error.</span>
+
+<span class="sd">        :return: The rx_frame_crc_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_crc_error_count</span>
+
+    <span class="nd">@rx_frame_crc_error_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_frame_crc_error_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_frame_crc_error_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_frame_crc_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames received and discarded with a CRC error.</span>
+
+<span class="sd">        :param rx_frame_crc_error_count: The rx_frame_crc_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_crc_error_count</span> <span class="o">=</span> <span class="n">rx_frame_crc_error_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_frame_encoding_error_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_frame_encoding_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames received with encoding errors.</span>
+
+<span class="sd">        :return: The rx_frame_encoding_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_encoding_error_count</span>
+
+    <span class="nd">@rx_frame_encoding_error_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_frame_encoding_error_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_frame_encoding_error_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_frame_encoding_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames received with encoding errors.</span>
+
+<span class="sd">        :param rx_frame_encoding_error_count: The rx_frame_encoding_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_frame_encoding_error_count</span> <span class="o">=</span> <span class="n">rx_frame_encoding_error_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_small_frame_error_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_small_frame_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames received that are smaller than the minimum size allowed (64 bytes).</span>
+
+<span class="sd">        :return: The rx_small_frame_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_small_frame_error_count</span>
+
+    <span class="nd">@rx_small_frame_error_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_small_frame_error_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_small_frame_error_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_small_frame_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of frames received that are smaller than the minimum size allowed (64 bytes).</span>
+
+<span class="sd">        :param rx_small_frame_error_count: The rx_small_frame_error_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_small_frame_error_count</span> <span class="o">=</span> <span class="n">rx_small_frame_error_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_multicast_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_multicast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of multicast frames received over the interface.</span>
+
+<span class="sd">        :return: The rx_multicast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_multicast_frame_count</span>
+
+    <span class="nd">@rx_multicast_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_multicast_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_multicast_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_multicast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of multicast frames received over the interface.</span>
+
+<span class="sd">        :param rx_multicast_frame_count: The rx_multicast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_multicast_frame_count</span> <span class="o">=</span> <span class="n">rx_multicast_frame_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rx_broadcast_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rx_broadcast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of broadcast frames received over the interface.</span>
+
+<span class="sd">        :return: The rx_broadcast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rx_broadcast_frame_count</span>
+
+    <span class="nd">@rx_broadcast_frame_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rx_broadcast_frame_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rx_broadcast_frame_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rx_broadcast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        The number of broadcast frames received over the interface.</span>
+
+<span class="sd">        :param rx_broadcast_frame_count: The rx_broadcast_frame_count of this EthernetPortStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rx_broadcast_frame_count</span> <span class="o">=</span> <span class="n">rx_broadcast_frame_count</span>
+
+<div class="viewcode-block" id="EthernetPortStatistics.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.ethernet_port_statistics.EthernetPortStatistics.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="EthernetPortStatistics.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.ethernet_port_statistics.EthernetPortStatistics.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

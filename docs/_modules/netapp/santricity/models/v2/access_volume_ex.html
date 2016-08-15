@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.v2.access_volume_ex &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.v2.access_volume_ex</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">AccessVolumeEx.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="AccessVolumeEx"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.access_volume_ex.AccessVolumeEx">[docs]</a><span class="k">class</span> <span class="nc">AccessVolumeEx</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        AccessVolumeEx - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;volume_handle&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;capacity&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;access_volume_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reserved1&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;object_type&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;wwn&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;list_of_mappings&#39;</span><span class="p">:</span> <span class="s1">&#39;list[LUNMapping]&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;mapped&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;current_controller_id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;preferred_controller_id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;total_size_in_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;enabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;volume_handle&#39;</span><span class="p">:</span> <span class="s1">&#39;volumeHandle&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;capacity&#39;</span><span class="p">:</span> <span class="s1">&#39;capacity&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;access_volume_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;accessVolumeRef&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reserved1&#39;</span><span class="p">:</span> <span class="s1">&#39;reserved1&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;object_type&#39;</span><span class="p">:</span> <span class="s1">&#39;objectType&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;wwn&#39;</span><span class="p">:</span> <span class="s1">&#39;wwn&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;list_of_mappings&#39;</span><span class="p">:</span> <span class="s1">&#39;listOfMappings&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;mapped&#39;</span><span class="p">:</span> <span class="s1">&#39;mapped&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;current_controller_id&#39;</span><span class="p">:</span> <span class="s1">&#39;currentControllerId&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;preferred_controller_id&#39;</span><span class="p">:</span> <span class="s1">&#39;preferredControllerId&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;total_size_in_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;totalSizeInBytes&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_handle</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_capacity</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_access_volume_ref</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved1</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_object_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wwn</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_list_of_mappings</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mapped</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_current_controller_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_preferred_controller_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_size_in_bytes</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the enabled of this AccessVolumeEx.</span>
+<span class="sd">        True if the access volume feature (and thus the UTM command transfer capability) is enabled, or false if it is disabled.</span>
+
+<span class="sd">        :return: The enabled of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enabled</span>
+
+    <span class="nd">@enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the enabled of this AccessVolumeEx.</span>
+<span class="sd">        True if the access volume feature (and thus the UTM command transfer capability) is enabled, or false if it is disabled.</span>
+
+<span class="sd">        :param enabled: The enabled of this AccessVolumeEx.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enabled</span> <span class="o">=</span> <span class="n">enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">volume_handle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the volume_handle of this AccessVolumeEx.</span>
+<span class="sd">        An identifier value for the AccessVolume object. This will generally correspond to the logical unit number (LUN) that is used to access the volume for UTM protocol command transactions.</span>
+
+<span class="sd">        :return: The volume_handle of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_volume_handle</span>
+
+    <span class="nd">@volume_handle</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">volume_handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_handle</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the volume_handle of this AccessVolumeEx.</span>
+<span class="sd">        An identifier value for the AccessVolume object. This will generally correspond to the logical unit number (LUN) that is used to access the volume for UTM protocol command transactions.</span>
+
+<span class="sd">        :param volume_handle: The volume_handle of this AccessVolumeEx.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_handle</span> <span class="o">=</span> <span class="n">volume_handle</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">capacity</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the capacity of this AccessVolumeEx.</span>
+<span class="sd">        The (simulated) capacity of the AccessVolume maintained by the controller. Since there is essentially no true data storage capacity present for an AccessVolume, this value is used to determine the block addressing limit of the unit, which is an important aspect of the UTM command transfer protocol.</span>
+
+<span class="sd">        :return: The capacity of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_capacity</span>
+
+    <span class="nd">@capacity</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">capacity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">capacity</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the capacity of this AccessVolumeEx.</span>
+<span class="sd">        The (simulated) capacity of the AccessVolume maintained by the controller. Since there is essentially no true data storage capacity present for an AccessVolume, this value is used to determine the block addressing limit of the unit, which is an important aspect of the UTM command transfer protocol.</span>
+
+<span class="sd">        :param capacity: The capacity of this AccessVolumeEx.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_capacity</span> <span class="o">=</span> <span class="n">capacity</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">access_volume_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the access_volume_ref of this AccessVolumeEx.</span>
+<span class="sd">        The identifier value for this AccessVolume. Other objects may use this reference value to refer to the AccessVolume.</span>
+
+<span class="sd">        :return: The access_volume_ref of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_access_volume_ref</span>
+
+    <span class="nd">@access_volume_ref</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">access_volume_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">access_volume_ref</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the access_volume_ref of this AccessVolumeEx.</span>
+<span class="sd">        The identifier value for this AccessVolume. Other objects may use this reference value to refer to the AccessVolume.</span>
+
+<span class="sd">        :param access_volume_ref: The access_volume_ref of this AccessVolumeEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_access_volume_ref</span> <span class="o">=</span> <span class="n">access_volume_ref</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reserved1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the reserved1 of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The reserved1 of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reserved1</span>
+
+    <span class="nd">@reserved1</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">reserved1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reserved1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the reserved1 of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param reserved1: The reserved1 of this AccessVolumeEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved1</span> <span class="o">=</span> <span class="n">reserved1</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">object_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the object_type of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The object_type of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_object_type</span>
+
+    <span class="nd">@object_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">object_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">object_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the object_type of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param object_type: The object_type of this AccessVolumeEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;volume&quot;</span><span class="p">,</span> <span class="s2">&quot;pool&quot;</span><span class="p">,</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;lunMapping&quot;</span><span class="p">,</span> <span class="s2">&quot;hostGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;thinVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;drive&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeCopy&quot;</span><span class="p">,</span> <span class="s2">&quot;pit&quot;</span><span class="p">,</span> <span class="s2">&quot;pitView&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshot&quot;</span><span class="p">,</span> <span class="s2">&quot;accessVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;legacySnapshot&quot;</span><span class="p">,</span> <span class="s2">&quot;hostType&quot;</span><span class="p">,</span> <span class="s2">&quot;metadataTag&quot;</span><span class="p">,</span> <span class="s2">&quot;managementUrl&quot;</span><span class="p">,</span> <span class="s2">&quot;folder&quot;</span><span class="p">,</span> <span class="s2">&quot;asyncMirrorGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;asyncMirrorGroupMember&quot;</span><span class="p">,</span> <span class="s2">&quot;asyncMirrorGroupIncompleteMember&quot;</span><span class="p">,</span> <span class="s2">&quot;consistencyGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;consistencyGroupView&quot;</span><span class="p">,</span> <span class="s2">&quot;fan&quot;</span><span class="p">,</span> <span class="s2">&quot;battery&quot;</span><span class="p">,</span> <span class="s2">&quot;storageSystem&quot;</span><span class="p">,</span> <span class="s2">&quot;controller&quot;</span><span class="p">,</span> <span class="s2">&quot;powerSupply&quot;</span><span class="p">,</span> <span class="s2">&quot;minihub&quot;</span><span class="p">,</span> <span class="s2">&quot;esm&quot;</span><span class="p">,</span> <span class="s2">&quot;drawer&quot;</span><span class="p">,</span> <span class="s2">&quot;hostBoard&quot;</span><span class="p">,</span> <span class="s2">&quot;interconnectCRU&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheBackupDevice&quot;</span><span class="p">,</span> <span class="s2">&quot;tray&quot;</span><span class="p">,</span> <span class="s2">&quot;supportCRU&quot;</span><span class="p">,</span> <span class="s2">&quot;hostPort&quot;</span><span class="p">,</span> <span class="s2">&quot;initiator&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotSchedule&quot;</span><span class="p">,</span> <span class="s2">&quot;thermalSensor&quot;</span><span class="p">,</span> <span class="s2">&quot;sfp&quot;</span><span class="p">,</span> <span class="s2">&quot;flashCache&quot;</span><span class="p">,</span> <span class="s2">&quot;featureAttribute&quot;</span><span class="p">,</span> <span class="s2">&quot;featureState&quot;</span><span class="p">,</span> <span class="s2">&quot;lockKeyId&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;mirrorVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;vaultMirrorVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;vaultMirrorGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;metadataVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;sasPort&quot;</span><span class="p">,</span> <span class="s2">&quot;sasExpander&quot;</span><span class="p">,</span> <span class="s2">&quot;channelPort&quot;</span><span class="p">,</span> <span class="s2">&quot;speedNegError&quot;</span><span class="p">,</span> <span class="s2">&quot;snmpAgentBundle&quot;</span><span class="p">,</span> <span class="s2">&quot;stagedFirmware&quot;</span><span class="p">,</span> <span class="s2">&quot;workload&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">object_type</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `object_type`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_object_type</span> <span class="o">=</span> <span class="n">object_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the name of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The name of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the name of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param name: The name of this AccessVolumeEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the id of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The id of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_id</span>
+
+    <span class="nd">@id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the id of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param id: The id of this AccessVolumeEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id</span> <span class="o">=</span> <span class="nb">id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wwn</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the wwn of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The wwn of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wwn</span>
+
+    <span class="nd">@wwn</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">wwn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wwn</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the wwn of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param wwn: The wwn of this AccessVolumeEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wwn</span> <span class="o">=</span> <span class="n">wwn</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">list_of_mappings</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the list_of_mappings of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The list_of_mappings of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: list[LUNMapping]</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_list_of_mappings</span>
+
+    <span class="nd">@list_of_mappings</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">list_of_mappings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">list_of_mappings</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the list_of_mappings of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param list_of_mappings: The list_of_mappings of this AccessVolumeEx.</span>
+<span class="sd">        :type: list[LUNMapping]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_list_of_mappings</span> <span class="o">=</span> <span class="n">list_of_mappings</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">mapped</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the mapped of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The mapped of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapped</span>
+
+    <span class="nd">@mapped</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">mapped</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapped</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the mapped of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param mapped: The mapped of this AccessVolumeEx.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mapped</span> <span class="o">=</span> <span class="n">mapped</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">current_controller_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the current_controller_id of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The current_controller_id of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_current_controller_id</span>
+
+    <span class="nd">@current_controller_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">current_controller_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">current_controller_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the current_controller_id of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param current_controller_id: The current_controller_id of this AccessVolumeEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_current_controller_id</span> <span class="o">=</span> <span class="n">current_controller_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">preferred_controller_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the preferred_controller_id of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The preferred_controller_id of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_preferred_controller_id</span>
+
+    <span class="nd">@preferred_controller_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">preferred_controller_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">preferred_controller_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the preferred_controller_id of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param preferred_controller_id: The preferred_controller_id of this AccessVolumeEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_preferred_controller_id</span> <span class="o">=</span> <span class="n">preferred_controller_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_size_in_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_size_in_bytes of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :return: The total_size_in_bytes of this AccessVolumeEx.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_size_in_bytes</span>
+
+    <span class="nd">@total_size_in_bytes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_size_in_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_size_in_bytes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_size_in_bytes of this AccessVolumeEx.</span>
+
+
+<span class="sd">        :param total_size_in_bytes: The total_size_in_bytes of this AccessVolumeEx.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_size_in_bytes</span> <span class="o">=</span> <span class="n">total_size_in_bytes</span>
+
+<div class="viewcode-block" id="AccessVolumeEx.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.access_volume_ex.AccessVolumeEx.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="AccessVolumeEx.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.access_volume_ex.AccessVolumeEx.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

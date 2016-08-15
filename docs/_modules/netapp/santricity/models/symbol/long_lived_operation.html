@@ -1,0 +1,896 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.long_lived_operation &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.long_lived_operation</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">LongLivedOperation.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="LongLivedOperation"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.long_lived_operation.LongLivedOperation">[docs]</a><span class="k">class</span> <span class="nc">LongLivedOperation</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        LongLivedOperation - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;vol_action&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;copyback&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;reconstruct&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;capacity_expansion&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;raid_migration&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;raid_migrationand_expansion&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;seg_size&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;vol_expansion&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;vol_and_cap_expansion&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;defrag&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;init&#39;</span><span class="p">:</span> <span class="s1">&#39;InitializationOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;InitializationOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;sync&#39;</span><span class="p">:</span> <span class="s1">&#39;MirrorSyncOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeCopyOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;parity_scan&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;rollback&#39;</span><span class="p">:</span> <span class="s1">&#39;SnapshotRollbackOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;pit_rollback&#39;</span><span class="p">:</span> <span class="s1">&#39;PITRollbackOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;initial_sync&#39;</span><span class="p">:</span> <span class="s1">&#39;AsyncMirrorGroupInitialSyncOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;rebalancing&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy_then_fail&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy_then_fail_pending&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy_then_replace&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy_then_replace_and_fail&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;reconstruct_critical&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeGroupOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;thin_defrag&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;vol_creation&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeOperation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;vol_deletion&#39;</span><span class="p">:</span> <span class="s1">&#39;VolumeOperation&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;vol_action&#39;</span><span class="p">:</span> <span class="s1">&#39;volAction&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;copyback&#39;</span><span class="p">:</span> <span class="s1">&#39;copyback&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;reconstruct&#39;</span><span class="p">:</span> <span class="s1">&#39;reconstruct&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;capacity_expansion&#39;</span><span class="p">:</span> <span class="s1">&#39;capacityExpansion&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;raid_migration&#39;</span><span class="p">:</span> <span class="s1">&#39;raidMigration&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;raid_migrationand_expansion&#39;</span><span class="p">:</span> <span class="s1">&#39;raidMigrationandExpansion&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;seg_size&#39;</span><span class="p">:</span> <span class="s1">&#39;segSize&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;vol_expansion&#39;</span><span class="p">:</span> <span class="s1">&#39;volExpansion&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;vol_and_cap_expansion&#39;</span><span class="p">:</span> <span class="s1">&#39;volAndCapExpansion&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;defrag&#39;</span><span class="p">:</span> <span class="s1">&#39;defrag&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;init&#39;</span><span class="p">:</span> <span class="s1">&#39;init&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;format&#39;</span><span class="p">:</span> <span class="s1">&#39;format&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;sync&#39;</span><span class="p">:</span> <span class="s1">&#39;sync&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy&#39;</span><span class="p">:</span> <span class="s1">&#39;copy&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;parity_scan&#39;</span><span class="p">:</span> <span class="s1">&#39;parityScan&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;rollback&#39;</span><span class="p">:</span> <span class="s1">&#39;rollback&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;pit_rollback&#39;</span><span class="p">:</span> <span class="s1">&#39;pitRollback&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;initial_sync&#39;</span><span class="p">:</span> <span class="s1">&#39;initialSync&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;rebalancing&#39;</span><span class="p">:</span> <span class="s1">&#39;rebalancing&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy_then_fail&#39;</span><span class="p">:</span> <span class="s1">&#39;copyThenFail&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy_then_fail_pending&#39;</span><span class="p">:</span> <span class="s1">&#39;copyThenFailPending&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy_then_replace&#39;</span><span class="p">:</span> <span class="s1">&#39;copyThenReplace&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;copy_then_replace_and_fail&#39;</span><span class="p">:</span> <span class="s1">&#39;copyThenReplaceAndFail&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;reconstruct_critical&#39;</span><span class="p">:</span> <span class="s1">&#39;reconstructCritical&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;thin_defrag&#39;</span><span class="p">:</span> <span class="s1">&#39;thinDefrag&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;vol_creation&#39;</span><span class="p">:</span> <span class="s1">&#39;volCreation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;vol_deletion&#39;</span><span class="p">:</span> <span class="s1">&#39;volDeletion&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_action</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copyback</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reconstruct</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_capacity_expansion</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_raid_migration</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_raid_migrationand_expansion</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_seg_size</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_expansion</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_and_cap_expansion</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_defrag</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_init</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_format</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_parity_scan</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rollback</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pit_rollback</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initial_sync</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rebalancing</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_fail</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_fail_pending</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_replace</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_replace_and_fail</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reconstruct_critical</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_thin_defrag</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_creation</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_deletion</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vol_action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vol_action of this LongLivedOperation.</span>
+<span class="sd">        This enumeration object is used to specify one of a set of volume actions that may be active for a volume. These volume actions represent \&quot;long-running\&quot; operations on a volume. Any time such an operation is active, the current progress can be determined using the getVolumeActionProgress procedure.</span>
+
+<span class="sd">        :return: The vol_action of this LongLivedOperation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vol_action</span>
+
+    <span class="nd">@vol_action</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vol_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vol_action</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vol_action of this LongLivedOperation.</span>
+<span class="sd">        This enumeration object is used to specify one of a set of volume actions that may be active for a volume. These volume actions represent \&quot;long-running\&quot; operations on a volume. Any time such an operation is active, the current progress can be determined using the getVolumeActionProgress procedure.</span>
+
+<span class="sd">        :param vol_action: The vol_action of this LongLivedOperation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="s2">&quot;copyback&quot;</span><span class="p">,</span> <span class="s2">&quot;initializing&quot;</span><span class="p">,</span> <span class="s2">&quot;reconstructing&quot;</span><span class="p">,</span> <span class="s2">&quot;remappingDce&quot;</span><span class="p">,</span> <span class="s2">&quot;remappingDrm&quot;</span><span class="p">,</span> <span class="s2">&quot;remappingDcedrm&quot;</span><span class="p">,</span> <span class="s2">&quot;remappingDseg&quot;</span><span class="p">,</span> <span class="s2">&quot;remappingDve&quot;</span><span class="p">,</span> <span class="s2">&quot;remappingDcedve&quot;</span><span class="p">,</span> <span class="s2">&quot;remappingInternal&quot;</span><span class="p">,</span> <span class="s2">&quot;remappingDefrag&quot;</span><span class="p">,</span> <span class="s2">&quot;formatting&quot;</span><span class="p">,</span> <span class="s2">&quot;synchronizing&quot;</span><span class="p">,</span> <span class="s2">&quot;parityScan&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeCopy&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotRollback&quot;</span><span class="p">,</span> <span class="s2">&quot;pitRollback&quot;</span><span class="p">,</span> <span class="s2">&quot;asyncMirrorGroupInitialSync&quot;</span><span class="p">,</span> <span class="s2">&quot;reconstructingCritical&quot;</span><span class="p">,</span> <span class="s2">&quot;rebalancing&quot;</span><span class="p">,</span> <span class="s2">&quot;copyThenFail&quot;</span><span class="p">,</span> <span class="s2">&quot;copyThenFailPending&quot;</span><span class="p">,</span> <span class="s2">&quot;copyThenReplace&quot;</span><span class="p">,</span> <span class="s2">&quot;copyThenReplaceAndFail&quot;</span><span class="p">,</span> <span class="s2">&quot;thinDefrag&quot;</span><span class="p">,</span> <span class="s2">&quot;creating&quot;</span><span class="p">,</span> <span class="s2">&quot;deleting&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">vol_action</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `vol_action`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_action</span> <span class="o">=</span> <span class="n">vol_action</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">copyback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the copyback of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_COPYBACK.</span>
+
+<span class="sd">        :return: The copyback of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_copyback</span>
+
+    <span class="nd">@copyback</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">copyback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">copyback</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the copyback of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_COPYBACK.</span>
+
+<span class="sd">        :param copyback: The copyback of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copyback</span> <span class="o">=</span> <span class="n">copyback</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reconstruct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the reconstruct of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_RECONSTRUCTING.</span>
+
+<span class="sd">        :return: The reconstruct of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reconstruct</span>
+
+    <span class="nd">@reconstruct</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">reconstruct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reconstruct</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the reconstruct of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_RECONSTRUCTING.</span>
+
+<span class="sd">        :param reconstruct: The reconstruct of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reconstruct</span> <span class="o">=</span> <span class="n">reconstruct</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">capacity_expansion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the capacity_expansion of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DCE.</span>
+
+<span class="sd">        :return: The capacity_expansion of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_capacity_expansion</span>
+
+    <span class="nd">@capacity_expansion</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">capacity_expansion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">capacity_expansion</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the capacity_expansion of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DCE.</span>
+
+<span class="sd">        :param capacity_expansion: The capacity_expansion of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_capacity_expansion</span> <span class="o">=</span> <span class="n">capacity_expansion</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">raid_migration</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the raid_migration of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DRM.</span>
+
+<span class="sd">        :return: The raid_migration of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_raid_migration</span>
+
+    <span class="nd">@raid_migration</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">raid_migration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">raid_migration</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the raid_migration of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DRM.</span>
+
+<span class="sd">        :param raid_migration: The raid_migration of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_raid_migration</span> <span class="o">=</span> <span class="n">raid_migration</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">raid_migrationand_expansion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the raid_migrationand_expansion of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DCEDRM.</span>
+
+<span class="sd">        :return: The raid_migrationand_expansion of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_raid_migrationand_expansion</span>
+
+    <span class="nd">@raid_migrationand_expansion</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">raid_migrationand_expansion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">raid_migrationand_expansion</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the raid_migrationand_expansion of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DCEDRM.</span>
+
+<span class="sd">        :param raid_migrationand_expansion: The raid_migrationand_expansion of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_raid_migrationand_expansion</span> <span class="o">=</span> <span class="n">raid_migrationand_expansion</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">seg_size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the seg_size of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DSEG.</span>
+
+<span class="sd">        :return: The seg_size of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_seg_size</span>
+
+    <span class="nd">@seg_size</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">seg_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seg_size</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the seg_size of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DSEG.</span>
+
+<span class="sd">        :param seg_size: The seg_size of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_seg_size</span> <span class="o">=</span> <span class="n">seg_size</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vol_expansion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vol_expansion of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DVE.</span>
+
+<span class="sd">        :return: The vol_expansion of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vol_expansion</span>
+
+    <span class="nd">@vol_expansion</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vol_expansion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vol_expansion</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vol_expansion of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DVE.</span>
+
+<span class="sd">        :param vol_expansion: The vol_expansion of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_expansion</span> <span class="o">=</span> <span class="n">vol_expansion</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vol_and_cap_expansion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vol_and_cap_expansion of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DCEDVE.</span>
+
+<span class="sd">        :return: The vol_and_cap_expansion of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vol_and_cap_expansion</span>
+
+    <span class="nd">@vol_and_cap_expansion</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vol_and_cap_expansion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vol_and_cap_expansion</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vol_and_cap_expansion of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DCEDVE.</span>
+
+<span class="sd">        :param vol_and_cap_expansion: The vol_and_cap_expansion of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_and_cap_expansion</span> <span class="o">=</span> <span class="n">vol_and_cap_expansion</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">defrag</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the defrag of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DEFRAG.</span>
+
+<span class="sd">        :return: The defrag of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_defrag</span>
+
+    <span class="nd">@defrag</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">defrag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">defrag</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the defrag of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_REMAPPING_DEFRAG.</span>
+
+<span class="sd">        :param defrag: The defrag of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_defrag</span> <span class="o">=</span> <span class="n">defrag</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the init of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_INITIALIZING.</span>
+
+<span class="sd">        :return: The init of this LongLivedOperation.</span>
+<span class="sd">        :rtype: InitializationOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_init</span>
+
+    <span class="nd">@init</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">init</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the init of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_INITIALIZING.</span>
+
+<span class="sd">        :param init: The init of this LongLivedOperation.</span>
+<span class="sd">        :type: InitializationOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_init</span> <span class="o">=</span> <span class="n">init</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the format of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_FORMATTING.</span>
+
+<span class="sd">        :return: The format of this LongLivedOperation.</span>
+<span class="sd">        :rtype: InitializationOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_format</span>
+
+    <span class="nd">@format</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">format</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the format of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_FORMATTING.</span>
+
+<span class="sd">        :param format: The format of this LongLivedOperation.</span>
+<span class="sd">        :type: InitializationOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_format</span> <span class="o">=</span> <span class="nb">format</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sync</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sync of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_SYNCHRONIZING.</span>
+
+<span class="sd">        :return: The sync of this LongLivedOperation.</span>
+<span class="sd">        :rtype: MirrorSyncOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sync</span>
+
+    <span class="nd">@sync</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sync</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sync</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sync of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_SYNCHRONIZING.</span>
+
+<span class="sd">        :param sync: The sync of this LongLivedOperation.</span>
+<span class="sd">        :type: MirrorSyncOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync</span> <span class="o">=</span> <span class="n">sync</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the copy of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_VOLUME_COPY.</span>
+
+<span class="sd">        :return: The copy of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeCopyOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_copy</span>
+
+    <span class="nd">@copy</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">copy</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the copy of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_VOLUME_COPY.</span>
+
+<span class="sd">        :param copy: The copy of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeCopyOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy</span> <span class="o">=</span> <span class="n">copy</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">parity_scan</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the parity_scan of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_PARITY_SCAN.</span>
+
+<span class="sd">        :return: The parity_scan of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parity_scan</span>
+
+    <span class="nd">@parity_scan</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">parity_scan</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parity_scan</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the parity_scan of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_PARITY_SCAN.</span>
+
+<span class="sd">        :param parity_scan: The parity_scan of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_parity_scan</span> <span class="o">=</span> <span class="n">parity_scan</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rollback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rollback of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_SNAPSHOT_ROLLBACK.</span>
+
+<span class="sd">        :return: The rollback of this LongLivedOperation.</span>
+<span class="sd">        :rtype: SnapshotRollbackOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rollback</span>
+
+    <span class="nd">@rollback</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rollback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rollback</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rollback of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_SNAPSHOT_ROLLBACK.</span>
+
+<span class="sd">        :param rollback: The rollback of this LongLivedOperation.</span>
+<span class="sd">        :type: SnapshotRollbackOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rollback</span> <span class="o">=</span> <span class="n">rollback</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">pit_rollback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the pit_rollback of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_PIT_ROLLBACK.</span>
+
+<span class="sd">        :return: The pit_rollback of this LongLivedOperation.</span>
+<span class="sd">        :rtype: PITRollbackOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pit_rollback</span>
+
+    <span class="nd">@pit_rollback</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">pit_rollback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pit_rollback</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the pit_rollback of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if volAction is equal to VOL_ACTION_PIT_ROLLBACK.</span>
+
+<span class="sd">        :param pit_rollback: The pit_rollback of this LongLivedOperation.</span>
+<span class="sd">        :type: PITRollbackOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pit_rollback</span> <span class="o">=</span> <span class="n">pit_rollback</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">initial_sync</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the initial_sync of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_ASYNC_MIRROR_GROUP_INITIAL_SYNC.</span>
+
+<span class="sd">        :return: The initial_sync of this LongLivedOperation.</span>
+<span class="sd">        :rtype: AsyncMirrorGroupInitialSyncOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_initial_sync</span>
+
+    <span class="nd">@initial_sync</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">initial_sync</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">initial_sync</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the initial_sync of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_ASYNC_MIRROR_GROUP_INITIAL_SYNC.</span>
+
+<span class="sd">        :param initial_sync: The initial_sync of this LongLivedOperation.</span>
+<span class="sd">        :type: AsyncMirrorGroupInitialSyncOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initial_sync</span> <span class="o">=</span> <span class="n">initial_sync</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rebalancing</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rebalancing of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_REBALANCING.</span>
+
+<span class="sd">        :return: The rebalancing of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rebalancing</span>
+
+    <span class="nd">@rebalancing</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rebalancing</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rebalancing</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rebalancing of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_REBALANCING.</span>
+
+<span class="sd">        :param rebalancing: The rebalancing of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rebalancing</span> <span class="o">=</span> <span class="n">rebalancing</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">copy_then_fail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the copy_then_fail of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_COPY_THEN_FAIL.</span>
+
+<span class="sd">        :return: The copy_then_fail of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_fail</span>
+
+    <span class="nd">@copy_then_fail</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">copy_then_fail</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">copy_then_fail</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the copy_then_fail of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_COPY_THEN_FAIL.</span>
+
+<span class="sd">        :param copy_then_fail: The copy_then_fail of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_fail</span> <span class="o">=</span> <span class="n">copy_then_fail</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">copy_then_fail_pending</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the copy_then_fail_pending of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_COPY_THEN_FAIL_PENDING.</span>
+
+<span class="sd">        :return: The copy_then_fail_pending of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_fail_pending</span>
+
+    <span class="nd">@copy_then_fail_pending</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">copy_then_fail_pending</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">copy_then_fail_pending</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the copy_then_fail_pending of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_COPY_THEN_FAIL_PENDING.</span>
+
+<span class="sd">        :param copy_then_fail_pending: The copy_then_fail_pending of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_fail_pending</span> <span class="o">=</span> <span class="n">copy_then_fail_pending</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">copy_then_replace</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the copy_then_replace of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_COPY_THEN_REPLACE.</span>
+
+<span class="sd">        :return: The copy_then_replace of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_replace</span>
+
+    <span class="nd">@copy_then_replace</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">copy_then_replace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">copy_then_replace</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the copy_then_replace of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_COPY_THEN_REPLACE.</span>
+
+<span class="sd">        :param copy_then_replace: The copy_then_replace of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_replace</span> <span class="o">=</span> <span class="n">copy_then_replace</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">copy_then_replace_and_fail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the copy_then_replace_and_fail of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_COPY_THEN_REPLACE_AND_FAIL.</span>
+
+<span class="sd">        :return: The copy_then_replace_and_fail of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_replace_and_fail</span>
+
+    <span class="nd">@copy_then_replace_and_fail</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">copy_then_replace_and_fail</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">copy_then_replace_and_fail</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the copy_then_replace_and_fail of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the value of volAction is equal to VOL_ACTION_COPY_THEN_REPLACE_AND_FAIL.</span>
+
+<span class="sd">        :param copy_then_replace_and_fail: The copy_then_replace_and_fail of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_copy_then_replace_and_fail</span> <span class="o">=</span> <span class="n">copy_then_replace_and_fail</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reconstruct_critical</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the reconstruct_critical of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the DDP pool is critical due to two drive failures.</span>
+
+<span class="sd">        :return: The reconstruct_critical of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeGroupOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reconstruct_critical</span>
+
+    <span class="nd">@reconstruct_critical</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">reconstruct_critical</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reconstruct_critical</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the reconstruct_critical of this LongLivedOperation.</span>
+<span class="sd">        This field is present only if the DDP pool is critical due to two drive failures.</span>
+
+<span class="sd">        :param reconstruct_critical: The reconstruct_critical of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeGroupOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reconstruct_critical</span> <span class="o">=</span> <span class="n">reconstruct_critical</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">thin_defrag</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the thin_defrag of this LongLivedOperation.</span>
+<span class="sd">        Thin volume defrag operation</span>
+
+<span class="sd">        :return: The thin_defrag of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_thin_defrag</span>
+
+    <span class="nd">@thin_defrag</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">thin_defrag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">thin_defrag</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the thin_defrag of this LongLivedOperation.</span>
+<span class="sd">        Thin volume defrag operation</span>
+
+<span class="sd">        :param thin_defrag: The thin_defrag of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_thin_defrag</span> <span class="o">=</span> <span class="n">thin_defrag</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vol_creation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vol_creation of this LongLivedOperation.</span>
+<span class="sd">        A DDP Volume is in the creating state.</span>
+
+<span class="sd">        :return: The vol_creation of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vol_creation</span>
+
+    <span class="nd">@vol_creation</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vol_creation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vol_creation</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vol_creation of this LongLivedOperation.</span>
+<span class="sd">        A DDP Volume is in the creating state.</span>
+
+<span class="sd">        :param vol_creation: The vol_creation of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_creation</span> <span class="o">=</span> <span class="n">vol_creation</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vol_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vol_deletion of this LongLivedOperation.</span>
+<span class="sd">        A DDP Volume is in the deleting state.</span>
+
+<span class="sd">        :return: The vol_deletion of this LongLivedOperation.</span>
+<span class="sd">        :rtype: VolumeOperation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vol_deletion</span>
+
+    <span class="nd">@vol_deletion</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vol_deletion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vol_deletion</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vol_deletion of this LongLivedOperation.</span>
+<span class="sd">        A DDP Volume is in the deleting state.</span>
+
+<span class="sd">        :param vol_deletion: The vol_deletion of this LongLivedOperation.</span>
+<span class="sd">        :type: VolumeOperation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vol_deletion</span> <span class="o">=</span> <span class="n">vol_deletion</span>
+
+<div class="viewcode-block" id="LongLivedOperation.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.long_lived_operation.LongLivedOperation.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="LongLivedOperation.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.long_lived_operation.LongLivedOperation.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

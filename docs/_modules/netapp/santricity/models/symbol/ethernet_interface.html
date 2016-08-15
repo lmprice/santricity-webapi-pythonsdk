@@ -1,0 +1,972 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.ethernet_interface &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.ethernet_interface</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">EthernetInterface.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="EthernetInterface"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.ethernet_interface.EthernetInterface">[docs]</a><span class="k">class</span> <span class="nc">EthernetInterface</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        EthernetInterface - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;interface_name&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;channel&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;speed&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ip&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;alias&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;mac_addr&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;gateway_ip&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;subnet_mask&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;bootp_used&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rlogin_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reserved1&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;setup_error&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reserved2&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;interface_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;link_status&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv4_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv4_address&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv4_subnet_mask&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv4_address_config_method&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_local_address&#39;</span><span class="p">:</span> <span class="s1">&#39;IpV6AddressData&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_port_static_routable_address&#39;</span><span class="p">:</span> <span class="s1">&#39;IpV6AddressData&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_port_routable_addresses&#39;</span><span class="p">:</span> <span class="s1">&#39;list[IpV6AddressData]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_address_config_method&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;full_duplex&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;supported_speed_settings&#39;</span><span class="p">:</span> <span class="s1">&#39;list[str]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;configured_speed_setting&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;current_speed&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;physical_location&#39;</span><span class="p">:</span> <span class="s1">&#39;Location&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;interface_name&#39;</span><span class="p">:</span> <span class="s1">&#39;interfaceName&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;channel&#39;</span><span class="p">:</span> <span class="s1">&#39;channel&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;speed&#39;</span><span class="p">:</span> <span class="s1">&#39;speed&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ip&#39;</span><span class="p">:</span> <span class="s1">&#39;ip&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;alias&#39;</span><span class="p">:</span> <span class="s1">&#39;alias&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;mac_addr&#39;</span><span class="p">:</span> <span class="s1">&#39;macAddr&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;gateway_ip&#39;</span><span class="p">:</span> <span class="s1">&#39;gatewayIp&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;subnet_mask&#39;</span><span class="p">:</span> <span class="s1">&#39;subnetMask&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;bootp_used&#39;</span><span class="p">:</span> <span class="s1">&#39;bootpUsed&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rlogin_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;rloginEnabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reserved1&#39;</span><span class="p">:</span> <span class="s1">&#39;reserved1&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;setup_error&#39;</span><span class="p">:</span> <span class="s1">&#39;setupError&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reserved2&#39;</span><span class="p">:</span> <span class="s1">&#39;reserved2&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;interface_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;interfaceRef&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;link_status&#39;</span><span class="p">:</span> <span class="s1">&#39;linkStatus&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv4_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;ipv4Enabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv4_address&#39;</span><span class="p">:</span> <span class="s1">&#39;ipv4Address&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv4_subnet_mask&#39;</span><span class="p">:</span> <span class="s1">&#39;ipv4SubnetMask&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv4_address_config_method&#39;</span><span class="p">:</span> <span class="s1">&#39;ipv4AddressConfigMethod&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;ipv6Enabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_local_address&#39;</span><span class="p">:</span> <span class="s1">&#39;ipv6LocalAddress&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_port_static_routable_address&#39;</span><span class="p">:</span> <span class="s1">&#39;ipv6PortStaticRoutableAddress&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_port_routable_addresses&#39;</span><span class="p">:</span> <span class="s1">&#39;ipv6PortRoutableAddresses&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ipv6_address_config_method&#39;</span><span class="p">:</span> <span class="s1">&#39;ipv6AddressConfigMethod&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;full_duplex&#39;</span><span class="p">:</span> <span class="s1">&#39;fullDuplex&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;supported_speed_settings&#39;</span><span class="p">:</span> <span class="s1">&#39;supportedSpeedSettings&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;configured_speed_setting&#39;</span><span class="p">:</span> <span class="s1">&#39;configuredSpeedSetting&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;current_speed&#39;</span><span class="p">:</span> <span class="s1">&#39;currentSpeed&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;physical_location&#39;</span><span class="p">:</span> <span class="s1">&#39;physicalLocation&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_interface_name</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_channel</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_speed</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ip</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_alias</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mac_addr</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_gateway_ip</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_subnet_mask</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bootp_used</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rlogin_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved1</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setup_error</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved2</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_interface_ref</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_link_status</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_address</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_subnet_mask</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_address_config_method</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_local_address</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_port_static_routable_address</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_port_routable_addresses</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_address_config_method</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_full_duplex</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_supported_speed_settings</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_configured_speed_setting</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_current_speed</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_physical_location</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">interface_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the interface_name of this EthernetInterface.</span>
+<span class="sd">        Name of the Ethernet port, as reported by the controller.</span>
+
+<span class="sd">        :return: The interface_name of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_interface_name</span>
+
+    <span class="nd">@interface_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">interface_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interface_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the interface_name of this EthernetInterface.</span>
+<span class="sd">        Name of the Ethernet port, as reported by the controller.</span>
+
+<span class="sd">        :param interface_name: The interface_name of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_interface_name</span> <span class="o">=</span> <span class="n">interface_name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">channel</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the channel of this EthernetInterface.</span>
+<span class="sd">        The channel number of this Ethernet interface.</span>
+
+<span class="sd">        :return: The channel of this EthernetInterface.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_channel</span>
+
+    <span class="nd">@channel</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">channel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the channel of this EthernetInterface.</span>
+<span class="sd">        The channel number of this Ethernet interface.</span>
+
+<span class="sd">        :param channel: The channel of this EthernetInterface.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_channel</span> <span class="o">=</span> <span class="n">channel</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">speed</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the speed of this EthernetInterface.</span>
+<span class="sd">        The speed of the interface, as currently configured, in Mbit/sec.</span>
+
+<span class="sd">        :return: The speed of this EthernetInterface.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_speed</span>
+
+    <span class="nd">@speed</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">speed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">speed</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the speed of this EthernetInterface.</span>
+<span class="sd">        The speed of the interface, as currently configured, in Mbit/sec.</span>
+
+<span class="sd">        :param speed: The speed of this EthernetInterface.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_speed</span> <span class="o">=</span> <span class="n">speed</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ip</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ip of this EthernetInterface.</span>
+<span class="sd">        The 32-bit IP protocol address assigned to the interface.</span>
+
+<span class="sd">        :return: The ip of this EthernetInterface.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ip</span>
+
+    <span class="nd">@ip</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ip</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ip</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ip of this EthernetInterface.</span>
+<span class="sd">        The 32-bit IP protocol address assigned to the interface.</span>
+
+<span class="sd">        :param ip: The ip of this EthernetInterface.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ip</span> <span class="o">=</span> <span class="n">ip</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">alias</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the alias of this EthernetInterface.</span>
+<span class="sd">        An ASCII string that identifies the alias name for the interface; this name is presumed to be associated with the IP protocol address.</span>
+
+<span class="sd">        :return: The alias of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_alias</span>
+
+    <span class="nd">@alias</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">alias</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">alias</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the alias of this EthernetInterface.</span>
+<span class="sd">        An ASCII string that identifies the alias name for the interface; this name is presumed to be associated with the IP protocol address.</span>
+
+<span class="sd">        :param alias: The alias of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_alias</span> <span class="o">=</span> <span class="n">alias</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">mac_addr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the mac_addr of this EthernetInterface.</span>
+<span class="sd">        An ASCII string representation of the globally-unique 48-bit MAC address assigned to the Ethernet interface.</span>
+
+<span class="sd">        :return: The mac_addr of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mac_addr</span>
+
+    <span class="nd">@mac_addr</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">mac_addr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mac_addr</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the mac_addr of this EthernetInterface.</span>
+<span class="sd">        An ASCII string representation of the globally-unique 48-bit MAC address assigned to the Ethernet interface.</span>
+
+<span class="sd">        :param mac_addr: The mac_addr of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mac_addr</span> <span class="o">=</span> <span class="n">mac_addr</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">gateway_ip</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the gateway_ip of this EthernetInterface.</span>
+<span class="sd">        IP address of the gateway.</span>
+
+<span class="sd">        :return: The gateway_ip of this EthernetInterface.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gateway_ip</span>
+
+    <span class="nd">@gateway_ip</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">gateway_ip</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gateway_ip</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the gateway_ip of this EthernetInterface.</span>
+<span class="sd">        IP address of the gateway.</span>
+
+<span class="sd">        :param gateway_ip: The gateway_ip of this EthernetInterface.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_gateway_ip</span> <span class="o">=</span> <span class="n">gateway_ip</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">subnet_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the subnet_mask of this EthernetInterface.</span>
+<span class="sd">        Network subnet mask.</span>
+
+<span class="sd">        :return: The subnet_mask of this EthernetInterface.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_subnet_mask</span>
+
+    <span class="nd">@subnet_mask</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">subnet_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">subnet_mask</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the subnet_mask of this EthernetInterface.</span>
+<span class="sd">        Network subnet mask.</span>
+
+<span class="sd">        :param subnet_mask: The subnet_mask of this EthernetInterface.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_subnet_mask</span> <span class="o">=</span> <span class="n">subnet_mask</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">bootp_used</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the bootp_used of this EthernetInterface.</span>
+<span class="sd">        Bootpserver used to get network parameters.</span>
+
+<span class="sd">        :return: The bootp_used of this EthernetInterface.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bootp_used</span>
+
+    <span class="nd">@bootp_used</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">bootp_used</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bootp_used</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the bootp_used of this EthernetInterface.</span>
+<span class="sd">        Bootpserver used to get network parameters.</span>
+
+<span class="sd">        :param bootp_used: The bootp_used of this EthernetInterface.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bootp_used</span> <span class="o">=</span> <span class="n">bootp_used</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rlogin_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rlogin_enabled of this EthernetInterface.</span>
+<span class="sd">        True if rlogin sessions are allowed.</span>
+
+<span class="sd">        :return: The rlogin_enabled of this EthernetInterface.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rlogin_enabled</span>
+
+    <span class="nd">@rlogin_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rlogin_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rlogin_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rlogin_enabled of this EthernetInterface.</span>
+<span class="sd">        True if rlogin sessions are allowed.</span>
+
+<span class="sd">        :param rlogin_enabled: The rlogin_enabled of this EthernetInterface.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rlogin_enabled</span> <span class="o">=</span> <span class="n">rlogin_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reserved1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the reserved1 of this EthernetInterface.</span>
+
+
+<span class="sd">        :return: The reserved1 of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reserved1</span>
+
+    <span class="nd">@reserved1</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">reserved1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reserved1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the reserved1 of this EthernetInterface.</span>
+
+
+<span class="sd">        :param reserved1: The reserved1 of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved1</span> <span class="o">=</span> <span class="n">reserved1</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">setup_error</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the setup_error of this EthernetInterface.</span>
+<span class="sd">        Set to true if there is a configuration error.</span>
+
+<span class="sd">        :return: The setup_error of this EthernetInterface.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_setup_error</span>
+
+    <span class="nd">@setup_error</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">setup_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">setup_error</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the setup_error of this EthernetInterface.</span>
+<span class="sd">        Set to true if there is a configuration error.</span>
+
+<span class="sd">        :param setup_error: The setup_error of this EthernetInterface.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setup_error</span> <span class="o">=</span> <span class="n">setup_error</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reserved2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the reserved2 of this EthernetInterface.</span>
+
+
+<span class="sd">        :return: The reserved2 of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reserved2</span>
+
+    <span class="nd">@reserved2</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">reserved2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reserved2</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the reserved2 of this EthernetInterface.</span>
+
+
+<span class="sd">        :param reserved2: The reserved2 of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved2</span> <span class="o">=</span> <span class="n">reserved2</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">interface_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the interface_ref of this EthernetInterface.</span>
+<span class="sd">        The unique identifier for a given instance of this structure.</span>
+
+<span class="sd">        :return: The interface_ref of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_interface_ref</span>
+
+    <span class="nd">@interface_ref</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">interface_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interface_ref</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the interface_ref of this EthernetInterface.</span>
+<span class="sd">        The unique identifier for a given instance of this structure.</span>
+
+<span class="sd">        :param interface_ref: The interface_ref of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_interface_ref</span> <span class="o">=</span> <span class="n">interface_ref</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">link_status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the link_status of this EthernetInterface.</span>
+<span class="sd">        The status of the network link for this interface.</span>
+
+<span class="sd">        :return: The link_status of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_link_status</span>
+
+    <span class="nd">@link_status</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">link_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">link_status</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the link_status of this EthernetInterface.</span>
+<span class="sd">        The status of the network link for this interface.</span>
+
+<span class="sd">        :param link_status: The link_status of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="s2">&quot;up&quot;</span><span class="p">,</span> <span class="s2">&quot;down&quot;</span><span class="p">,</span> <span class="s2">&quot;failed&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">link_status</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `link_status`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_link_status</span> <span class="o">=</span> <span class="n">link_status</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ipv4_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ipv4_enabled of this EthernetInterface.</span>
+<span class="sd">        True if IPV4 is enabled for this interface; otherwise false.</span>
+
+<span class="sd">        :return: The ipv4_enabled of this EthernetInterface.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_enabled</span>
+
+    <span class="nd">@ipv4_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ipv4_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ipv4_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ipv4_enabled of this EthernetInterface.</span>
+<span class="sd">        True if IPV4 is enabled for this interface; otherwise false.</span>
+
+<span class="sd">        :param ipv4_enabled: The ipv4_enabled of this EthernetInterface.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_enabled</span> <span class="o">=</span> <span class="n">ipv4_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ipv4_address</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ipv4_address of this EthernetInterface.</span>
+<span class="sd">        The IPV4 address for the interface.</span>
+
+<span class="sd">        :return: The ipv4_address of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_address</span>
+
+    <span class="nd">@ipv4_address</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ipv4_address</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ipv4_address</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ipv4_address of this EthernetInterface.</span>
+<span class="sd">        The IPV4 address for the interface.</span>
+
+<span class="sd">        :param ipv4_address: The ipv4_address of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_address</span> <span class="o">=</span> <span class="n">ipv4_address</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ipv4_subnet_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ipv4_subnet_mask of this EthernetInterface.</span>
+<span class="sd">        The IPV4 subnet mask for the interface.</span>
+
+<span class="sd">        :return: The ipv4_subnet_mask of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_subnet_mask</span>
+
+    <span class="nd">@ipv4_subnet_mask</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ipv4_subnet_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ipv4_subnet_mask</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ipv4_subnet_mask of this EthernetInterface.</span>
+<span class="sd">        The IPV4 subnet mask for the interface.</span>
+
+<span class="sd">        :param ipv4_subnet_mask: The ipv4_subnet_mask of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_subnet_mask</span> <span class="o">=</span> <span class="n">ipv4_subnet_mask</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ipv4_address_config_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ipv4_address_config_method of this EthernetInterface.</span>
+<span class="sd">        The method by which the IPV4 address information is configured.</span>
+
+<span class="sd">        :return: The ipv4_address_config_method of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_address_config_method</span>
+
+    <span class="nd">@ipv4_address_config_method</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ipv4_address_config_method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ipv4_address_config_method</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ipv4_address_config_method of this EthernetInterface.</span>
+<span class="sd">        The method by which the IPV4 address information is configured.</span>
+
+<span class="sd">        :param ipv4_address_config_method: The ipv4_address_config_method of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;configDhcp&quot;</span><span class="p">,</span> <span class="s2">&quot;configStatic&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">ipv4_address_config_method</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `ipv4_address_config_method`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv4_address_config_method</span> <span class="o">=</span> <span class="n">ipv4_address_config_method</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ipv6_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ipv6_enabled of this EthernetInterface.</span>
+<span class="sd">        True if IPV6 is enabled for this interface; otherwise false.</span>
+
+<span class="sd">        :return: The ipv6_enabled of this EthernetInterface.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_enabled</span>
+
+    <span class="nd">@ipv6_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ipv6_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ipv6_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ipv6_enabled of this EthernetInterface.</span>
+<span class="sd">        True if IPV6 is enabled for this interface; otherwise false.</span>
+
+<span class="sd">        :param ipv6_enabled: The ipv6_enabled of this EthernetInterface.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_enabled</span> <span class="o">=</span> <span class="n">ipv6_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ipv6_local_address</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ipv6_local_address of this EthernetInterface.</span>
+<span class="sd">        The IPV6 local address for the interface and associated data.</span>
+
+<span class="sd">        :return: The ipv6_local_address of this EthernetInterface.</span>
+<span class="sd">        :rtype: IpV6AddressData</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_local_address</span>
+
+    <span class="nd">@ipv6_local_address</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ipv6_local_address</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ipv6_local_address</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ipv6_local_address of this EthernetInterface.</span>
+<span class="sd">        The IPV6 local address for the interface and associated data.</span>
+
+<span class="sd">        :param ipv6_local_address: The ipv6_local_address of this EthernetInterface.</span>
+<span class="sd">        :type: IpV6AddressData</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_local_address</span> <span class="o">=</span> <span class="n">ipv6_local_address</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ipv6_port_static_routable_address</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ipv6_port_static_routable_address of this EthernetInterface.</span>
+<span class="sd">        The IPV6 static routable address for the interface and associated data.</span>
+
+<span class="sd">        :return: The ipv6_port_static_routable_address of this EthernetInterface.</span>
+<span class="sd">        :rtype: IpV6AddressData</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_port_static_routable_address</span>
+
+    <span class="nd">@ipv6_port_static_routable_address</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ipv6_port_static_routable_address</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ipv6_port_static_routable_address</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ipv6_port_static_routable_address of this EthernetInterface.</span>
+<span class="sd">        The IPV6 static routable address for the interface and associated data.</span>
+
+<span class="sd">        :param ipv6_port_static_routable_address: The ipv6_port_static_routable_address of this EthernetInterface.</span>
+<span class="sd">        :type: IpV6AddressData</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_port_static_routable_address</span> <span class="o">=</span> <span class="n">ipv6_port_static_routable_address</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ipv6_port_routable_addresses</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ipv6_port_routable_addresses of this EthernetInterface.</span>
+<span class="sd">        The set of IPV6 port routable addresses for the interface.</span>
+
+<span class="sd">        :return: The ipv6_port_routable_addresses of this EthernetInterface.</span>
+<span class="sd">        :rtype: list[IpV6AddressData]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_port_routable_addresses</span>
+
+    <span class="nd">@ipv6_port_routable_addresses</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ipv6_port_routable_addresses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ipv6_port_routable_addresses</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ipv6_port_routable_addresses of this EthernetInterface.</span>
+<span class="sd">        The set of IPV6 port routable addresses for the interface.</span>
+
+<span class="sd">        :param ipv6_port_routable_addresses: The ipv6_port_routable_addresses of this EthernetInterface.</span>
+<span class="sd">        :type: list[IpV6AddressData]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_port_routable_addresses</span> <span class="o">=</span> <span class="n">ipv6_port_routable_addresses</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ipv6_address_config_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ipv6_address_config_method of this EthernetInterface.</span>
+<span class="sd">        The method by which the IPV6 address information is configured for the interface.</span>
+
+<span class="sd">        :return: The ipv6_address_config_method of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_address_config_method</span>
+
+    <span class="nd">@ipv6_address_config_method</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ipv6_address_config_method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ipv6_address_config_method</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ipv6_address_config_method of this EthernetInterface.</span>
+<span class="sd">        The method by which the IPV6 address information is configured for the interface.</span>
+
+<span class="sd">        :param ipv6_address_config_method: The ipv6_address_config_method of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;configStatic&quot;</span><span class="p">,</span> <span class="s2">&quot;configStateless&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">ipv6_address_config_method</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `ipv6_address_config_method`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ipv6_address_config_method</span> <span class="o">=</span> <span class="n">ipv6_address_config_method</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">full_duplex</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the full_duplex of this EthernetInterface.</span>
+<span class="sd">        If set to true, the interface is operating in full duplex mode; otherwise, it is operating in half-duplex mode.</span>
+
+<span class="sd">        :return: The full_duplex of this EthernetInterface.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_full_duplex</span>
+
+    <span class="nd">@full_duplex</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">full_duplex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">full_duplex</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the full_duplex of this EthernetInterface.</span>
+<span class="sd">        If set to true, the interface is operating in full duplex mode; otherwise, it is operating in half-duplex mode.</span>
+
+<span class="sd">        :param full_duplex: The full_duplex of this EthernetInterface.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_full_duplex</span> <span class="o">=</span> <span class="n">full_duplex</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">supported_speed_settings</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the supported_speed_settings of this EthernetInterface.</span>
+<span class="sd">        Support speed setting for interface</span>
+
+<span class="sd">        :return: The supported_speed_settings of this EthernetInterface.</span>
+<span class="sd">        :rtype: list[str]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_supported_speed_settings</span>
+
+    <span class="nd">@supported_speed_settings</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">supported_speed_settings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">supported_speed_settings</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the supported_speed_settings of this EthernetInterface.</span>
+<span class="sd">        Support speed setting for interface</span>
+
+<span class="sd">        :param supported_speed_settings: The supported_speed_settings of this EthernetInterface.</span>
+<span class="sd">        :type: list[str]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_supported_speed_settings</span> <span class="o">=</span> <span class="n">supported_speed_settings</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">configured_speed_setting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the configured_speed_setting of this EthernetInterface.</span>
+<span class="sd">        Configured setting for the interface.</span>
+
+<span class="sd">        :return: The configured_speed_setting of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_configured_speed_setting</span>
+
+    <span class="nd">@configured_speed_setting</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">configured_speed_setting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">configured_speed_setting</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the configured_speed_setting of this EthernetInterface.</span>
+<span class="sd">        Configured setting for the interface.</span>
+
+<span class="sd">        :param configured_speed_setting: The configured_speed_setting of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;speedNone&quot;</span><span class="p">,</span> <span class="s2">&quot;speedAutoNegotiated&quot;</span><span class="p">,</span> <span class="s2">&quot;speed10MbitHalfDuplex&quot;</span><span class="p">,</span> <span class="s2">&quot;speed10MbitFullDuplex&quot;</span><span class="p">,</span> <span class="s2">&quot;speed100MbitHalfDuplex&quot;</span><span class="p">,</span> <span class="s2">&quot;speed100MbitFullDuplex&quot;</span><span class="p">,</span> <span class="s2">&quot;speed1000MbitHalfDuplex&quot;</span><span class="p">,</span> <span class="s2">&quot;speed1000MbitFullDuplex&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">configured_speed_setting</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `configured_speed_setting`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_configured_speed_setting</span> <span class="o">=</span> <span class="n">configured_speed_setting</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">current_speed</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the current_speed of this EthernetInterface.</span>
+<span class="sd">        Current speed of the interface.</span>
+
+<span class="sd">        :return: The current_speed of this EthernetInterface.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_current_speed</span>
+
+    <span class="nd">@current_speed</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">current_speed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">current_speed</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the current_speed of this EthernetInterface.</span>
+<span class="sd">        Current speed of the interface.</span>
+
+<span class="sd">        :param current_speed: The current_speed of this EthernetInterface.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;speedUnknown&quot;</span><span class="p">,</span> <span class="s2">&quot;speed1gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed2gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed4gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed10gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed15gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed3gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed10meg&quot;</span><span class="p">,</span> <span class="s2">&quot;speed100meg&quot;</span><span class="p">,</span> <span class="s2">&quot;speed2pt5Gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed5gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed20gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed30gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed60gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed8gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed6gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed40gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed16gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed56gig&quot;</span><span class="p">,</span> <span class="s2">&quot;speed12gig&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">current_speed</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `current_speed`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_current_speed</span> <span class="o">=</span> <span class="n">current_speed</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">physical_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the physical_location of this EthernetInterface.</span>
+<span class="sd">        The physical location of the Ethernet interface. The parent reference in Location identifies the physical component (e.g., controller or host card) where the interface circuitry is located, and the position field is a firmware-assigned 1-relative number signifying \&quot;1st ethernet interface relative to the parent,\&quot; \&quot;2nd ethernet interface relative to the parent,\&quot; etc. This \&quot;interface number\&quot; is independent of the interface&#39;s channel association.</span>
+
+<span class="sd">        :return: The physical_location of this EthernetInterface.</span>
+<span class="sd">        :rtype: Location</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_physical_location</span>
+
+    <span class="nd">@physical_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">physical_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">physical_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the physical_location of this EthernetInterface.</span>
+<span class="sd">        The physical location of the Ethernet interface. The parent reference in Location identifies the physical component (e.g., controller or host card) where the interface circuitry is located, and the position field is a firmware-assigned 1-relative number signifying \&quot;1st ethernet interface relative to the parent,\&quot; \&quot;2nd ethernet interface relative to the parent,\&quot; etc. This \&quot;interface number\&quot; is independent of the interface&#39;s channel association.</span>
+
+<span class="sd">        :param physical_location: The physical_location of this EthernetInterface.</span>
+<span class="sd">        :type: Location</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_physical_location</span> <span class="o">=</span> <span class="n">physical_location</span>
+
+<div class="viewcode-block" id="EthernetInterface.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.ethernet_interface.EthernetInterface.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="EthernetInterface.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.ethernet_interface.EthernetInterface.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

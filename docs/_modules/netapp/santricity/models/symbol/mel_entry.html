@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.mel_entry &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.mel_entry</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">MelEntry.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="MelEntry"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.mel_entry.MelEntry">[docs]</a><span class="k">class</span> <span class="nc">MelEntry</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        MelEntry - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;sequence_number&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;event_type&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;time_stamp&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;category&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;component_type&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;component_location&#39;</span><span class="p">:</span> <span class="s1">&#39;ComponentLocation&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;location_valid&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;priority&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;event_source_controller&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sense_key&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;raw_data&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ext_component_location&#39;</span><span class="p">:</span> <span class="s1">&#39;ExtendedComponentLocation&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;control_params&#39;</span><span class="p">:</span> <span class="s1">&#39;EventControl&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;asc&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;ascq&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;sequence_number&#39;</span><span class="p">:</span> <span class="s1">&#39;sequenceNumber&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;event_type&#39;</span><span class="p">:</span> <span class="s1">&#39;eventType&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;time_stamp&#39;</span><span class="p">:</span> <span class="s1">&#39;timeStamp&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;category&#39;</span><span class="p">:</span> <span class="s1">&#39;category&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;component_type&#39;</span><span class="p">:</span> <span class="s1">&#39;componentType&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;component_location&#39;</span><span class="p">:</span> <span class="s1">&#39;componentLocation&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;location_valid&#39;</span><span class="p">:</span> <span class="s1">&#39;locationValid&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;priority&#39;</span><span class="p">:</span> <span class="s1">&#39;priority&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;event_source_controller&#39;</span><span class="p">:</span> <span class="s1">&#39;eventSourceController&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sense_key&#39;</span><span class="p">:</span> <span class="s1">&#39;senseKey&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;raw_data&#39;</span><span class="p">:</span> <span class="s1">&#39;rawData&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ext_component_location&#39;</span><span class="p">:</span> <span class="s1">&#39;extComponentLocation&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;control_params&#39;</span><span class="p">:</span> <span class="s1">&#39;controlParams&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;asc&#39;</span><span class="p">:</span> <span class="s1">&#39;asc&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;ascq&#39;</span><span class="p">:</span> <span class="s1">&#39;ascq&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sequence_number</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time_stamp</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_category</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_component_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_component_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_location_valid</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_priority</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_source_controller</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sense_key</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_raw_data</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ext_component_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_control_params</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_asc</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ascq</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sequence_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sequence_number of this MelEntry.</span>
+<span class="sd">        The sequence number of the MEL entry. The controller maintains a unique, monotonically increasing 64-bit sequence number value and stamps each MEL entry with the next value of this counter.</span>
+
+<span class="sd">        :return: The sequence_number of this MelEntry.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sequence_number</span>
+
+    <span class="nd">@sequence_number</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sequence_number</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sequence_number</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sequence_number of this MelEntry.</span>
+<span class="sd">        The sequence number of the MEL entry. The controller maintains a unique, monotonically increasing 64-bit sequence number value and stamps each MEL entry with the next value of this counter.</span>
+
+<span class="sd">        :param sequence_number: The sequence_number of this MelEntry.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sequence_number</span> <span class="o">=</span> <span class="n">sequence_number</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">event_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the event_type of this MelEntry.</span>
+<span class="sd">        An integer value that indicates the specific type of event being reported.</span>
+
+<span class="sd">        :return: The event_type of this MelEntry.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_event_type</span>
+
+    <span class="nd">@event_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">event_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the event_type of this MelEntry.</span>
+<span class="sd">        An integer value that indicates the specific type of event being reported.</span>
+
+<span class="sd">        :param event_type: The event_type of this MelEntry.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_type</span> <span class="o">=</span> <span class="n">event_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">time_stamp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the time_stamp of this MelEntry.</span>
+<span class="sd">        The time at which the MEL entry was generated. This value is defined in terms of the number of seconds since midnight GMT on January 1, 1970.</span>
+
+<span class="sd">        :return: The time_stamp of this MelEntry.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_stamp</span>
+
+    <span class="nd">@time_stamp</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">time_stamp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time_stamp</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the time_stamp of this MelEntry.</span>
+<span class="sd">        The time at which the MEL entry was generated. This value is defined in terms of the number of seconds since midnight GMT on January 1, 1970.</span>
+
+<span class="sd">        :param time_stamp: The time_stamp of this MelEntry.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time_stamp</span> <span class="o">=</span> <span class="n">time_stamp</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">category</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the category of this MelEntry.</span>
+<span class="sd">        The category into which this event falls. This value identifies the general type of activity or event that occurred and caused the entry to be generated.</span>
+
+<span class="sd">        :return: The category of this MelEntry.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_category</span>
+
+    <span class="nd">@category</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">category</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the category of this MelEntry.</span>
+<span class="sd">        The category into which this event falls. This value identifies the general type of activity or event that occurred and caused the entry to be generated.</span>
+
+<span class="sd">        :param category: The category of this MelEntry.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="s2">&quot;failure&quot;</span><span class="p">,</span> <span class="s2">&quot;command&quot;</span><span class="p">,</span> <span class="s2">&quot;notification&quot;</span><span class="p">,</span> <span class="s2">&quot;stateChange&quot;</span><span class="p">,</span> <span class="s2">&quot;hostEntry&quot;</span><span class="p">,</span> <span class="s2">&quot;general&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">category</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `category`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_category</span> <span class="o">=</span> <span class="n">category</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">component_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the component_type of this MelEntry.</span>
+<span class="sd">        The type of component that is associated with this entry.</span>
+
+<span class="sd">        :return: The component_type of this MelEntry.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_component_type</span>
+
+    <span class="nd">@component_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">component_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">component_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the component_type of this MelEntry.</span>
+<span class="sd">        The type of component that is associated with this entry.</span>
+
+<span class="sd">        :param component_type: The component_type of this MelEntry.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span> <span class="s2">&quot;drive&quot;</span><span class="p">,</span> <span class="s2">&quot;powerSply&quot;</span><span class="p">,</span> <span class="s2">&quot;fan&quot;</span><span class="p">,</span> <span class="s2">&quot;minihub&quot;</span><span class="p">,</span> <span class="s2">&quot;tempSensor&quot;</span><span class="p">,</span> <span class="s2">&quot;channel&quot;</span><span class="p">,</span> <span class="s2">&quot;esm&quot;</span><span class="p">,</span> <span class="s2">&quot;controller&quot;</span><span class="p">,</span> <span class="s2">&quot;battery&quot;</span><span class="p">,</span> <span class="s2">&quot;enclosure&quot;</span><span class="p">,</span> <span class="s2">&quot;ups&quot;</span><span class="p">,</span> <span class="s2">&quot;chip&quot;</span><span class="p">,</span> <span class="s2">&quot;volume&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeGrp&quot;</span><span class="p">,</span> <span class="s2">&quot;portCru&quot;</span><span class="p">,</span> <span class="s2">&quot;interconnectCru&quot;</span><span class="p">,</span> <span class="s2">&quot;supportCru&quot;</span><span class="p">,</span> <span class="s2">&quot;alarm&quot;</span><span class="p">,</span> <span class="s2">&quot;channelPort&quot;</span><span class="p">,</span> <span class="s2">&quot;sfpPort&quot;</span><span class="p">,</span> <span class="s2">&quot;hostBoard&quot;</span><span class="p">,</span> <span class="s2">&quot;newFormat&quot;</span><span class="p">,</span> <span class="s2">&quot;ctlrSfp&quot;</span><span class="p">,</span> <span class="s2">&quot;ctlrSoc&quot;</span><span class="p">,</span> <span class="s2">&quot;initiator&quot;</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">,</span> <span class="s2">&quot;isnsServer&quot;</span><span class="p">,</span> <span class="s2">&quot;hostIoCard&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheBackupDevice&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheMemDimm&quot;</span><span class="p">,</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;hostPort&quot;</span><span class="p">,</span> <span class="s2">&quot;drawer&quot;</span><span class="p">,</span> <span class="s2">&quot;relative&quot;</span><span class="p">,</span> <span class="s2">&quot;schedule&quot;</span><span class="p">,</span> <span class="s2">&quot;asyncMirrorGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPool&quot;</span><span class="p">,</span> <span class="s2">&quot;pit&quot;</span><span class="p">,</span> <span class="s2">&quot;pitConsistencyGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;cgpit&quot;</span><span class="p">,</span> <span class="s2">&quot;cgview&quot;</span><span class="p">,</span> <span class="s2">&quot;flashCache&quot;</span><span class="p">,</span> <span class="s2">&quot;snmpCommunity&quot;</span><span class="p">,</span> <span class="s2">&quot;snmpTrapDestination&quot;</span><span class="p">,</span> <span class="s2">&quot;fcTarget&quot;</span><span class="p">,</span> <span class="s2">&quot;fanOnlyCru&quot;</span><span class="p">,</span> <span class="s2">&quot;psuCru&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">component_type</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `component_type`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_component_type</span> <span class="o">=</span> <span class="n">component_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">component_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the component_location of this MelEntry.</span>
+<span class="sd">        The location, or other identifying value, of the component associated with this entry.</span>
+
+<span class="sd">        :return: The component_location of this MelEntry.</span>
+<span class="sd">        :rtype: ComponentLocation</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_component_location</span>
+
+    <span class="nd">@component_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">component_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">component_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the component_location of this MelEntry.</span>
+<span class="sd">        The location, or other identifying value, of the component associated with this entry.</span>
+
+<span class="sd">        :param component_location: The component_location of this MelEntry.</span>
+<span class="sd">        :type: ComponentLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_component_location</span> <span class="o">=</span> <span class="n">component_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">location_valid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the location_valid of this MelEntry.</span>
+<span class="sd">        A true/false indication of whether the ComponentLocation field is valid for this entry.</span>
+
+<span class="sd">        :return: The location_valid of this MelEntry.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_location_valid</span>
+
+    <span class="nd">@location_valid</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">location_valid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">location_valid</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the location_valid of this MelEntry.</span>
+<span class="sd">        A true/false indication of whether the ComponentLocation field is valid for this entry.</span>
+
+<span class="sd">        :param location_valid: The location_valid of this MelEntry.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_location_valid</span> <span class="o">=</span> <span class="n">location_valid</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">priority</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the priority of this MelEntry.</span>
+<span class="sd">        The priority code associated with this event.</span>
+
+<span class="sd">        :return: The priority of this MelEntry.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_priority</span>
+
+    <span class="nd">@priority</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">priority</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">priority</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the priority of this MelEntry.</span>
+<span class="sd">        The priority code associated with this event.</span>
+
+<span class="sd">        :param priority: The priority of this MelEntry.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;priorityDefault&quot;</span><span class="p">,</span> <span class="s2">&quot;priorityCritical&quot;</span><span class="p">,</span> <span class="s2">&quot;priorityInfo&quot;</span><span class="p">,</span> <span class="s2">&quot;priorityEmergency&quot;</span><span class="p">,</span> <span class="s2">&quot;priorityAlert&quot;</span><span class="p">,</span> <span class="s2">&quot;priorityError&quot;</span><span class="p">,</span> <span class="s2">&quot;priorityWarning&quot;</span><span class="p">,</span> <span class="s2">&quot;priorityNotice&quot;</span><span class="p">,</span> <span class="s2">&quot;priorityDebug&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">priority</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `priority`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_priority</span> <span class="o">=</span> <span class="n">priority</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">event_source_controller</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the event_source_controller of this MelEntry.</span>
+<span class="sd">        The controller that is the source of the event (Controller 1 or 2).</span>
+
+<span class="sd">        :return: The event_source_controller of this MelEntry.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_event_source_controller</span>
+
+    <span class="nd">@event_source_controller</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">event_source_controller</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_source_controller</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the event_source_controller of this MelEntry.</span>
+<span class="sd">        The controller that is the source of the event (Controller 1 or 2).</span>
+
+<span class="sd">        :param event_source_controller: The event_source_controller of this MelEntry.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_source_controller</span> <span class="o">=</span> <span class="n">event_source_controller</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sense_key</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sense_key of this MelEntry.</span>
+<span class="sd">        The Sense Key value associated with this event, or zero if no key is applicable.</span>
+
+<span class="sd">        :return: The sense_key of this MelEntry.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sense_key</span>
+
+    <span class="nd">@sense_key</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sense_key</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sense_key</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sense_key of this MelEntry.</span>
+<span class="sd">        The Sense Key value associated with this event, or zero if no key is applicable.</span>
+
+<span class="sd">        :param sense_key: The sense_key of this MelEntry.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sense_key</span> <span class="o">=</span> <span class="n">sense_key</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">raw_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the raw_data of this MelEntry.</span>
+<span class="sd">        The raw data stored for this event. This information may be useful for debugging or troubleshooting problems with the assistance of a field support or development representative.</span>
+
+<span class="sd">        :return: The raw_data of this MelEntry.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_raw_data</span>
+
+    <span class="nd">@raw_data</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">raw_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">raw_data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the raw_data of this MelEntry.</span>
+<span class="sd">        The raw data stored for this event. This information may be useful for debugging or troubleshooting problems with the assistance of a field support or development representative.</span>
+
+<span class="sd">        :param raw_data: The raw_data of this MelEntry.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_raw_data</span> <span class="o">=</span> <span class="n">raw_data</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ext_component_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ext_component_location of this MelEntry.</span>
+<span class="sd">        Extended component location information for this entry. This data type of this field is a union with discriminator extLocType. If the discriminator is set to something other than EXT_COMP_LOCTYPE_UNKNOWN, then the location information in this field overrides what is in the componentLocation field.</span>
+
+<span class="sd">        :return: The ext_component_location of this MelEntry.</span>
+<span class="sd">        :rtype: ExtendedComponentLocation</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ext_component_location</span>
+
+    <span class="nd">@ext_component_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ext_component_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ext_component_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ext_component_location of this MelEntry.</span>
+<span class="sd">        Extended component location information for this entry. This data type of this field is a union with discriminator extLocType. If the discriminator is set to something other than EXT_COMP_LOCTYPE_UNKNOWN, then the location information in this field overrides what is in the componentLocation field.</span>
+
+<span class="sd">        :param ext_component_location: The ext_component_location of this MelEntry.</span>
+<span class="sd">        :type: ExtendedComponentLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ext_component_location</span> <span class="o">=</span> <span class="n">ext_component_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">control_params</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the control_params of this MelEntry.</span>
+<span class="sd">        This field allows customized control over the handling of MEL events.</span>
+
+<span class="sd">        :return: The control_params of this MelEntry.</span>
+<span class="sd">        :rtype: EventControl</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_control_params</span>
+
+    <span class="nd">@control_params</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">control_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">control_params</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the control_params of this MelEntry.</span>
+<span class="sd">        This field allows customized control over the handling of MEL events.</span>
+
+<span class="sd">        :param control_params: The control_params of this MelEntry.</span>
+<span class="sd">        :type: EventControl</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_control_params</span> <span class="o">=</span> <span class="n">control_params</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">asc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the asc of this MelEntry.</span>
+
+
+<span class="sd">        :return: The asc of this MelEntry.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_asc</span>
+
+    <span class="nd">@asc</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">asc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">asc</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the asc of this MelEntry.</span>
+
+
+<span class="sd">        :param asc: The asc of this MelEntry.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_asc</span> <span class="o">=</span> <span class="n">asc</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ascq</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ascq of this MelEntry.</span>
+
+
+<span class="sd">        :return: The ascq of this MelEntry.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ascq</span>
+
+    <span class="nd">@ascq</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ascq</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ascq</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ascq of this MelEntry.</span>
+
+
+<span class="sd">        :param ascq: The ascq of this MelEntry.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ascq</span> <span class="o">=</span> <span class="n">ascq</span>
+
+<div class="viewcode-block" id="MelEntry.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.mel_entry.MelEntry.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="MelEntry.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.mel_entry.MelEntry.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

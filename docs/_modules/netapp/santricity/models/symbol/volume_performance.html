@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.volume_performance &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.volume_performance</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">VolumePerformance.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="VolumePerformance"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.volume_performance.VolumePerformance">[docs]</a><span class="k">class</span> <span class="nc">VolumePerformance</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        VolumePerformance - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_requests_serviced&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_read_requests&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_read_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_write_requests&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_write_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;percent_read_requests&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;average_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_large_reads&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_large_read_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_large_writes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_large_write_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_cache_read_checks&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_cache_read_check_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_cache_write_requests&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;volume_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_cache_write_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_flash_cache_read_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;time&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_requests_serviced&#39;</span><span class="p">:</span> <span class="s1">&#39;totalRequestsServiced&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;totalBlocksRequested&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_read_requests&#39;</span><span class="p">:</span> <span class="s1">&#39;totalReadRequests&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_read_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;totalReadBlocksRequested&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_write_requests&#39;</span><span class="p">:</span> <span class="s1">&#39;totalWriteRequests&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_write_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;totalWriteBlocksRequested&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;percent_read_requests&#39;</span><span class="p">:</span> <span class="s1">&#39;percentReadRequests&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;average_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;averageBlocksRequested&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_large_reads&#39;</span><span class="p">:</span> <span class="s1">&#39;totalLargeReads&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_large_read_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;totalLargeReadBlocksRequested&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_large_writes&#39;</span><span class="p">:</span> <span class="s1">&#39;totalLargeWrites&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_large_write_blocks_requested&#39;</span><span class="p">:</span> <span class="s1">&#39;totalLargeWriteBlocksRequested&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_cache_read_checks&#39;</span><span class="p">:</span> <span class="s1">&#39;totalCacheReadChecks&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_cache_read_check_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;totalCacheReadCheckHits&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_cache_write_requests&#39;</span><span class="p">:</span> <span class="s1">&#39;totalCacheWriteRequests&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;volume_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;volumeRef&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_cache_write_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;totalCacheWriteHits&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_flash_cache_read_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;totalFlashCacheReadHits&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_requests_serviced</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_blocks_requested</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_read_requests</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_read_blocks_requested</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_write_requests</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_write_blocks_requested</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_percent_read_requests</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_average_blocks_requested</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_reads</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_read_blocks_requested</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_writes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_write_blocks_requested</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_read_checks</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_read_check_hits</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_write_requests</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_ref</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_write_hits</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_flash_cache_read_hits</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the time of this VolumePerformance.</span>
+<span class="sd">        Timestamp returned by controller with performance metrics.</span>
+
+<span class="sd">        :return: The time of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time</span>
+
+    <span class="nd">@time</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the time of this VolumePerformance.</span>
+<span class="sd">        Timestamp returned by controller with performance metrics.</span>
+
+<span class="sd">        :param time: The time of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time</span> <span class="o">=</span> <span class="n">time</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_requests_serviced</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_requests_serviced of this VolumePerformance.</span>
+<span class="sd">        Total number of requests.</span>
+
+<span class="sd">        :return: The total_requests_serviced of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_requests_serviced</span>
+
+    <span class="nd">@total_requests_serviced</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_requests_serviced</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_requests_serviced</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_requests_serviced of this VolumePerformance.</span>
+<span class="sd">        Total number of requests.</span>
+
+<span class="sd">        :param total_requests_serviced: The total_requests_serviced of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_requests_serviced</span> <span class="o">=</span> <span class="n">total_requests_serviced</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total number of blocks requested.</span>
+
+<span class="sd">        :return: The total_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_blocks_requested</span>
+
+    <span class="nd">@total_blocks_requested</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_blocks_requested</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total number of blocks requested.</span>
+
+<span class="sd">        :param total_blocks_requested: The total_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_blocks_requested</span> <span class="o">=</span> <span class="n">total_blocks_requested</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_read_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_read_requests of this VolumePerformance.</span>
+<span class="sd">        Total number of read requests.</span>
+
+<span class="sd">        :return: The total_read_requests of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_read_requests</span>
+
+    <span class="nd">@total_read_requests</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_read_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_read_requests</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_read_requests of this VolumePerformance.</span>
+<span class="sd">        Total number of read requests.</span>
+
+<span class="sd">        :param total_read_requests: The total_read_requests of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_read_requests</span> <span class="o">=</span> <span class="n">total_read_requests</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_read_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_read_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total number of read blocks requested.</span>
+
+<span class="sd">        :return: The total_read_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_read_blocks_requested</span>
+
+    <span class="nd">@total_read_blocks_requested</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_read_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_read_blocks_requested</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_read_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total number of read blocks requested.</span>
+
+<span class="sd">        :param total_read_blocks_requested: The total_read_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_read_blocks_requested</span> <span class="o">=</span> <span class="n">total_read_blocks_requested</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_write_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_write_requests of this VolumePerformance.</span>
+<span class="sd">        Total number of write requests.</span>
+
+<span class="sd">        :return: The total_write_requests of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_write_requests</span>
+
+    <span class="nd">@total_write_requests</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_write_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_write_requests</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_write_requests of this VolumePerformance.</span>
+<span class="sd">        Total number of write requests.</span>
+
+<span class="sd">        :param total_write_requests: The total_write_requests of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_write_requests</span> <span class="o">=</span> <span class="n">total_write_requests</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_write_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_write_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total number of write blocks requested.</span>
+
+<span class="sd">        :return: The total_write_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_write_blocks_requested</span>
+
+    <span class="nd">@total_write_blocks_requested</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_write_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_write_blocks_requested</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_write_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total number of write blocks requested.</span>
+
+<span class="sd">        :param total_write_blocks_requested: The total_write_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_write_blocks_requested</span> <span class="o">=</span> <span class="n">total_write_blocks_requested</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">percent_read_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the percent_read_requests of this VolumePerformance.</span>
+<span class="sd">        The percentReadRequests is computed directly as: (totalReadRequests * 100) / totalRequests.</span>
+
+<span class="sd">        :return: The percent_read_requests of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_percent_read_requests</span>
+
+    <span class="nd">@percent_read_requests</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">percent_read_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">percent_read_requests</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the percent_read_requests of this VolumePerformance.</span>
+<span class="sd">        The percentReadRequests is computed directly as: (totalReadRequests * 100) / totalRequests.</span>
+
+<span class="sd">        :param percent_read_requests: The percent_read_requests of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_percent_read_requests</span> <span class="o">=</span> <span class="n">percent_read_requests</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">average_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the average_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Average number of blocks requested.</span>
+
+<span class="sd">        :return: The average_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_average_blocks_requested</span>
+
+    <span class="nd">@average_blocks_requested</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">average_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">average_blocks_requested</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the average_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Average number of blocks requested.</span>
+
+<span class="sd">        :param average_blocks_requested: The average_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_average_blocks_requested</span> <span class="o">=</span> <span class="n">average_blocks_requested</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_large_reads</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_large_reads of this VolumePerformance.</span>
+<span class="sd">        Total number of reads considered large.</span>
+
+<span class="sd">        :return: The total_large_reads of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_reads</span>
+
+    <span class="nd">@total_large_reads</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_large_reads</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_large_reads</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_large_reads of this VolumePerformance.</span>
+<span class="sd">        Total number of reads considered large.</span>
+
+<span class="sd">        :param total_large_reads: The total_large_reads of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_reads</span> <span class="o">=</span> <span class="n">total_large_reads</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_large_read_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_large_read_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total requested blocks for large reads.</span>
+
+<span class="sd">        :return: The total_large_read_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_read_blocks_requested</span>
+
+    <span class="nd">@total_large_read_blocks_requested</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_large_read_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_large_read_blocks_requested</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_large_read_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total requested blocks for large reads.</span>
+
+<span class="sd">        :param total_large_read_blocks_requested: The total_large_read_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_read_blocks_requested</span> <span class="o">=</span> <span class="n">total_large_read_blocks_requested</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_large_writes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_large_writes of this VolumePerformance.</span>
+<span class="sd">        Total number of writes considered large.</span>
+
+<span class="sd">        :return: The total_large_writes of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_writes</span>
+
+    <span class="nd">@total_large_writes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_large_writes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_large_writes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_large_writes of this VolumePerformance.</span>
+<span class="sd">        Total number of writes considered large.</span>
+
+<span class="sd">        :param total_large_writes: The total_large_writes of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_writes</span> <span class="o">=</span> <span class="n">total_large_writes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_large_write_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_large_write_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total requested blocks for large writes.</span>
+
+<span class="sd">        :return: The total_large_write_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_write_blocks_requested</span>
+
+    <span class="nd">@total_large_write_blocks_requested</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_large_write_blocks_requested</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_large_write_blocks_requested</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_large_write_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        Total requested blocks for large writes.</span>
+
+<span class="sd">        :param total_large_write_blocks_requested: The total_large_write_blocks_requested of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_large_write_blocks_requested</span> <span class="o">=</span> <span class="n">total_large_write_blocks_requested</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_cache_read_checks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_cache_read_checks of this VolumePerformance.</span>
+<span class="sd">        This field tracks the number of calls to the cache manager to check if a host-initiated read request can be fully satisfied out of cache.</span>
+
+<span class="sd">        :return: The total_cache_read_checks of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_read_checks</span>
+
+    <span class="nd">@total_cache_read_checks</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_cache_read_checks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_cache_read_checks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_cache_read_checks of this VolumePerformance.</span>
+<span class="sd">        This field tracks the number of calls to the cache manager to check if a host-initiated read request can be fully satisfied out of cache.</span>
+
+<span class="sd">        :param total_cache_read_checks: The total_cache_read_checks of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_read_checks</span> <span class="o">=</span> <span class="n">total_cache_read_checks</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_cache_read_check_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_cache_read_check_hits of this VolumePerformance.</span>
+<span class="sd">        Number of cache read check hits.</span>
+
+<span class="sd">        :return: The total_cache_read_check_hits of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_read_check_hits</span>
+
+    <span class="nd">@total_cache_read_check_hits</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_cache_read_check_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_cache_read_check_hits</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_cache_read_check_hits of this VolumePerformance.</span>
+<span class="sd">        Number of cache read check hits.</span>
+
+<span class="sd">        :param total_cache_read_check_hits: The total_cache_read_check_hits of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_read_check_hits</span> <span class="o">=</span> <span class="n">total_cache_read_check_hits</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_cache_write_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_cache_write_requests of this VolumePerformance.</span>
+<span class="sd">        Number of cache write requests. (This field is always set to zero by firmware releases prior to 7.10.)</span>
+
+<span class="sd">        :return: The total_cache_write_requests of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_write_requests</span>
+
+    <span class="nd">@total_cache_write_requests</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_cache_write_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_cache_write_requests</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_cache_write_requests of this VolumePerformance.</span>
+<span class="sd">        Number of cache write requests. (This field is always set to zero by firmware releases prior to 7.10.)</span>
+
+<span class="sd">        :param total_cache_write_requests: The total_cache_write_requests of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_write_requests</span> <span class="o">=</span> <span class="n">total_cache_write_requests</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">volume_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the volume_ref of this VolumePerformance.</span>
+<span class="sd">        The volume for which this information applies.</span>
+
+<span class="sd">        :return: The volume_ref of this VolumePerformance.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_volume_ref</span>
+
+    <span class="nd">@volume_ref</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">volume_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_ref</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the volume_ref of this VolumePerformance.</span>
+<span class="sd">        The volume for which this information applies.</span>
+
+<span class="sd">        :param volume_ref: The volume_ref of this VolumePerformance.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_ref</span> <span class="o">=</span> <span class="n">volume_ref</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_cache_write_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_cache_write_hits of this VolumePerformance.</span>
+<span class="sd">        The number of flash cache write hits.</span>
+
+<span class="sd">        :return: The total_cache_write_hits of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_write_hits</span>
+
+    <span class="nd">@total_cache_write_hits</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_cache_write_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_cache_write_hits</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_cache_write_hits of this VolumePerformance.</span>
+<span class="sd">        The number of flash cache write hits.</span>
+
+<span class="sd">        :param total_cache_write_hits: The total_cache_write_hits of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_cache_write_hits</span> <span class="o">=</span> <span class="n">total_cache_write_hits</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_flash_cache_read_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_flash_cache_read_hits of this VolumePerformance.</span>
+<span class="sd">        The total number of flash cache read hits.</span>
+
+<span class="sd">        :return: The total_flash_cache_read_hits of this VolumePerformance.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_flash_cache_read_hits</span>
+
+    <span class="nd">@total_flash_cache_read_hits</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_flash_cache_read_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_flash_cache_read_hits</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_flash_cache_read_hits of this VolumePerformance.</span>
+<span class="sd">        The total number of flash cache read hits.</span>
+
+<span class="sd">        :param total_flash_cache_read_hits: The total_flash_cache_read_hits of this VolumePerformance.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_flash_cache_read_hits</span> <span class="o">=</span> <span class="n">total_flash_cache_read_hits</span>
+
+<div class="viewcode-block" id="VolumePerformance.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.volume_performance.VolumePerformance.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="VolumePerformance.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.volume_performance.VolumePerformance.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

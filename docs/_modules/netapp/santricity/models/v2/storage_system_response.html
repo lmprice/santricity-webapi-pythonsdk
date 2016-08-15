@@ -1,0 +1,1376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.v2.storage_system_response &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.v2.storage_system_response</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">StorageSystemResponse.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="StorageSystemResponse"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.storage_system_response.StorageSystemResponse">[docs]</a><span class="k">class</span> <span class="nc">StorageSystemResponse</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        StorageSystemResponse - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;wwn&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;password_status&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;password_set&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ip1&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ip2&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;trace_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;types&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;meta_tags&#39;</span><span class="p">:</span> <span class="s1">&#39;list[KeyValue]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;hot_spare_size&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;used_pool_space&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;free_pool_space&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;unconfigured_space&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_types&#39;</span><span class="p">:</span> <span class="s1">&#39;list[str]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;host_spare_count_in_standby&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;hot_spare_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;host_spares_used&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;boot_time&#39;</span><span class="p">:</span> <span class="s1">&#39;datetime&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fw_version&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;app_version&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;boot_version&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;nvsram_version&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;chassis_serial_number&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;access_volume&#39;</span><span class="p">:</span> <span class="s1">&#39;AccessVolumeEx&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;unconfigured_space_by_drive_type&#39;</span><span class="p">:</span> <span class="s1">&#39;dict(String, int)&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;media_scan_period&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_channel_port_disabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;recovery_mode_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;auto_load_balancing_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;remote_mirroring_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fc_remote_mirroring_state&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;asup_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;security_key_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;last_contacted&#39;</span><span class="p">:</span> <span class="s1">&#39;datetime&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;defined_partition_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;simplex_mode_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;free_pool_space_as_string&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;hot_spare_size_as_string&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;unconfigured_space_as_strings&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;used_pool_space_as_string&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;wwn&#39;</span><span class="p">:</span> <span class="s1">&#39;wwn&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;password_status&#39;</span><span class="p">:</span> <span class="s1">&#39;passwordStatus&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;password_set&#39;</span><span class="p">:</span> <span class="s1">&#39;passwordSet&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="s1">&#39;status&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ip1&#39;</span><span class="p">:</span> <span class="s1">&#39;ip1&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ip2&#39;</span><span class="p">:</span> <span class="s1">&#39;ip2&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_count&#39;</span><span class="p">:</span> <span class="s1">&#39;driveCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;tray_count&#39;</span><span class="p">:</span> <span class="s1">&#39;trayCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;trace_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;traceEnabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;types&#39;</span><span class="p">:</span> <span class="s1">&#39;types&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="s1">&#39;model&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;meta_tags&#39;</span><span class="p">:</span> <span class="s1">&#39;metaTags&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;hot_spare_size&#39;</span><span class="p">:</span> <span class="s1">&#39;hotSpareSize&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;used_pool_space&#39;</span><span class="p">:</span> <span class="s1">&#39;usedPoolSpace&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;free_pool_space&#39;</span><span class="p">:</span> <span class="s1">&#39;freePoolSpace&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;unconfigured_space&#39;</span><span class="p">:</span> <span class="s1">&#39;unconfiguredSpace&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_types&#39;</span><span class="p">:</span> <span class="s1">&#39;driveTypes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;host_spare_count_in_standby&#39;</span><span class="p">:</span> <span class="s1">&#39;hostSpareCountInStandby&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;hot_spare_count&#39;</span><span class="p">:</span> <span class="s1">&#39;hotSpareCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;host_spares_used&#39;</span><span class="p">:</span> <span class="s1">&#39;hostSparesUsed&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;boot_time&#39;</span><span class="p">:</span> <span class="s1">&#39;bootTime&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fw_version&#39;</span><span class="p">:</span> <span class="s1">&#39;fwVersion&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;app_version&#39;</span><span class="p">:</span> <span class="s1">&#39;appVersion&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;boot_version&#39;</span><span class="p">:</span> <span class="s1">&#39;bootVersion&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;nvsram_version&#39;</span><span class="p">:</span> <span class="s1">&#39;nvsramVersion&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;chassis_serial_number&#39;</span><span class="p">:</span> <span class="s1">&#39;chassisSerialNumber&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;access_volume&#39;</span><span class="p">:</span> <span class="s1">&#39;accessVolume&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;unconfigured_space_by_drive_type&#39;</span><span class="p">:</span> <span class="s1">&#39;unconfiguredSpaceByDriveType&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;media_scan_period&#39;</span><span class="p">:</span> <span class="s1">&#39;mediaScanPeriod&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_channel_port_disabled&#39;</span><span class="p">:</span> <span class="s1">&#39;driveChannelPortDisabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;recovery_mode_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;recoveryModeEnabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;auto_load_balancing_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;autoLoadBalancingEnabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;remote_mirroring_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;remoteMirroringEnabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fc_remote_mirroring_state&#39;</span><span class="p">:</span> <span class="s1">&#39;fcRemoteMirroringState&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;asup_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;asupEnabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;security_key_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;securityKeyEnabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;last_contacted&#39;</span><span class="p">:</span> <span class="s1">&#39;lastContacted&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;defined_partition_count&#39;</span><span class="p">:</span> <span class="s1">&#39;definedPartitionCount&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;simplex_mode_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;simplexModeEnabled&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;free_pool_space_as_string&#39;</span><span class="p">:</span> <span class="s1">&#39;freePoolSpaceAsString&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;hot_spare_size_as_string&#39;</span><span class="p">:</span> <span class="s1">&#39;hotSpareSizeAsString&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;unconfigured_space_as_strings&#39;</span><span class="p">:</span> <span class="s1">&#39;unconfiguredSpaceAsStrings&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;used_pool_space_as_string&#39;</span><span class="p">:</span> <span class="s1">&#39;usedPoolSpaceAsString&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wwn</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_password_status</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_password_set</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_status</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ip1</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ip2</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_trace_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_types</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_model</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_meta_tags</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spare_size</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_used_pool_space</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_free_pool_space</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unconfigured_space</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_types</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_spare_count_in_standby</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spare_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_spares_used</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_boot_time</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fw_version</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_app_version</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_boot_version</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_nvsram_version</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_chassis_serial_number</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_access_volume</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unconfigured_space_by_drive_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_media_scan_period</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_channel_port_disabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_recovery_mode_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_auto_load_balancing_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_remote_mirroring_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fc_remote_mirroring_state</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_asup_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_security_key_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_last_contacted</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_defined_partition_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_simplex_mode_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_free_pool_space_as_string</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spare_size_as_string</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unconfigured_space_as_strings</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_used_pool_space_as_string</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the id of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The id of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_id</span>
+
+    <span class="nd">@id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the id of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param id: The id of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id</span> <span class="o">=</span> <span class="nb">id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the name of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The name of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the name of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param name: The name of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wwn</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the wwn of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The wwn of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wwn</span>
+
+    <span class="nd">@wwn</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">wwn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wwn</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the wwn of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param wwn: The wwn of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wwn</span> <span class="o">=</span> <span class="n">wwn</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">password_status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the password_status of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The password_status of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_password_status</span>
+
+    <span class="nd">@password_status</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">password_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">password_status</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the password_status of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param password_status: The password_status of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span> <span class="s2">&quot;invalid&quot;</span><span class="p">,</span> <span class="s2">&quot;valid&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">password_status</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `password_status`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_password_status</span> <span class="o">=</span> <span class="n">password_status</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">password_set</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the password_set of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The password_set of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_password_set</span>
+
+    <span class="nd">@password_set</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">password_set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">password_set</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the password_set of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param password_set: The password_set of this StorageSystemResponse.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_password_set</span> <span class="o">=</span> <span class="n">password_set</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the status of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The status of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_status</span>
+
+    <span class="nd">@status</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the status of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param status: The status of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;neverContacted&quot;</span><span class="p">,</span> <span class="s2">&quot;offline&quot;</span><span class="p">,</span> <span class="s2">&quot;optimal&quot;</span><span class="p">,</span> <span class="s2">&quot;needsAttn&quot;</span><span class="p">,</span> <span class="s2">&quot;removed&quot;</span><span class="p">,</span> <span class="s2">&quot;newDevice&quot;</span><span class="p">,</span> <span class="s2">&quot;lockDown&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">status</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `status`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_status</span> <span class="o">=</span> <span class="n">status</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ip1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ip1 of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The ip1 of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ip1</span>
+
+    <span class="nd">@ip1</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ip1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ip1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ip1 of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param ip1: The ip1 of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ip1</span> <span class="o">=</span> <span class="n">ip1</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ip2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ip2 of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The ip2 of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ip2</span>
+
+    <span class="nd">@ip2</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ip2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ip2</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ip2 of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param ip2: The ip2 of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ip2</span> <span class="o">=</span> <span class="n">ip2</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drive_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drive_count of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The drive_count of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drive_count</span>
+
+    <span class="nd">@drive_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drive_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drive_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drive_count of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param drive_count: The drive_count of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_count</span> <span class="o">=</span> <span class="n">drive_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tray_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the tray_count of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The tray_count of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tray_count</span>
+
+    <span class="nd">@tray_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">tray_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tray_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the tray_count of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param tray_count: The tray_count of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tray_count</span> <span class="o">=</span> <span class="n">tray_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">trace_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the trace_enabled of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The trace_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_trace_enabled</span>
+
+    <span class="nd">@trace_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">trace_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trace_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the trace_enabled of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param trace_enabled: The trace_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_trace_enabled</span> <span class="o">=</span> <span class="n">trace_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">types</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the types of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The types of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_types</span>
+
+    <span class="nd">@types</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">types</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">types</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the types of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param types: The types of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_types</span> <span class="o">=</span> <span class="n">types</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">model</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the model of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The model of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_model</span>
+
+    <span class="nd">@model</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the model of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param model: The model of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_model</span> <span class="o">=</span> <span class="n">model</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">meta_tags</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the meta_tags of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The meta_tags of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: list[KeyValue]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_meta_tags</span>
+
+    <span class="nd">@meta_tags</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">meta_tags</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">meta_tags</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the meta_tags of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param meta_tags: The meta_tags of this StorageSystemResponse.</span>
+<span class="sd">        :type: list[KeyValue]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_meta_tags</span> <span class="o">=</span> <span class="n">meta_tags</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hot_spare_size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the hot_spare_size of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The hot_spare_size of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spare_size</span>
+
+    <span class="nd">@hot_spare_size</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">hot_spare_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hot_spare_size</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the hot_spare_size of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param hot_spare_size: The hot_spare_size of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spare_size</span> <span class="o">=</span> <span class="n">hot_spare_size</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">used_pool_space</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the used_pool_space of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The used_pool_space of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_used_pool_space</span>
+
+    <span class="nd">@used_pool_space</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">used_pool_space</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">used_pool_space</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the used_pool_space of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param used_pool_space: The used_pool_space of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_used_pool_space</span> <span class="o">=</span> <span class="n">used_pool_space</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">free_pool_space</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the free_pool_space of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The free_pool_space of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_free_pool_space</span>
+
+    <span class="nd">@free_pool_space</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">free_pool_space</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">free_pool_space</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the free_pool_space of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param free_pool_space: The free_pool_space of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_free_pool_space</span> <span class="o">=</span> <span class="n">free_pool_space</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">unconfigured_space</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the unconfigured_space of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The unconfigured_space of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_unconfigured_space</span>
+
+    <span class="nd">@unconfigured_space</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">unconfigured_space</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unconfigured_space</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the unconfigured_space of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param unconfigured_space: The unconfigured_space of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unconfigured_space</span> <span class="o">=</span> <span class="n">unconfigured_space</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drive_types</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drive_types of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The drive_types of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: list[str]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drive_types</span>
+
+    <span class="nd">@drive_types</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drive_types</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drive_types</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drive_types of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param drive_types: The drive_types of this StorageSystemResponse.</span>
+<span class="sd">        :type: list[str]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_types</span> <span class="o">=</span> <span class="n">drive_types</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">host_spare_count_in_standby</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the host_spare_count_in_standby of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The host_spare_count_in_standby of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_host_spare_count_in_standby</span>
+
+    <span class="nd">@host_spare_count_in_standby</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">host_spare_count_in_standby</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">host_spare_count_in_standby</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the host_spare_count_in_standby of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param host_spare_count_in_standby: The host_spare_count_in_standby of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_spare_count_in_standby</span> <span class="o">=</span> <span class="n">host_spare_count_in_standby</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hot_spare_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the hot_spare_count of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The hot_spare_count of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spare_count</span>
+
+    <span class="nd">@hot_spare_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">hot_spare_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hot_spare_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the hot_spare_count of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param hot_spare_count: The hot_spare_count of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spare_count</span> <span class="o">=</span> <span class="n">hot_spare_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">host_spares_used</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the host_spares_used of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The host_spares_used of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_host_spares_used</span>
+
+    <span class="nd">@host_spares_used</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">host_spares_used</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">host_spares_used</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the host_spares_used of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param host_spares_used: The host_spares_used of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_spares_used</span> <span class="o">=</span> <span class="n">host_spares_used</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">boot_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the boot_time of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The boot_time of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: datetime</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_boot_time</span>
+
+    <span class="nd">@boot_time</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">boot_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">boot_time</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the boot_time of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param boot_time: The boot_time of this StorageSystemResponse.</span>
+<span class="sd">        :type: datetime</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_boot_time</span> <span class="o">=</span> <span class="n">boot_time</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fw_version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fw_version of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The fw_version of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fw_version</span>
+
+    <span class="nd">@fw_version</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fw_version</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fw_version</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fw_version of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param fw_version: The fw_version of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fw_version</span> <span class="o">=</span> <span class="n">fw_version</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">app_version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the app_version of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The app_version of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_app_version</span>
+
+    <span class="nd">@app_version</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">app_version</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app_version</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the app_version of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param app_version: The app_version of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_app_version</span> <span class="o">=</span> <span class="n">app_version</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">boot_version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the boot_version of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The boot_version of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_boot_version</span>
+
+    <span class="nd">@boot_version</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">boot_version</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">boot_version</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the boot_version of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param boot_version: The boot_version of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_boot_version</span> <span class="o">=</span> <span class="n">boot_version</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">nvsram_version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the nvsram_version of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The nvsram_version of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nvsram_version</span>
+
+    <span class="nd">@nvsram_version</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">nvsram_version</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nvsram_version</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the nvsram_version of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param nvsram_version: The nvsram_version of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_nvsram_version</span> <span class="o">=</span> <span class="n">nvsram_version</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">chassis_serial_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the chassis_serial_number of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The chassis_serial_number of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chassis_serial_number</span>
+
+    <span class="nd">@chassis_serial_number</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">chassis_serial_number</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chassis_serial_number</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the chassis_serial_number of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param chassis_serial_number: The chassis_serial_number of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_chassis_serial_number</span> <span class="o">=</span> <span class="n">chassis_serial_number</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">access_volume</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the access_volume of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The access_volume of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: AccessVolumeEx</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_access_volume</span>
+
+    <span class="nd">@access_volume</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">access_volume</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">access_volume</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the access_volume of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param access_volume: The access_volume of this StorageSystemResponse.</span>
+<span class="sd">        :type: AccessVolumeEx</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_access_volume</span> <span class="o">=</span> <span class="n">access_volume</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">unconfigured_space_by_drive_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the unconfigured_space_by_drive_type of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The unconfigured_space_by_drive_type of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: dict(String, int)</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_unconfigured_space_by_drive_type</span>
+
+    <span class="nd">@unconfigured_space_by_drive_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">unconfigured_space_by_drive_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unconfigured_space_by_drive_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the unconfigured_space_by_drive_type of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param unconfigured_space_by_drive_type: The unconfigured_space_by_drive_type of this StorageSystemResponse.</span>
+<span class="sd">        :type: dict(String, int)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unconfigured_space_by_drive_type</span> <span class="o">=</span> <span class="n">unconfigured_space_by_drive_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">media_scan_period</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the media_scan_period of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The media_scan_period of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_media_scan_period</span>
+
+    <span class="nd">@media_scan_period</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">media_scan_period</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">media_scan_period</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the media_scan_period of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param media_scan_period: The media_scan_period of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_media_scan_period</span> <span class="o">=</span> <span class="n">media_scan_period</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drive_channel_port_disabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drive_channel_port_disabled of this StorageSystemResponse.</span>
+<span class="sd">        True if one or more drive channel ports have been disabled by the controllers to protect against faulty expansion cabling.</span>
+
+<span class="sd">        :return: The drive_channel_port_disabled of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drive_channel_port_disabled</span>
+
+    <span class="nd">@drive_channel_port_disabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drive_channel_port_disabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drive_channel_port_disabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drive_channel_port_disabled of this StorageSystemResponse.</span>
+<span class="sd">        True if one or more drive channel ports have been disabled by the controllers to protect against faulty expansion cabling.</span>
+
+<span class="sd">        :param drive_channel_port_disabled: The drive_channel_port_disabled of this StorageSystemResponse.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_channel_port_disabled</span> <span class="o">=</span> <span class="n">drive_channel_port_disabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">recovery_mode_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the recovery_mode_enabled of this StorageSystemResponse.</span>
+<span class="sd">        True if recovery mode is enabled on the array.</span>
+
+<span class="sd">        :return: The recovery_mode_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_recovery_mode_enabled</span>
+
+    <span class="nd">@recovery_mode_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">recovery_mode_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">recovery_mode_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the recovery_mode_enabled of this StorageSystemResponse.</span>
+<span class="sd">        True if recovery mode is enabled on the array.</span>
+
+<span class="sd">        :param recovery_mode_enabled: The recovery_mode_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_recovery_mode_enabled</span> <span class="o">=</span> <span class="n">recovery_mode_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">auto_load_balancing_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the auto_load_balancing_enabled of this StorageSystemResponse.</span>
+<span class="sd">        True if auto load balance is enabled on the array.</span>
+
+<span class="sd">        :return: The auto_load_balancing_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_auto_load_balancing_enabled</span>
+
+    <span class="nd">@auto_load_balancing_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">auto_load_balancing_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">auto_load_balancing_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the auto_load_balancing_enabled of this StorageSystemResponse.</span>
+<span class="sd">        True if auto load balance is enabled on the array.</span>
+
+<span class="sd">        :param auto_load_balancing_enabled: The auto_load_balancing_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_auto_load_balancing_enabled</span> <span class="o">=</span> <span class="n">auto_load_balancing_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">remote_mirroring_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the remote_mirroring_enabled of this StorageSystemResponse.</span>
+<span class="sd">        Can Remote Volume Mirrors be created on this StorageDevice?</span>
+
+<span class="sd">        :return: The remote_mirroring_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_remote_mirroring_enabled</span>
+
+    <span class="nd">@remote_mirroring_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">remote_mirroring_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">remote_mirroring_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the remote_mirroring_enabled of this StorageSystemResponse.</span>
+<span class="sd">        Can Remote Volume Mirrors be created on this StorageDevice?</span>
+
+<span class="sd">        :param remote_mirroring_enabled: The remote_mirroring_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_remote_mirroring_enabled</span> <span class="o">=</span> <span class="n">remote_mirroring_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fc_remote_mirroring_state</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fc_remote_mirroring_state of this StorageSystemResponse.</span>
+<span class="sd">        The remote mirroring state on this StorageDevice</span>
+
+<span class="sd">        :return: The fc_remote_mirroring_state of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fc_remote_mirroring_state</span>
+
+    <span class="nd">@fc_remote_mirroring_state</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fc_remote_mirroring_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fc_remote_mirroring_state</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fc_remote_mirroring_state of this StorageSystemResponse.</span>
+<span class="sd">        The remote mirroring state on this StorageDevice</span>
+
+<span class="sd">        :param fc_remote_mirroring_state: The fc_remote_mirroring_state of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span> <span class="s2">&quot;disabled&quot;</span><span class="p">,</span> <span class="s2">&quot;enabledLegacyRvm&quot;</span><span class="p">,</span> <span class="s2">&quot;enabledArvm&quot;</span><span class="p">,</span> <span class="s2">&quot;enabledAll&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">fc_remote_mirroring_state</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `fc_remote_mirroring_state`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fc_remote_mirroring_state</span> <span class="o">=</span> <span class="n">fc_remote_mirroring_state</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">asup_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the asup_enabled of this StorageSystemResponse.</span>
+<span class="sd">        True if ASUP is enabled for this StorageDevice</span>
+
+<span class="sd">        :return: The asup_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_asup_enabled</span>
+
+    <span class="nd">@asup_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">asup_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">asup_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the asup_enabled of this StorageSystemResponse.</span>
+<span class="sd">        True if ASUP is enabled for this StorageDevice</span>
+
+<span class="sd">        :param asup_enabled: The asup_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_asup_enabled</span> <span class="o">=</span> <span class="n">asup_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">security_key_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the security_key_enabled of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The security_key_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_security_key_enabled</span>
+
+    <span class="nd">@security_key_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">security_key_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">security_key_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the security_key_enabled of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param security_key_enabled: The security_key_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_security_key_enabled</span> <span class="o">=</span> <span class="n">security_key_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">last_contacted</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the last_contacted of this StorageSystemResponse.</span>
+<span class="sd">        The last time that the device was considered accessible.</span>
+
+<span class="sd">        :return: The last_contacted of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: datetime</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_last_contacted</span>
+
+    <span class="nd">@last_contacted</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">last_contacted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">last_contacted</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the last_contacted of this StorageSystemResponse.</span>
+<span class="sd">        The last time that the device was considered accessible.</span>
+
+<span class="sd">        :param last_contacted: The last_contacted of this StorageSystemResponse.</span>
+<span class="sd">        :type: datetime</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_last_contacted</span> <span class="o">=</span> <span class="n">last_contacted</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">defined_partition_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the defined_partition_count of this StorageSystemResponse.</span>
+<span class="sd">        The number of partitions calculated from the user&#39;s current mappings.</span>
+
+<span class="sd">        :return: The defined_partition_count of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_defined_partition_count</span>
+
+    <span class="nd">@defined_partition_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">defined_partition_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">defined_partition_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the defined_partition_count of this StorageSystemResponse.</span>
+<span class="sd">        The number of partitions calculated from the user&#39;s current mappings.</span>
+
+<span class="sd">        :param defined_partition_count: The defined_partition_count of this StorageSystemResponse.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_defined_partition_count</span> <span class="o">=</span> <span class="n">defined_partition_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">simplex_mode_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the simplex_mode_enabled of this StorageSystemResponse.</span>
+<span class="sd">        True if the redundancy mode of the system is simplex.</span>
+
+<span class="sd">        :return: The simplex_mode_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_simplex_mode_enabled</span>
+
+    <span class="nd">@simplex_mode_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">simplex_mode_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">simplex_mode_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the simplex_mode_enabled of this StorageSystemResponse.</span>
+<span class="sd">        True if the redundancy mode of the system is simplex.</span>
+
+<span class="sd">        :param simplex_mode_enabled: The simplex_mode_enabled of this StorageSystemResponse.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_simplex_mode_enabled</span> <span class="o">=</span> <span class="n">simplex_mode_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">free_pool_space_as_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the free_pool_space_as_string of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The free_pool_space_as_string of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_free_pool_space_as_string</span>
+
+    <span class="nd">@free_pool_space_as_string</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">free_pool_space_as_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">free_pool_space_as_string</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the free_pool_space_as_string of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param free_pool_space_as_string: The free_pool_space_as_string of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_free_pool_space_as_string</span> <span class="o">=</span> <span class="n">free_pool_space_as_string</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hot_spare_size_as_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the hot_spare_size_as_string of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The hot_spare_size_as_string of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spare_size_as_string</span>
+
+    <span class="nd">@hot_spare_size_as_string</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">hot_spare_size_as_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hot_spare_size_as_string</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the hot_spare_size_as_string of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param hot_spare_size_as_string: The hot_spare_size_as_string of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spare_size_as_string</span> <span class="o">=</span> <span class="n">hot_spare_size_as_string</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">unconfigured_space_as_strings</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the unconfigured_space_as_strings of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The unconfigured_space_as_strings of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_unconfigured_space_as_strings</span>
+
+    <span class="nd">@unconfigured_space_as_strings</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">unconfigured_space_as_strings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unconfigured_space_as_strings</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the unconfigured_space_as_strings of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param unconfigured_space_as_strings: The unconfigured_space_as_strings of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unconfigured_space_as_strings</span> <span class="o">=</span> <span class="n">unconfigured_space_as_strings</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">used_pool_space_as_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the used_pool_space_as_string of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :return: The used_pool_space_as_string of this StorageSystemResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_used_pool_space_as_string</span>
+
+    <span class="nd">@used_pool_space_as_string</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">used_pool_space_as_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">used_pool_space_as_string</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the used_pool_space_as_string of this StorageSystemResponse.</span>
+
+
+<span class="sd">        :param used_pool_space_as_string: The used_pool_space_as_string of this StorageSystemResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_used_pool_space_as_string</span> <span class="o">=</span> <span class="n">used_pool_space_as_string</span>
+
+<div class="viewcode-block" id="StorageSystemResponse.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.storage_system_response.StorageSystemResponse.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="StorageSystemResponse.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.storage_system_response.StorageSystemResponse.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

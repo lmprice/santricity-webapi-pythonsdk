@@ -1,0 +1,714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.v2.battery_ex &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.v2.battery_ex</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">BatteryEx.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="BatteryEx"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.battery_ex.BatteryEx">[docs]</a><span class="k">class</span> <span class="nc">BatteryEx</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        BatteryEx - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;battery_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;physical_location&#39;</span><span class="p">:</span> <span class="s1">&#39;Location&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;battery_age&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;battery_life_remaining&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;battery_type_data&#39;</span><span class="p">:</span> <span class="s1">&#39;BatteryTypeData&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reserved1&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;reserved2&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;manufacturer_date&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_name&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_pn&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_sn&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fru_type&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rtr_attributes&#39;</span><span class="p">:</span> <span class="s1">&#39;RTRAttributes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;repair_policy&#39;</span><span class="p">:</span> <span class="s1">&#39;RepairPolicy&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;battery_can_expire&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;automatic_age_reset&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;learn_cycle_data&#39;</span><span class="p">:</span> <span class="s1">&#39;SmartBatteryData&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;smart_battery_data&#39;</span><span class="p">:</span> <span class="s1">&#39;SmartBatteryData&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;battery_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;batteryRef&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="s1">&#39;status&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;physical_location&#39;</span><span class="p">:</span> <span class="s1">&#39;physicalLocation&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;battery_age&#39;</span><span class="p">:</span> <span class="s1">&#39;batteryAge&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;battery_life_remaining&#39;</span><span class="p">:</span> <span class="s1">&#39;batteryLifeRemaining&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;battery_type_data&#39;</span><span class="p">:</span> <span class="s1">&#39;batteryTypeData&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reserved1&#39;</span><span class="p">:</span> <span class="s1">&#39;reserved1&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;reserved2&#39;</span><span class="p">:</span> <span class="s1">&#39;reserved2&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;manufacturer_date&#39;</span><span class="p">:</span> <span class="s1">&#39;manufacturerDate&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_name&#39;</span><span class="p">:</span> <span class="s1">&#39;vendorName&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_pn&#39;</span><span class="p">:</span> <span class="s1">&#39;vendorPN&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_sn&#39;</span><span class="p">:</span> <span class="s1">&#39;vendorSN&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fru_type&#39;</span><span class="p">:</span> <span class="s1">&#39;fruType&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rtr_attributes&#39;</span><span class="p">:</span> <span class="s1">&#39;rtrAttributes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;repair_policy&#39;</span><span class="p">:</span> <span class="s1">&#39;repairPolicy&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;battery_can_expire&#39;</span><span class="p">:</span> <span class="s1">&#39;batteryCanExpire&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;automatic_age_reset&#39;</span><span class="p">:</span> <span class="s1">&#39;automaticAgeReset&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;learn_cycle_data&#39;</span><span class="p">:</span> <span class="s1">&#39;learnCycleData&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;smart_battery_data&#39;</span><span class="p">:</span> <span class="s1">&#39;smartBatteryData&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;id&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_ref</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_status</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_physical_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_age</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_life_remaining</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_type_data</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved1</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved2</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_manufacturer_date</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_name</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_pn</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_sn</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fru_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rtr_attributes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_repair_policy</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_can_expire</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_automatic_age_reset</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_learn_cycle_data</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_smart_battery_data</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">battery_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the battery_ref of this BatteryEx.</span>
+<span class="sd">        The reference for this battery.</span>
+
+<span class="sd">        :return: The battery_ref of this BatteryEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_battery_ref</span>
+
+    <span class="nd">@battery_ref</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">battery_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">battery_ref</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the battery_ref of this BatteryEx.</span>
+<span class="sd">        The reference for this battery.</span>
+
+<span class="sd">        :param battery_ref: The battery_ref of this BatteryEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_ref</span> <span class="o">=</span> <span class="n">battery_ref</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the status of this BatteryEx.</span>
+<span class="sd">        The operational status of the battery.</span>
+
+<span class="sd">        :return: The status of this BatteryEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_status</span>
+
+    <span class="nd">@status</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the status of this BatteryEx.</span>
+<span class="sd">        The operational status of the battery.</span>
+
+<span class="sd">        :param status: The status of this BatteryEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;optimal&quot;</span><span class="p">,</span> <span class="s2">&quot;fullCharging&quot;</span><span class="p">,</span> <span class="s2">&quot;nearExpiration&quot;</span><span class="p">,</span> <span class="s2">&quot;failed&quot;</span><span class="p">,</span> <span class="s2">&quot;removed&quot;</span><span class="p">,</span> <span class="s2">&quot;unknown&quot;</span><span class="p">,</span> <span class="s2">&quot;notInConfig&quot;</span><span class="p">,</span> <span class="s2">&quot;configMismatch&quot;</span><span class="p">,</span> <span class="s2">&quot;learning&quot;</span><span class="p">,</span> <span class="s2">&quot;overtemp&quot;</span><span class="p">,</span> <span class="s2">&quot;expired&quot;</span><span class="p">,</span> <span class="s2">&quot;maintenanceCharging&quot;</span><span class="p">,</span> <span class="s2">&quot;replacementRequired&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">status</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `status`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_status</span> <span class="o">=</span> <span class="n">status</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">physical_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the physical_location of this BatteryEx.</span>
+<span class="sd">        The physical location of the battery. The parent reference in Location identifies the CRU that physically houses the battery, and the position field is the parent-relative/like-component relative slot number of the battery, starting at one.</span>
+
+<span class="sd">        :return: The physical_location of this BatteryEx.</span>
+<span class="sd">        :rtype: Location</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_physical_location</span>
+
+    <span class="nd">@physical_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">physical_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">physical_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the physical_location of this BatteryEx.</span>
+<span class="sd">        The physical location of the battery. The parent reference in Location identifies the CRU that physically houses the battery, and the position field is the parent-relative/like-component relative slot number of the battery, starting at one.</span>
+
+<span class="sd">        :param physical_location: The physical_location of this BatteryEx.</span>
+<span class="sd">        :type: Location</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_physical_location</span> <span class="o">=</span> <span class="n">physical_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">battery_age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the battery_age of this BatteryEx.</span>
+<span class="sd">        Current battery age, in days.</span>
+
+<span class="sd">        :return: The battery_age of this BatteryEx.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_battery_age</span>
+
+    <span class="nd">@battery_age</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">battery_age</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">battery_age</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the battery_age of this BatteryEx.</span>
+<span class="sd">        Current battery age, in days.</span>
+
+<span class="sd">        :param battery_age: The battery_age of this BatteryEx.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_age</span> <span class="o">=</span> <span class="n">battery_age</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">battery_life_remaining</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the battery_life_remaining of this BatteryEx.</span>
+<span class="sd">        Days of battery life remaining. A value of -1 indicates that the battery life expiration age has been set to 0xFF in NVSRAM, disabling cache battery expiration event notification.</span>
+
+<span class="sd">        :return: The battery_life_remaining of this BatteryEx.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_battery_life_remaining</span>
+
+    <span class="nd">@battery_life_remaining</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">battery_life_remaining</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">battery_life_remaining</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the battery_life_remaining of this BatteryEx.</span>
+<span class="sd">        Days of battery life remaining. A value of -1 indicates that the battery life expiration age has been set to 0xFF in NVSRAM, disabling cache battery expiration event notification.</span>
+
+<span class="sd">        :param battery_life_remaining: The battery_life_remaining of this BatteryEx.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_life_remaining</span> <span class="o">=</span> <span class="n">battery_life_remaining</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">battery_type_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the battery_type_data of this BatteryEx.</span>
+<span class="sd">        Used to determine the scope of the battery.</span>
+
+<span class="sd">        :return: The battery_type_data of this BatteryEx.</span>
+<span class="sd">        :rtype: BatteryTypeData</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_battery_type_data</span>
+
+    <span class="nd">@battery_type_data</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">battery_type_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">battery_type_data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the battery_type_data of this BatteryEx.</span>
+<span class="sd">        Used to determine the scope of the battery.</span>
+
+<span class="sd">        :param battery_type_data: The battery_type_data of this BatteryEx.</span>
+<span class="sd">        :type: BatteryTypeData</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_type_data</span> <span class="o">=</span> <span class="n">battery_type_data</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reserved1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the reserved1 of this BatteryEx.</span>
+
+
+<span class="sd">        :return: The reserved1 of this BatteryEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reserved1</span>
+
+    <span class="nd">@reserved1</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">reserved1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reserved1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the reserved1 of this BatteryEx.</span>
+
+
+<span class="sd">        :param reserved1: The reserved1 of this BatteryEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved1</span> <span class="o">=</span> <span class="n">reserved1</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reserved2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the reserved2 of this BatteryEx.</span>
+
+
+<span class="sd">        :return: The reserved2 of this BatteryEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reserved2</span>
+
+    <span class="nd">@reserved2</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">reserved2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reserved2</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the reserved2 of this BatteryEx.</span>
+
+
+<span class="sd">        :param reserved2: The reserved2 of this BatteryEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reserved2</span> <span class="o">=</span> <span class="n">reserved2</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">manufacturer_date</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the manufacturer_date of this BatteryEx.</span>
+<span class="sd">        VPD manufacture date.</span>
+
+<span class="sd">        :return: The manufacturer_date of this BatteryEx.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_manufacturer_date</span>
+
+    <span class="nd">@manufacturer_date</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">manufacturer_date</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manufacturer_date</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the manufacturer_date of this BatteryEx.</span>
+<span class="sd">        VPD manufacture date.</span>
+
+<span class="sd">        :param manufacturer_date: The manufacturer_date of this BatteryEx.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_manufacturer_date</span> <span class="o">=</span> <span class="n">manufacturer_date</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vendor_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vendor_name of this BatteryEx.</span>
+<span class="sd">        VPD vendor name.</span>
+
+<span class="sd">        :return: The vendor_name of this BatteryEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_name</span>
+
+    <span class="nd">@vendor_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vendor_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vendor_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vendor_name of this BatteryEx.</span>
+<span class="sd">        VPD vendor name.</span>
+
+<span class="sd">        :param vendor_name: The vendor_name of this BatteryEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_name</span> <span class="o">=</span> <span class="n">vendor_name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vendor_pn</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vendor_pn of this BatteryEx.</span>
+<span class="sd">        VPD part number.</span>
+
+<span class="sd">        :return: The vendor_pn of this BatteryEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_pn</span>
+
+    <span class="nd">@vendor_pn</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vendor_pn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vendor_pn</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vendor_pn of this BatteryEx.</span>
+<span class="sd">        VPD part number.</span>
+
+<span class="sd">        :param vendor_pn: The vendor_pn of this BatteryEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_pn</span> <span class="o">=</span> <span class="n">vendor_pn</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vendor_sn</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vendor_sn of this BatteryEx.</span>
+<span class="sd">        VPD serial number.</span>
+
+<span class="sd">        :return: The vendor_sn of this BatteryEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_sn</span>
+
+    <span class="nd">@vendor_sn</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vendor_sn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vendor_sn</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vendor_sn of this BatteryEx.</span>
+<span class="sd">        VPD serial number.</span>
+
+<span class="sd">        :param vendor_sn: The vendor_sn of this BatteryEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_sn</span> <span class="o">=</span> <span class="n">vendor_sn</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fru_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fru_type of this BatteryEx.</span>
+<span class="sd">        VPD field replaceable unit type.</span>
+
+<span class="sd">        :return: The fru_type of this BatteryEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fru_type</span>
+
+    <span class="nd">@fru_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fru_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fru_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fru_type of this BatteryEx.</span>
+<span class="sd">        VPD field replaceable unit type.</span>
+
+<span class="sd">        :param fru_type: The fru_type of this BatteryEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fru_type</span> <span class="o">=</span> <span class="n">fru_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rtr_attributes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rtr_attributes of this BatteryEx.</span>
+<span class="sd">        The CRU type of the battery plus its ready-to-remove attributes, which are based on the CRU type.</span>
+
+<span class="sd">        :return: The rtr_attributes of this BatteryEx.</span>
+<span class="sd">        :rtype: RTRAttributes</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rtr_attributes</span>
+
+    <span class="nd">@rtr_attributes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rtr_attributes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rtr_attributes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rtr_attributes of this BatteryEx.</span>
+<span class="sd">        The CRU type of the battery plus its ready-to-remove attributes, which are based on the CRU type.</span>
+
+<span class="sd">        :param rtr_attributes: The rtr_attributes of this BatteryEx.</span>
+<span class="sd">        :type: RTRAttributes</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rtr_attributes</span> <span class="o">=</span> <span class="n">rtr_attributes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">repair_policy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the repair_policy of this BatteryEx.</span>
+<span class="sd">        The repair policy for the battery component.</span>
+
+<span class="sd">        :return: The repair_policy of this BatteryEx.</span>
+<span class="sd">        :rtype: RepairPolicy</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repair_policy</span>
+
+    <span class="nd">@repair_policy</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">repair_policy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">repair_policy</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the repair_policy of this BatteryEx.</span>
+<span class="sd">        The repair policy for the battery component.</span>
+
+<span class="sd">        :param repair_policy: The repair_policy of this BatteryEx.</span>
+<span class="sd">        :type: RepairPolicy</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_repair_policy</span> <span class="o">=</span> <span class="n">repair_policy</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">battery_can_expire</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the battery_can_expire of this BatteryEx.</span>
+<span class="sd">        This boolean field is set to true when cache battery expired event notification is enabled.</span>
+
+<span class="sd">        :return: The battery_can_expire of this BatteryEx.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_battery_can_expire</span>
+
+    <span class="nd">@battery_can_expire</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">battery_can_expire</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">battery_can_expire</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the battery_can_expire of this BatteryEx.</span>
+<span class="sd">        This boolean field is set to true when cache battery expired event notification is enabled.</span>
+
+<span class="sd">        :param battery_can_expire: The battery_can_expire of this BatteryEx.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_can_expire</span> <span class="o">=</span> <span class="n">battery_can_expire</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">automatic_age_reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the automatic_age_reset of this BatteryEx.</span>
+<span class="sd">        This boolean field is set to true when the batteryCanExpire field in this structure is set to false and when the controller tracks the battery serial number.</span>
+
+<span class="sd">        :return: The automatic_age_reset of this BatteryEx.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_automatic_age_reset</span>
+
+    <span class="nd">@automatic_age_reset</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">automatic_age_reset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">automatic_age_reset</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the automatic_age_reset of this BatteryEx.</span>
+<span class="sd">        This boolean field is set to true when the batteryCanExpire field in this structure is set to false and when the controller tracks the battery serial number.</span>
+
+<span class="sd">        :param automatic_age_reset: The automatic_age_reset of this BatteryEx.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_automatic_age_reset</span> <span class="o">=</span> <span class="n">automatic_age_reset</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">learn_cycle_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the learn_cycle_data of this BatteryEx.</span>
+<span class="sd">        Contains details about the learn cycle for this battery</span>
+
+<span class="sd">        :return: The learn_cycle_data of this BatteryEx.</span>
+<span class="sd">        :rtype: SmartBatteryData</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_learn_cycle_data</span>
+
+    <span class="nd">@learn_cycle_data</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">learn_cycle_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">learn_cycle_data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the learn_cycle_data of this BatteryEx.</span>
+<span class="sd">        Contains details about the learn cycle for this battery</span>
+
+<span class="sd">        :param learn_cycle_data: The learn_cycle_data of this BatteryEx.</span>
+<span class="sd">        :type: SmartBatteryData</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_learn_cycle_data</span> <span class="o">=</span> <span class="n">learn_cycle_data</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">smart_battery_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the smart_battery_data of this BatteryEx.</span>
+
+
+<span class="sd">        :return: The smart_battery_data of this BatteryEx.</span>
+<span class="sd">        :rtype: SmartBatteryData</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_smart_battery_data</span>
+
+    <span class="nd">@smart_battery_data</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">smart_battery_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">smart_battery_data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the smart_battery_data of this BatteryEx.</span>
+
+
+<span class="sd">        :param smart_battery_data: The smart_battery_data of this BatteryEx.</span>
+<span class="sd">        :type: SmartBatteryData</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_smart_battery_data</span> <span class="o">=</span> <span class="n">smart_battery_data</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the id of this BatteryEx.</span>
+
+
+<span class="sd">        :return: The id of this BatteryEx.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_id</span>
+
+    <span class="nd">@id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the id of this BatteryEx.</span>
+
+
+<span class="sd">        :param id: The id of this BatteryEx.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id</span> <span class="o">=</span> <span class="nb">id</span>
+
+<div class="viewcode-block" id="BatteryEx.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.battery_ex.BatteryEx.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="BatteryEx.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.battery_ex.BatteryEx.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

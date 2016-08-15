@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.v2.hardware_inventory_response &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.v2.hardware_inventory_response</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">HardwareInventoryResponse.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="HardwareInventoryResponse"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.hardware_inventory_response.HardwareInventoryResponse">[docs]</a><span class="k">class</span> <span class="nc">HardwareInventoryResponse</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        HardwareInventoryResponse - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;drives&#39;</span><span class="p">:</span> <span class="s1">&#39;list[DriveEx]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ib_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;list[IBInterfacePort]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;iscsi_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;list[IScsiInterfacePort]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fibre_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;list[FibreInterfacePort]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sas_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;list[SasInterfacePort]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sas_expanders&#39;</span><span class="p">:</span> <span class="s1">&#39;list[SasExpander]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;channel_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;list[ChannelPort]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;trays&#39;</span><span class="p">:</span> <span class="s1">&#39;list[TrayEx]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drawers&#39;</span><span class="p">:</span> <span class="s1">&#39;list[Drawer]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;controllers&#39;</span><span class="p">:</span> <span class="s1">&#39;list[Controller]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;batteries&#39;</span><span class="p">:</span> <span class="s1">&#39;list[BatteryEx]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fans&#39;</span><span class="p">:</span> <span class="s1">&#39;list[Fan]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;host_boards&#39;</span><span class="p">:</span> <span class="s1">&#39;list[HostBoard]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;power_supplies&#39;</span><span class="p">:</span> <span class="s1">&#39;list[PowerSupply]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;nvsram_version&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cache_memory_dimms&#39;</span><span class="p">:</span> <span class="s1">&#39;list[CacheMemoryDimm]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cache_backup_devices&#39;</span><span class="p">:</span> <span class="s1">&#39;list[CacheBackupDevice]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;support_cr_us&#39;</span><span class="p">:</span> <span class="s1">&#39;list[SupportCRU]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esms&#39;</span><span class="p">:</span> <span class="s1">&#39;list[Esm]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sfps&#39;</span><span class="p">:</span> <span class="s1">&#39;list[Sfp]&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;thermal_sensors&#39;</span><span class="p">:</span> <span class="s1">&#39;list[ThermalSensor]&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;drives&#39;</span><span class="p">:</span> <span class="s1">&#39;drives&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;ib_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;ibPorts&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;iscsi_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;iscsiPorts&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fibre_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;fibrePorts&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sas_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;sasPorts&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sas_expanders&#39;</span><span class="p">:</span> <span class="s1">&#39;sasExpanders&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;channel_ports&#39;</span><span class="p">:</span> <span class="s1">&#39;channelPorts&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;trays&#39;</span><span class="p">:</span> <span class="s1">&#39;trays&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drawers&#39;</span><span class="p">:</span> <span class="s1">&#39;drawers&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;controllers&#39;</span><span class="p">:</span> <span class="s1">&#39;controllers&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;batteries&#39;</span><span class="p">:</span> <span class="s1">&#39;batteries&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;fans&#39;</span><span class="p">:</span> <span class="s1">&#39;fans&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;host_boards&#39;</span><span class="p">:</span> <span class="s1">&#39;hostBoards&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;power_supplies&#39;</span><span class="p">:</span> <span class="s1">&#39;powerSupplies&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;nvsram_version&#39;</span><span class="p">:</span> <span class="s1">&#39;nvsramVersion&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cache_memory_dimms&#39;</span><span class="p">:</span> <span class="s1">&#39;cacheMemoryDimms&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cache_backup_devices&#39;</span><span class="p">:</span> <span class="s1">&#39;cacheBackupDevices&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;support_cr_us&#39;</span><span class="p">:</span> <span class="s1">&#39;supportCRUs&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;esms&#39;</span><span class="p">:</span> <span class="s1">&#39;esms&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sfps&#39;</span><span class="p">:</span> <span class="s1">&#39;sfps&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;thermal_sensors&#39;</span><span class="p">:</span> <span class="s1">&#39;thermalSensors&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drives</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ib_ports</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iscsi_ports</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fibre_ports</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sas_ports</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sas_expanders</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_channel_ports</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_trays</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drawers</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_controllers</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_batteries</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fans</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_boards</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_power_supplies</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_nvsram_version</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_memory_dimms</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_backup_devices</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_support_cr_us</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esms</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sfps</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_thermal_sensors</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drives</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drives of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the disk drives in the storage system.</span>
+
+<span class="sd">        :return: The drives of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[DriveEx]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drives</span>
+
+    <span class="nd">@drives</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drives</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drives</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drives of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the disk drives in the storage system.</span>
+
+<span class="sd">        :param drives: The drives of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[DriveEx]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drives</span> <span class="o">=</span> <span class="n">drives</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ib_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ib_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        IB Ports</span>
+
+<span class="sd">        :return: The ib_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[IBInterfacePort]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ib_ports</span>
+
+    <span class="nd">@ib_ports</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ib_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ib_ports</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ib_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        IB Ports</span>
+
+<span class="sd">        :param ib_ports: The ib_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[IBInterfacePort]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ib_ports</span> <span class="o">=</span> <span class="n">ib_ports</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">iscsi_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the iscsi_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        ISCSI Port</span>
+
+<span class="sd">        :return: The iscsi_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[IScsiInterfacePort]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_iscsi_ports</span>
+
+    <span class="nd">@iscsi_ports</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">iscsi_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iscsi_ports</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the iscsi_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        ISCSI Port</span>
+
+<span class="sd">        :param iscsi_ports: The iscsi_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[IScsiInterfacePort]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iscsi_ports</span> <span class="o">=</span> <span class="n">iscsi_ports</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fibre_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fibre_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        Fibre Ports</span>
+
+<span class="sd">        :return: The fibre_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[FibreInterfacePort]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fibre_ports</span>
+
+    <span class="nd">@fibre_ports</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fibre_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fibre_ports</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fibre_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        Fibre Ports</span>
+
+<span class="sd">        :param fibre_ports: The fibre_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[FibreInterfacePort]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fibre_ports</span> <span class="o">=</span> <span class="n">fibre_ports</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sas_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sas_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        SAS Ports</span>
+
+<span class="sd">        :return: The sas_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[SasInterfacePort]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sas_ports</span>
+
+    <span class="nd">@sas_ports</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sas_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sas_ports</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sas_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        SAS Ports</span>
+
+<span class="sd">        :param sas_ports: The sas_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[SasInterfacePort]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sas_ports</span> <span class="o">=</span> <span class="n">sas_ports</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sas_expanders</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sas_expanders of this HardwareInventoryResponse.</span>
+<span class="sd">        SAS Expanders</span>
+
+<span class="sd">        :return: The sas_expanders of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[SasExpander]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sas_expanders</span>
+
+    <span class="nd">@sas_expanders</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sas_expanders</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sas_expanders</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sas_expanders of this HardwareInventoryResponse.</span>
+<span class="sd">        SAS Expanders</span>
+
+<span class="sd">        :param sas_expanders: The sas_expanders of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[SasExpander]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sas_expanders</span> <span class="o">=</span> <span class="n">sas_expanders</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">channel_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the channel_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        Channel Ports</span>
+
+<span class="sd">        :return: The channel_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[ChannelPort]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_channel_ports</span>
+
+    <span class="nd">@channel_ports</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">channel_ports</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel_ports</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the channel_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        Channel Ports</span>
+
+<span class="sd">        :param channel_ports: The channel_ports of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[ChannelPort]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_channel_ports</span> <span class="o">=</span> <span class="n">channel_ports</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">trays</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the trays of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the disk trays in the storage system.</span>
+
+<span class="sd">        :return: The trays of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[TrayEx]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_trays</span>
+
+    <span class="nd">@trays</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">trays</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trays</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the trays of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the disk trays in the storage system.</span>
+
+<span class="sd">        :param trays: The trays of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[TrayEx]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_trays</span> <span class="o">=</span> <span class="n">trays</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drawers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drawers of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the disk drawers</span>
+
+<span class="sd">        :return: The drawers of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[Drawer]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drawers</span>
+
+    <span class="nd">@drawers</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drawers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drawers</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drawers of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the disk drawers</span>
+
+<span class="sd">        :param drawers: The drawers of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[Drawer]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drawers</span> <span class="o">=</span> <span class="n">drawers</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">controllers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the controllers of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the controllers in the storage system.</span>
+
+<span class="sd">        :return: The controllers of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[Controller]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_controllers</span>
+
+    <span class="nd">@controllers</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">controllers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">controllers</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the controllers of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the controllers in the storage system.</span>
+
+<span class="sd">        :param controllers: The controllers of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[Controller]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_controllers</span> <span class="o">=</span> <span class="n">controllers</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">batteries</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the batteries of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the batteries in the storage system.</span>
+
+<span class="sd">        :return: The batteries of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[BatteryEx]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_batteries</span>
+
+    <span class="nd">@batteries</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">batteries</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batteries</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the batteries of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the batteries in the storage system.</span>
+
+<span class="sd">        :param batteries: The batteries of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[BatteryEx]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_batteries</span> <span class="o">=</span> <span class="n">batteries</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fans</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fans of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the fans in the storage system.</span>
+
+<span class="sd">        :return: The fans of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[Fan]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fans</span>
+
+    <span class="nd">@fans</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fans</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fans</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fans of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the fans in the storage system.</span>
+
+<span class="sd">        :param fans: The fans of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[Fan]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fans</span> <span class="o">=</span> <span class="n">fans</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">host_boards</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the host_boards of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the host interface cards in the storage system.</span>
+
+<span class="sd">        :return: The host_boards of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[HostBoard]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_host_boards</span>
+
+    <span class="nd">@host_boards</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">host_boards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">host_boards</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the host_boards of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the host interface cards in the storage system.</span>
+
+<span class="sd">        :param host_boards: The host_boards of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[HostBoard]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_boards</span> <span class="o">=</span> <span class="n">host_boards</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">power_supplies</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the power_supplies of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the power supplies in the storage system.</span>
+
+<span class="sd">        :return: The power_supplies of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[PowerSupply]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_power_supplies</span>
+
+    <span class="nd">@power_supplies</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">power_supplies</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">power_supplies</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the power_supplies of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the power supplies in the storage system.</span>
+
+<span class="sd">        :param power_supplies: The power_supplies of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[PowerSupply]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_power_supplies</span> <span class="o">=</span> <span class="n">power_supplies</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">nvsram_version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the nvsram_version of this HardwareInventoryResponse.</span>
+<span class="sd">        The version of NVSRAM settings installed on the storage system.</span>
+
+<span class="sd">        :return: The nvsram_version of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nvsram_version</span>
+
+    <span class="nd">@nvsram_version</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">nvsram_version</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nvsram_version</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the nvsram_version of this HardwareInventoryResponse.</span>
+<span class="sd">        The version of NVSRAM settings installed on the storage system.</span>
+
+<span class="sd">        :param nvsram_version: The nvsram_version of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_nvsram_version</span> <span class="o">=</span> <span class="n">nvsram_version</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cache_memory_dimms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cache_memory_dimms of this HardwareInventoryResponse.</span>
+<span class="sd">        The list of processor memory DIMMs installed on the storage system.</span>
+
+<span class="sd">        :return: The cache_memory_dimms of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[CacheMemoryDimm]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache_memory_dimms</span>
+
+    <span class="nd">@cache_memory_dimms</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cache_memory_dimms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cache_memory_dimms</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cache_memory_dimms of this HardwareInventoryResponse.</span>
+<span class="sd">        The list of processor memory DIMMs installed on the storage system.</span>
+
+<span class="sd">        :param cache_memory_dimms: The cache_memory_dimms of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[CacheMemoryDimm]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_memory_dimms</span> <span class="o">=</span> <span class="n">cache_memory_dimms</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cache_backup_devices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cache_backup_devices of this HardwareInventoryResponse.</span>
+<span class="sd">        The list of cache backup modules installed on the storage system.</span>
+
+<span class="sd">        :return: The cache_backup_devices of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[CacheBackupDevice]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache_backup_devices</span>
+
+    <span class="nd">@cache_backup_devices</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cache_backup_devices</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cache_backup_devices</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cache_backup_devices of this HardwareInventoryResponse.</span>
+<span class="sd">        The list of cache backup modules installed on the storage system.</span>
+
+<span class="sd">        :param cache_backup_devices: The cache_backup_devices of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[CacheBackupDevice]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_backup_devices</span> <span class="o">=</span> <span class="n">cache_backup_devices</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">support_cr_us</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the support_cr_us of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the support CRUs in the storage system.</span>
+
+<span class="sd">        :return: The support_cr_us of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[SupportCRU]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_support_cr_us</span>
+
+    <span class="nd">@support_cr_us</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">support_cr_us</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">support_cr_us</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the support_cr_us of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the support CRUs in the storage system.</span>
+
+<span class="sd">        :param support_cr_us: The support_cr_us of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[SupportCRU]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_support_cr_us</span> <span class="o">=</span> <span class="n">support_cr_us</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">esms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the esms of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the ESMs in the storage system.</span>
+
+<span class="sd">        :return: The esms of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[Esm]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_esms</span>
+
+    <span class="nd">@esms</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">esms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">esms</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the esms of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the ESMs in the storage system.</span>
+
+<span class="sd">        :param esms: The esms of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[Esm]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esms</span> <span class="o">=</span> <span class="n">esms</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sfps</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sfps of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the SFPs in the storage system.</span>
+
+<span class="sd">        :return: The sfps of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[Sfp]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sfps</span>
+
+    <span class="nd">@sfps</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sfps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sfps</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sfps of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the SFPs in the storage system.</span>
+
+<span class="sd">        :param sfps: The sfps of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[Sfp]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sfps</span> <span class="o">=</span> <span class="n">sfps</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">thermal_sensors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the thermal_sensors of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the thermal sensors in the storage system.</span>
+
+<span class="sd">        :return: The thermal_sensors of this HardwareInventoryResponse.</span>
+<span class="sd">        :rtype: list[ThermalSensor]</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_thermal_sensors</span>
+
+    <span class="nd">@thermal_sensors</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">thermal_sensors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">thermal_sensors</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the thermal_sensors of this HardwareInventoryResponse.</span>
+<span class="sd">        A list of the thermal sensors in the storage system.</span>
+
+<span class="sd">        :param thermal_sensors: The thermal_sensors of this HardwareInventoryResponse.</span>
+<span class="sd">        :type: list[ThermalSensor]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_thermal_sensors</span> <span class="o">=</span> <span class="n">thermal_sensors</span>
+
+<div class="viewcode-block" id="HardwareInventoryResponse.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.hardware_inventory_response.HardwareInventoryResponse.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="HardwareInventoryResponse.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.hardware_inventory_response.HardwareInventoryResponse.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

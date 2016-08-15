@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.v2.firmware_upgrade_health_check_result &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.v2.firmware_upgrade_health_check_result</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">FirmwareUpgradeHealthCheckResult.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="FirmwareUpgradeHealthCheckResult"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.firmware_upgrade_health_check_result.FirmwareUpgradeHealthCheckResult">[docs]</a><span class="k">class</span> <span class="nc">FirmwareUpgradeHealthCheckResult</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        FirmwareUpgradeHealthCheckResult - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;storage_device_id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;storage_device_name&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;storage_device_wwn&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;processing_time_ms&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rerun&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;storage_device_accessible&#39;</span><span class="p">:</span> <span class="s1">&#39;StorageDeviceHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;spm_database_verification&#39;</span><span class="p">:</span> <span class="s1">&#39;SpmDatabaseHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;configuration_database_check&#39;</span><span class="p">:</span> <span class="s1">&#39;ConfigurationDbValidationCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;object_graph_sync_check&#39;</span><span class="p">:</span> <span class="s1">&#39;ObjectGraphSyncCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;volume_groups_complete&#39;</span><span class="p">:</span> <span class="s1">&#39;StorageDeviceHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;controller_status_optimal&#39;</span><span class="p">:</span> <span class="s1">&#39;StorageDeviceHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;hot_spares_in_use&#39;</span><span class="p">:</span> <span class="s1">&#39;StorageDeviceHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;missing_volumes&#39;</span><span class="p">:</span> <span class="s1">&#39;StorageDeviceHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_check&#39;</span><span class="p">:</span> <span class="s1">&#39;StorageDeviceHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;exclusive_operations&#39;</span><span class="p">:</span> <span class="s1">&#39;ExclusiveOperationCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;failed_drives_present&#39;</span><span class="p">:</span> <span class="s1">&#39;StorageDeviceHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;valid_password_set&#39;</span><span class="p">:</span> <span class="s1">&#39;StorageDeviceHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;mel_check&#39;</span><span class="p">:</span> <span class="s1">&#39;MelEventHealthCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;successful&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;storage_device_id&#39;</span><span class="p">:</span> <span class="s1">&#39;storageDeviceId&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;storage_device_name&#39;</span><span class="p">:</span> <span class="s1">&#39;storageDeviceName&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;storage_device_wwn&#39;</span><span class="p">:</span> <span class="s1">&#39;storageDeviceWWN&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;processing_time_ms&#39;</span><span class="p">:</span> <span class="s1">&#39;processingTimeMS&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rerun&#39;</span><span class="p">:</span> <span class="s1">&#39;rerun&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;storage_device_accessible&#39;</span><span class="p">:</span> <span class="s1">&#39;storageDeviceAccessible&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;spm_database_verification&#39;</span><span class="p">:</span> <span class="s1">&#39;spmDatabaseVerification&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;configuration_database_check&#39;</span><span class="p">:</span> <span class="s1">&#39;configurationDatabaseCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;object_graph_sync_check&#39;</span><span class="p">:</span> <span class="s1">&#39;objectGraphSyncCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;volume_groups_complete&#39;</span><span class="p">:</span> <span class="s1">&#39;volumeGroupsComplete&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;controller_status_optimal&#39;</span><span class="p">:</span> <span class="s1">&#39;controllerStatusOptimal&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;hot_spares_in_use&#39;</span><span class="p">:</span> <span class="s1">&#39;hotSparesInUse&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;missing_volumes&#39;</span><span class="p">:</span> <span class="s1">&#39;missingVolumes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;drive_check&#39;</span><span class="p">:</span> <span class="s1">&#39;driveCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;exclusive_operations&#39;</span><span class="p">:</span> <span class="s1">&#39;exclusiveOperations&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;failed_drives_present&#39;</span><span class="p">:</span> <span class="s1">&#39;failedDrivesPresent&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;valid_password_set&#39;</span><span class="p">:</span> <span class="s1">&#39;validPasswordSet&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;mel_check&#39;</span><span class="p">:</span> <span class="s1">&#39;melCheck&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;successful&#39;</span><span class="p">:</span> <span class="s1">&#39;successful&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_name</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_wwn</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_processing_time_ms</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rerun</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_accessible</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_spm_database_verification</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_configuration_database_check</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_object_graph_sync_check</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_groups_complete</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_controller_status_optimal</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spares_in_use</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_missing_volumes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_check</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_exclusive_operations</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_failed_drives_present</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_valid_password_set</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mel_check</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_successful</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">storage_device_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the storage_device_id of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :return: The storage_device_id of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_id</span>
+
+    <span class="nd">@storage_device_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">storage_device_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">storage_device_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the storage_device_id of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :param storage_device_id: The storage_device_id of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_id</span> <span class="o">=</span> <span class="n">storage_device_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">storage_device_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the storage_device_name of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :return: The storage_device_name of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_name</span>
+
+    <span class="nd">@storage_device_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">storage_device_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">storage_device_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the storage_device_name of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :param storage_device_name: The storage_device_name of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_name</span> <span class="o">=</span> <span class="n">storage_device_name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">storage_device_wwn</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the storage_device_wwn of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :return: The storage_device_wwn of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_wwn</span>
+
+    <span class="nd">@storage_device_wwn</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">storage_device_wwn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">storage_device_wwn</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the storage_device_wwn of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :param storage_device_wwn: The storage_device_wwn of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_wwn</span> <span class="o">=</span> <span class="n">storage_device_wwn</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">processing_time_ms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the processing_time_ms of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :return: The processing_time_ms of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_processing_time_ms</span>
+
+    <span class="nd">@processing_time_ms</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">processing_time_ms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">processing_time_ms</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the processing_time_ms of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :param processing_time_ms: The processing_time_ms of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_processing_time_ms</span> <span class="o">=</span> <span class="n">processing_time_ms</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rerun</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rerun of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Info about test run for internal use</span>
+
+<span class="sd">        :return: The rerun of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rerun</span>
+
+    <span class="nd">@rerun</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rerun</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rerun</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rerun of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Info about test run for internal use</span>
+
+<span class="sd">        :param rerun: The rerun of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rerun</span> <span class="o">=</span> <span class="n">rerun</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">storage_device_accessible</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the storage_device_accessible of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify the storage-system is contactable.</span>
+
+<span class="sd">        :return: The storage_device_accessible of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: StorageDeviceHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_accessible</span>
+
+    <span class="nd">@storage_device_accessible</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">storage_device_accessible</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">storage_device_accessible</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the storage_device_accessible of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify the storage-system is contactable.</span>
+
+<span class="sd">        :param storage_device_accessible: The storage_device_accessible of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: StorageDeviceHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_storage_device_accessible</span> <span class="o">=</span> <span class="n">storage_device_accessible</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">spm_database_verification</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the spm_database_verification of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Validate a database internal to the controller.</span>
+
+<span class="sd">        :return: The spm_database_verification of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: SpmDatabaseHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_spm_database_verification</span>
+
+    <span class="nd">@spm_database_verification</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">spm_database_verification</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">spm_database_verification</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the spm_database_verification of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Validate a database internal to the controller.</span>
+
+<span class="sd">        :param spm_database_verification: The spm_database_verification of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: SpmDatabaseHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_spm_database_verification</span> <span class="o">=</span> <span class="n">spm_database_verification</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">configuration_database_check</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the configuration_database_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Validate a database internal to the controller.</span>
+
+<span class="sd">        :return: The configuration_database_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: ConfigurationDbValidationCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_configuration_database_check</span>
+
+    <span class="nd">@configuration_database_check</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">configuration_database_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">configuration_database_check</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the configuration_database_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Validate a database internal to the controller.</span>
+
+<span class="sd">        :param configuration_database_check: The configuration_database_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: ConfigurationDbValidationCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_configuration_database_check</span> <span class="o">=</span> <span class="n">configuration_database_check</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">object_graph_sync_check</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the object_graph_sync_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify that ObjectGraph data is synchronized between the two controllers.</span>
+
+<span class="sd">        :return: The object_graph_sync_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: ObjectGraphSyncCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_object_graph_sync_check</span>
+
+    <span class="nd">@object_graph_sync_check</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">object_graph_sync_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">object_graph_sync_check</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the object_graph_sync_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify that ObjectGraph data is synchronized between the two controllers.</span>
+
+<span class="sd">        :param object_graph_sync_check: The object_graph_sync_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: ObjectGraphSyncCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_object_graph_sync_check</span> <span class="o">=</span> <span class="n">object_graph_sync_check</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">volume_groups_complete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the volume_groups_complete of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify there are no volume groups that are not in a full state of redundancy.</span>
+
+<span class="sd">        :return: The volume_groups_complete of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: StorageDeviceHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_volume_groups_complete</span>
+
+    <span class="nd">@volume_groups_complete</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">volume_groups_complete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_groups_complete</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the volume_groups_complete of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify there are no volume groups that are not in a full state of redundancy.</span>
+
+<span class="sd">        :param volume_groups_complete: The volume_groups_complete of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: StorageDeviceHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_groups_complete</span> <span class="o">=</span> <span class="n">volume_groups_complete</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">controller_status_optimal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the controller_status_optimal of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify the state of both controllers is optimal.</span>
+
+<span class="sd">        :return: The controller_status_optimal of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: StorageDeviceHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_controller_status_optimal</span>
+
+    <span class="nd">@controller_status_optimal</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">controller_status_optimal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">controller_status_optimal</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the controller_status_optimal of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify the state of both controllers is optimal.</span>
+
+<span class="sd">        :param controller_status_optimal: The controller_status_optimal of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: StorageDeviceHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_controller_status_optimal</span> <span class="o">=</span> <span class="n">controller_status_optimal</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">hot_spares_in_use</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the hot_spares_in_use of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify that hot spares are not in use (due to drives in a non-optimal state).</span>
+
+<span class="sd">        :return: The hot_spares_in_use of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: StorageDeviceHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spares_in_use</span>
+
+    <span class="nd">@hot_spares_in_use</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">hot_spares_in_use</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hot_spares_in_use</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the hot_spares_in_use of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify that hot spares are not in use (due to drives in a non-optimal state).</span>
+
+<span class="sd">        :param hot_spares_in_use: The hot_spares_in_use of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: StorageDeviceHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hot_spares_in_use</span> <span class="o">=</span> <span class="n">hot_spares_in_use</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">missing_volumes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the missing_volumes of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify that there are no missing drives/volume-groups.</span>
+
+<span class="sd">        :return: The missing_volumes of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: StorageDeviceHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_missing_volumes</span>
+
+    <span class="nd">@missing_volumes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">missing_volumes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">missing_volumes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the missing_volumes of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify that there are no missing drives/volume-groups.</span>
+
+<span class="sd">        :param missing_volumes: The missing_volumes of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: StorageDeviceHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_missing_volumes</span> <span class="o">=</span> <span class="n">missing_volumes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drive_check</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drive_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify that at least one optimal drive is present</span>
+
+<span class="sd">        :return: The drive_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: StorageDeviceHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drive_check</span>
+
+    <span class="nd">@drive_check</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drive_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drive_check</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drive_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        Verify that at least one optimal drive is present</span>
+
+<span class="sd">        :param drive_check: The drive_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: StorageDeviceHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_check</span> <span class="o">=</span> <span class="n">drive_check</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">exclusive_operations</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the exclusive_operations of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        An upgrade operation cannot proceed if an exclusive operation is in progress on a volume. Examples: volume expansion, RAID type migration.</span>
+
+<span class="sd">        :return: The exclusive_operations of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: ExclusiveOperationCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_exclusive_operations</span>
+
+    <span class="nd">@exclusive_operations</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">exclusive_operations</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">exclusive_operations</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the exclusive_operations of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        An upgrade operation cannot proceed if an exclusive operation is in progress on a volume. Examples: volume expansion, RAID type migration.</span>
+
+<span class="sd">        :param exclusive_operations: The exclusive_operations of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: ExclusiveOperationCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_exclusive_operations</span> <span class="o">=</span> <span class="n">exclusive_operations</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">failed_drives_present</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the failed_drives_present of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :return: The failed_drives_present of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: StorageDeviceHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_failed_drives_present</span>
+
+    <span class="nd">@failed_drives_present</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">failed_drives_present</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">failed_drives_present</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the failed_drives_present of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :param failed_drives_present: The failed_drives_present of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: StorageDeviceHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_failed_drives_present</span> <span class="o">=</span> <span class="n">failed_drives_present</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">valid_password_set</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the valid_password_set of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :return: The valid_password_set of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: StorageDeviceHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_valid_password_set</span>
+
+    <span class="nd">@valid_password_set</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">valid_password_set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">valid_password_set</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the valid_password_set of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :param valid_password_set: The valid_password_set of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: StorageDeviceHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_valid_password_set</span> <span class="o">=</span> <span class="n">valid_password_set</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">mel_check</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the mel_check of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :return: The mel_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: MelEventHealthCheck</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mel_check</span>
+
+    <span class="nd">@mel_check</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">mel_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mel_check</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the mel_check of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :param mel_check: The mel_check of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: MelEventHealthCheck</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mel_check</span> <span class="o">=</span> <span class="n">mel_check</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">successful</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the successful of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :return: The successful of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_successful</span>
+
+    <span class="nd">@successful</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">successful</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">successful</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the successful of this FirmwareUpgradeHealthCheckResult.</span>
+
+
+<span class="sd">        :param successful: The successful of this FirmwareUpgradeHealthCheckResult.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_successful</span> <span class="o">=</span> <span class="n">successful</span>
+
+<div class="viewcode-block" id="FirmwareUpgradeHealthCheckResult.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.firmware_upgrade_health_check_result.FirmwareUpgradeHealthCheckResult.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="FirmwareUpgradeHealthCheckResult.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.v2.html#netapp.santricity.models.v2.firmware_upgrade_health_check_result.FirmwareUpgradeHealthCheckResult.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

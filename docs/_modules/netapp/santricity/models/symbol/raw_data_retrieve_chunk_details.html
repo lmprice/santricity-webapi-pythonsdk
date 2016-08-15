@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.raw_data_retrieve_chunk_details &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.raw_data_retrieve_chunk_details</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">RawDataRetrieveChunkDetails.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="RawDataRetrieveChunkDetails"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.raw_data_retrieve_chunk_details.RawDataRetrieveChunkDetails">[docs]</a><span class="k">class</span> <span class="nc">RawDataRetrieveChunkDetails</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        RawDataRetrieveChunkDetails - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;raw_data_transfer_type&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;dq&#39;</span><span class="p">:</span> <span class="s1">&#39;DqRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dbm_rec&#39;</span><span class="p">:</span> <span class="s1">&#39;DbmRecRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dbm_blk&#39;</span><span class="p">:</span> <span class="s1">&#39;DbmBlkRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dbm_check&#39;</span><span class="p">:</span> <span class="s1">&#39;DbmCheckRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;enclosure_state_capture&#39;</span><span class="p">:</span> <span class="s1">&#39;EnclosureStateCaptureRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dpl_core_dump&#39;</span><span class="p">:</span> <span class="s1">&#39;DPLCoreDumpRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;io_statistics&#39;</span><span class="p">:</span> <span class="s1">&#39;IoStatisticsRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;fdi_dems_log&#39;</span><span class="p">:</span> <span class="s1">&#39;FdiDemsLogRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;drive_performance_history&#39;</span><span class="p">:</span> <span class="s1">&#39;DrivePerformanceHistoryRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;ioc_dump&#39;</span><span class="p">:</span> <span class="s1">&#39;IOCDumpRetrieveChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;drive_health_logs&#39;</span><span class="p">:</span> <span class="s1">&#39;DriveHealthLogsChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;ctrl_perf_stats&#39;</span><span class="p">:</span> <span class="s1">&#39;PerformanceRingChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dom0_data_chunk_details&#39;</span><span class="p">:</span> <span class="s1">&#39;Dom0SupportDataChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;wlc_analytics_chunk_details&#39;</span><span class="p">:</span> <span class="s1">&#39;WlcAnalyticsChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;auto_load_balance_statistics&#39;</span><span class="p">:</span> <span class="s1">&#39;AutoLoadBalanceStatsLogRetrieveChunkDetails&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;raw_data_transfer_type&#39;</span><span class="p">:</span> <span class="s1">&#39;rawDataTransferType&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;dq&#39;</span><span class="p">:</span> <span class="s1">&#39;dq&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dbm_rec&#39;</span><span class="p">:</span> <span class="s1">&#39;dbmRec&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dbm_blk&#39;</span><span class="p">:</span> <span class="s1">&#39;dbmBlk&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dbm_check&#39;</span><span class="p">:</span> <span class="s1">&#39;dbmCheck&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;enclosure_state_capture&#39;</span><span class="p">:</span> <span class="s1">&#39;enclosureStateCapture&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dpl_core_dump&#39;</span><span class="p">:</span> <span class="s1">&#39;dplCoreDump&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;io_statistics&#39;</span><span class="p">:</span> <span class="s1">&#39;ioStatistics&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;fdi_dems_log&#39;</span><span class="p">:</span> <span class="s1">&#39;fdiDemsLog&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;drive_performance_history&#39;</span><span class="p">:</span> <span class="s1">&#39;drivePerformanceHistory&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;ioc_dump&#39;</span><span class="p">:</span> <span class="s1">&#39;iocDump&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;drive_health_logs&#39;</span><span class="p">:</span> <span class="s1">&#39;driveHealthLogs&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;ctrl_perf_stats&#39;</span><span class="p">:</span> <span class="s1">&#39;ctrlPerfStats&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;dom0_data_chunk_details&#39;</span><span class="p">:</span> <span class="s1">&#39;dom0DataChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;wlc_analytics_chunk_details&#39;</span><span class="p">:</span> <span class="s1">&#39;wlcAnalyticsChunkDetails&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;auto_load_balance_statistics&#39;</span><span class="p">:</span> <span class="s1">&#39;autoLoadBalanceStatistics&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_raw_data_transfer_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dq</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dbm_rec</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dbm_blk</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dbm_check</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enclosure_state_capture</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dpl_core_dump</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_io_statistics</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fdi_dems_log</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_performance_history</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ioc_dump</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_health_logs</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ctrl_perf_stats</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dom0_data_chunk_details</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wlc_analytics_chunk_details</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_auto_load_balance_statistics</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">raw_data_transfer_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the raw_data_transfer_type of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This enumeration lists the raw data transfer types.</span>
+
+<span class="sd">        :return: The raw_data_transfer_type of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_raw_data_transfer_type</span>
+
+    <span class="nd">@raw_data_transfer_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">raw_data_transfer_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">raw_data_transfer_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the raw_data_transfer_type of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This enumeration lists the raw data transfer types.</span>
+
+<span class="sd">        :param raw_data_transfer_type: The raw_data_transfer_type of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span> <span class="s2">&quot;dq&quot;</span><span class="p">,</span> <span class="s2">&quot;dbmblk&quot;</span><span class="p">,</span> <span class="s2">&quot;dbmrec&quot;</span><span class="p">,</span> <span class="s2">&quot;dbmCheck&quot;</span><span class="p">,</span> <span class="s2">&quot;enclosureStateCapture&quot;</span><span class="p">,</span> <span class="s2">&quot;dplCoreDumpBundle&quot;</span><span class="p">,</span> <span class="s2">&quot;ioStatistics&quot;</span><span class="p">,</span> <span class="s2">&quot;fdiDemsLogs&quot;</span><span class="p">,</span> <span class="s2">&quot;drivePerformanceHistory&quot;</span><span class="p">,</span> <span class="s2">&quot;iocDump&quot;</span><span class="p">,</span> <span class="s2">&quot;driveHealthLogs&quot;</span><span class="p">,</span> <span class="s2">&quot;ctrlPerfLogs&quot;</span><span class="p">,</span> <span class="s2">&quot;dom0SupportData&quot;</span><span class="p">,</span> <span class="s2">&quot;retrieveWlcAnalytics&quot;</span><span class="p">,</span> <span class="s2">&quot;autoLoadBalanceStatisticsLog&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">raw_data_transfer_type</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `raw_data_transfer_type`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_raw_data_transfer_type</span> <span class="o">=</span> <span class="n">raw_data_transfer_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dq</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the dq of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DQ.</span>
+
+<span class="sd">        :return: The dq of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: DqRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dq</span>
+
+    <span class="nd">@dq</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dq</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dq</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the dq of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DQ.</span>
+
+<span class="sd">        :param dq: The dq of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: DqRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dq</span> <span class="o">=</span> <span class="n">dq</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dbm_rec</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the dbm_rec of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DBMREC.</span>
+
+<span class="sd">        :return: The dbm_rec of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: DbmRecRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dbm_rec</span>
+
+    <span class="nd">@dbm_rec</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dbm_rec</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dbm_rec</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the dbm_rec of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DBMREC.</span>
+
+<span class="sd">        :param dbm_rec: The dbm_rec of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: DbmRecRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dbm_rec</span> <span class="o">=</span> <span class="n">dbm_rec</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dbm_blk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the dbm_blk of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DBMBLK.</span>
+
+<span class="sd">        :return: The dbm_blk of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: DbmBlkRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dbm_blk</span>
+
+    <span class="nd">@dbm_blk</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dbm_blk</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dbm_blk</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the dbm_blk of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DBMBLK.</span>
+
+<span class="sd">        :param dbm_blk: The dbm_blk of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: DbmBlkRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dbm_blk</span> <span class="o">=</span> <span class="n">dbm_blk</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dbm_check</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the dbm_check of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DBM_CHECK.</span>
+
+<span class="sd">        :return: The dbm_check of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: DbmCheckRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dbm_check</span>
+
+    <span class="nd">@dbm_check</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dbm_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dbm_check</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the dbm_check of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DBM_CHECK.</span>
+
+<span class="sd">        :param dbm_check: The dbm_check of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: DbmCheckRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dbm_check</span> <span class="o">=</span> <span class="n">dbm_check</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">enclosure_state_capture</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the enclosure_state_capture of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_ENCLOSURE_STATE_CAPTURE.</span>
+
+<span class="sd">        :return: The enclosure_state_capture of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: EnclosureStateCaptureRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enclosure_state_capture</span>
+
+    <span class="nd">@enclosure_state_capture</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">enclosure_state_capture</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enclosure_state_capture</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the enclosure_state_capture of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_ENCLOSURE_STATE_CAPTURE.</span>
+
+<span class="sd">        :param enclosure_state_capture: The enclosure_state_capture of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: EnclosureStateCaptureRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enclosure_state_capture</span> <span class="o">=</span> <span class="n">enclosure_state_capture</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dpl_core_dump</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the dpl_core_dump of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DPL_CORE_DUMP_BUNDLE.</span>
+
+<span class="sd">        :return: The dpl_core_dump of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: DPLCoreDumpRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dpl_core_dump</span>
+
+    <span class="nd">@dpl_core_dump</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dpl_core_dump</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dpl_core_dump</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the dpl_core_dump of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DPL_CORE_DUMP_BUNDLE.</span>
+
+<span class="sd">        :param dpl_core_dump: The dpl_core_dump of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: DPLCoreDumpRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dpl_core_dump</span> <span class="o">=</span> <span class="n">dpl_core_dump</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">io_statistics</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the io_statistics of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_IO_STATISTICS.</span>
+
+<span class="sd">        :return: The io_statistics of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: IoStatisticsRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_statistics</span>
+
+    <span class="nd">@io_statistics</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">io_statistics</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">io_statistics</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the io_statistics of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_IO_STATISTICS.</span>
+
+<span class="sd">        :param io_statistics: The io_statistics of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: IoStatisticsRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_io_statistics</span> <span class="o">=</span> <span class="n">io_statistics</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fdi_dems_log</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fdi_dems_log of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_FDI_DEMS_LOGS.</span>
+
+<span class="sd">        :return: The fdi_dems_log of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: FdiDemsLogRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fdi_dems_log</span>
+
+    <span class="nd">@fdi_dems_log</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fdi_dems_log</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fdi_dems_log</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fdi_dems_log of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_FDI_DEMS_LOGS.</span>
+
+<span class="sd">        :param fdi_dems_log: The fdi_dems_log of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: FdiDemsLogRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fdi_dems_log</span> <span class="o">=</span> <span class="n">fdi_dems_log</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drive_performance_history</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drive_performance_history of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DRIVE_PERFORMANCE_HISTORY.</span>
+
+<span class="sd">        :return: The drive_performance_history of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: DrivePerformanceHistoryRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drive_performance_history</span>
+
+    <span class="nd">@drive_performance_history</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drive_performance_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drive_performance_history</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drive_performance_history of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DRIVE_PERFORMANCE_HISTORY.</span>
+
+<span class="sd">        :param drive_performance_history: The drive_performance_history of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: DrivePerformanceHistoryRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_performance_history</span> <span class="o">=</span> <span class="n">drive_performance_history</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ioc_dump</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ioc_dump of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_IOC_DUMP.</span>
+
+<span class="sd">        :return: The ioc_dump of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: IOCDumpRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ioc_dump</span>
+
+    <span class="nd">@ioc_dump</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ioc_dump</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ioc_dump</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ioc_dump of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_IOC_DUMP.</span>
+
+<span class="sd">        :param ioc_dump: The ioc_dump of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: IOCDumpRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ioc_dump</span> <span class="o">=</span> <span class="n">ioc_dump</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drive_health_logs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drive_health_logs of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This is the case for when drive health logs are being returned in the raw data retrieve operation.</span>
+
+<span class="sd">        :return: The drive_health_logs of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: DriveHealthLogsChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drive_health_logs</span>
+
+    <span class="nd">@drive_health_logs</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drive_health_logs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drive_health_logs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drive_health_logs of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This is the case for when drive health logs are being returned in the raw data retrieve operation.</span>
+
+<span class="sd">        :param drive_health_logs: The drive_health_logs of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: DriveHealthLogsChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_health_logs</span> <span class="o">=</span> <span class="n">drive_health_logs</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ctrl_perf_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ctrl_perf_stats of this RawDataRetrieveChunkDetails.</span>
+
+
+<span class="sd">        :return: The ctrl_perf_stats of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: PerformanceRingChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ctrl_perf_stats</span>
+
+    <span class="nd">@ctrl_perf_stats</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ctrl_perf_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctrl_perf_stats</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ctrl_perf_stats of this RawDataRetrieveChunkDetails.</span>
+
+
+<span class="sd">        :param ctrl_perf_stats: The ctrl_perf_stats of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: PerformanceRingChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ctrl_perf_stats</span> <span class="o">=</span> <span class="n">ctrl_perf_stats</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dom0_data_chunk_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the dom0_data_chunk_details of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DOM0_SUPPORT_DATA.</span>
+
+<span class="sd">        :return: The dom0_data_chunk_details of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: Dom0SupportDataChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dom0_data_chunk_details</span>
+
+    <span class="nd">@dom0_data_chunk_details</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dom0_data_chunk_details</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dom0_data_chunk_details</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the dom0_data_chunk_details of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        This field is present only if the type value is equal to RAWDATA_DOM0_SUPPORT_DATA.</span>
+
+<span class="sd">        :param dom0_data_chunk_details: The dom0_data_chunk_details of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: Dom0SupportDataChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dom0_data_chunk_details</span> <span class="o">=</span> <span class="n">dom0_data_chunk_details</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wlc_analytics_chunk_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the wlc_analytics_chunk_details of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        Data passed back to host application when workload capture data is retrieved.</span>
+
+<span class="sd">        :return: The wlc_analytics_chunk_details of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: WlcAnalyticsChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wlc_analytics_chunk_details</span>
+
+    <span class="nd">@wlc_analytics_chunk_details</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">wlc_analytics_chunk_details</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wlc_analytics_chunk_details</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the wlc_analytics_chunk_details of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        Data passed back to host application when workload capture data is retrieved.</span>
+
+<span class="sd">        :param wlc_analytics_chunk_details: The wlc_analytics_chunk_details of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: WlcAnalyticsChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wlc_analytics_chunk_details</span> <span class="o">=</span> <span class="n">wlc_analytics_chunk_details</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">auto_load_balance_statistics</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the auto_load_balance_statistics of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        Auto Load Balance statistics log data returned to the reqeustor.</span>
+
+<span class="sd">        :return: The auto_load_balance_statistics of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :rtype: AutoLoadBalanceStatsLogRetrieveChunkDetails</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_auto_load_balance_statistics</span>
+
+    <span class="nd">@auto_load_balance_statistics</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">auto_load_balance_statistics</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">auto_load_balance_statistics</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the auto_load_balance_statistics of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        Auto Load Balance statistics log data returned to the reqeustor.</span>
+
+<span class="sd">        :param auto_load_balance_statistics: The auto_load_balance_statistics of this RawDataRetrieveChunkDetails.</span>
+<span class="sd">        :type: AutoLoadBalanceStatsLogRetrieveChunkDetails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_auto_load_balance_statistics</span> <span class="o">=</span> <span class="n">auto_load_balance_statistics</span>
+
+<div class="viewcode-block" id="RawDataRetrieveChunkDetails.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.raw_data_retrieve_chunk_details.RawDataRetrieveChunkDetails.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="RawDataRetrieveChunkDetails.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.raw_data_retrieve_chunk_details.RawDataRetrieveChunkDetails.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

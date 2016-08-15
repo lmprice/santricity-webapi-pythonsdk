@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.async_mirror_primary_sync_statistics_sample &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.async_mirror_primary_sync_statistics_sample</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">AsyncMirrorPrimarySyncStatisticsSample.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="AsyncMirrorPrimarySyncStatisticsSample"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.async_mirror_primary_sync_statistics_sample.AsyncMirrorPrimarySyncStatisticsSample">[docs]</a><span class="k">class</span> <span class="nc">AsyncMirrorPrimarySyncStatisticsSample</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        AsyncMirrorPrimarySyncStatisticsSample - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;sync_type&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sync_start_timestamp&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;completion_detail&#39;</span><span class="p">:</span> <span class="s1">&#39;AsyncMirrorSyncCompletionDetail&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;owner&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sample_start_time_seconds&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sample_end_time_seconds&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;member_state&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;repository_utilization_warn_threshold&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;repository_utilization_percentage&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sync_interval_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sync_duration_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sync_completion_time_alert_threshold_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;recovery_point_age_alert_threshold_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;recovery_point_age_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cumulative_bytes_sent&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cumulative_io_time&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_io_count&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;longest_response_time_micro_seconds&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;longest_response_time_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;shortest_response_time_micro_seconds&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;shortest_response_time_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;highest_throughput_in_bytes_per_second&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;lowest_throughput_in_bytes_per_second&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;sync_type&#39;</span><span class="p">:</span> <span class="s1">&#39;syncType&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sync_start_timestamp&#39;</span><span class="p">:</span> <span class="s1">&#39;syncStartTimestamp&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;completion_detail&#39;</span><span class="p">:</span> <span class="s1">&#39;completionDetail&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;owner&#39;</span><span class="p">:</span> <span class="s1">&#39;owner&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sample_start_time_seconds&#39;</span><span class="p">:</span> <span class="s1">&#39;sampleStartTimeSeconds&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sample_end_time_seconds&#39;</span><span class="p">:</span> <span class="s1">&#39;sampleEndTimeSeconds&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;member_state&#39;</span><span class="p">:</span> <span class="s1">&#39;memberState&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;repository_utilization_warn_threshold&#39;</span><span class="p">:</span> <span class="s1">&#39;repositoryUtilizationWarnThreshold&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;repository_utilization_percentage&#39;</span><span class="p">:</span> <span class="s1">&#39;repositoryUtilizationPercentage&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sync_interval_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;syncIntervalMinutes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sync_duration_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;syncDurationMinutes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;sync_completion_time_alert_threshold_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;syncCompletionTimeAlertThresholdMinutes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;recovery_point_age_alert_threshold_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;recoveryPointAgeAlertThresholdMinutes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;recovery_point_age_minutes&#39;</span><span class="p">:</span> <span class="s1">&#39;recoveryPointAgeMinutes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cumulative_bytes_sent&#39;</span><span class="p">:</span> <span class="s1">&#39;cumulativeBytesSent&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cumulative_io_time&#39;</span><span class="p">:</span> <span class="s1">&#39;cumulativeIOTime&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;total_io_count&#39;</span><span class="p">:</span> <span class="s1">&#39;totalIOCount&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;longest_response_time_micro_seconds&#39;</span><span class="p">:</span> <span class="s1">&#39;longestResponseTimeMicroSeconds&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;longest_response_time_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;longestResponseTimeBytes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;shortest_response_time_micro_seconds&#39;</span><span class="p">:</span> <span class="s1">&#39;shortestResponseTimeMicroSeconds&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;shortest_response_time_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;shortestResponseTimeBytes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;highest_throughput_in_bytes_per_second&#39;</span><span class="p">:</span> <span class="s1">&#39;highestThroughputInBytesPerSecond&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;lowest_throughput_in_bytes_per_second&#39;</span><span class="p">:</span> <span class="s1">&#39;lowestThroughputInBytesPerSecond&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_start_timestamp</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_completion_detail</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_owner</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sample_start_time_seconds</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sample_end_time_seconds</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_state</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_repository_utilization_warn_threshold</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_repository_utilization_percentage</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_interval_minutes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_duration_minutes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_completion_time_alert_threshold_minutes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_recovery_point_age_alert_threshold_minutes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_recovery_point_age_minutes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cumulative_bytes_sent</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cumulative_io_time</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_io_count</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_longest_response_time_micro_seconds</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_longest_response_time_bytes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_shortest_response_time_micro_seconds</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_shortest_response_time_bytes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_highest_throughput_in_bytes_per_second</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_lowest_throughput_in_bytes_per_second</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sync_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sync_type of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The type of synchronization being performed during this sample period.</span>
+
+<span class="sd">        :return: The sync_type of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sync_type</span>
+
+    <span class="nd">@sync_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sync_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sync_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sync_type of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The type of synchronization being performed during this sample period.</span>
+
+<span class="sd">        :param sync_type: The sync_type of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span> <span class="s2">&quot;periodic&quot;</span><span class="p">,</span> <span class="s2">&quot;manual&quot;</span><span class="p">,</span> <span class="s2">&quot;initialSync&quot;</span><span class="p">,</span> <span class="s2">&quot;roleChange&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">sync_type</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `sync_type`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_type</span> <span class="o">=</span> <span class="n">sync_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sync_start_timestamp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sync_start_timestamp of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The synchronization start timestamp represented in seconds since midnight GMT on January 1, 1970. This can be used to correlate statistics between the primary and secondary for the same interval (time recorded here is driven from the primary). This can also be used to correlate multiple samples for the same synchronization period.</span>
+
+<span class="sd">        :return: The sync_start_timestamp of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sync_start_timestamp</span>
+
+    <span class="nd">@sync_start_timestamp</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sync_start_timestamp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sync_start_timestamp</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sync_start_timestamp of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The synchronization start timestamp represented in seconds since midnight GMT on January 1, 1970. This can be used to correlate statistics between the primary and secondary for the same interval (time recorded here is driven from the primary). This can also be used to correlate multiple samples for the same synchronization period.</span>
+
+<span class="sd">        :param sync_start_timestamp: The sync_start_timestamp of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_start_timestamp</span> <span class="o">=</span> <span class="n">sync_start_timestamp</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">completion_detail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the completion_detail of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Indication of whether synchronization failed or completed normally.</span>
+
+<span class="sd">        :return: The completion_detail of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: AsyncMirrorSyncCompletionDetail</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_completion_detail</span>
+
+    <span class="nd">@completion_detail</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">completion_detail</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">completion_detail</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the completion_detail of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Indication of whether synchronization failed or completed normally.</span>
+
+<span class="sd">        :param completion_detail: The completion_detail of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: AsyncMirrorSyncCompletionDetail</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_completion_detail</span> <span class="o">=</span> <span class="n">completion_detail</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">owner</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the owner of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Owning controller for the duration of this sample.</span>
+
+<span class="sd">        :return: The owner of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_owner</span>
+
+    <span class="nd">@owner</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">owner</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">owner</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the owner of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Owning controller for the duration of this sample.</span>
+
+<span class="sd">        :param owner: The owner of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_owner</span> <span class="o">=</span> <span class="n">owner</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sample_start_time_seconds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sample_start_time_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        When this sample started: &gt; = synchronization start time. Time is expressed in seconds since midnight January 1, 1970 GMT.</span>
+
+<span class="sd">        :return: The sample_start_time_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sample_start_time_seconds</span>
+
+    <span class="nd">@sample_start_time_seconds</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sample_start_time_seconds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample_start_time_seconds</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sample_start_time_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        When this sample started: &gt; = synchronization start time. Time is expressed in seconds since midnight January 1, 1970 GMT.</span>
+
+<span class="sd">        :param sample_start_time_seconds: The sample_start_time_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sample_start_time_seconds</span> <span class="o">=</span> <span class="n">sample_start_time_seconds</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sample_end_time_seconds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sample_end_time_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        When this sample ended: synchronization completion time, or time of last update before disruption. Time is expressed in seconds since midnight January 1, 1970 GMT.</span>
+
+<span class="sd">        :return: The sample_end_time_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sample_end_time_seconds</span>
+
+    <span class="nd">@sample_end_time_seconds</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sample_end_time_seconds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample_end_time_seconds</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sample_end_time_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        When this sample ended: synchronization completion time, or time of last update before disruption. Time is expressed in seconds since midnight January 1, 1970 GMT.</span>
+
+<span class="sd">        :param sample_end_time_seconds: The sample_end_time_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sample_end_time_seconds</span> <span class="o">=</span> <span class="n">sample_end_time_seconds</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">member_state</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the member_state of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Last known state of the mirror member as of the sample end time.</span>
+
+<span class="sd">        :return: The member_state of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_member_state</span>
+
+    <span class="nd">@member_state</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">member_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">member_state</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the member_state of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Last known state of the mirror member as of the sample end time.</span>
+
+<span class="sd">        :param member_state: The member_state of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span> <span class="s2">&quot;initialSync&quot;</span><span class="p">,</span> <span class="s2">&quot;optimal&quot;</span><span class="p">,</span> <span class="s2">&quot;failed&quot;</span><span class="p">,</span> <span class="s2">&quot;incomplete&quot;</span><span class="p">,</span> <span class="s2">&quot;orphan&quot;</span><span class="p">,</span> <span class="s2">&quot;stopped&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">member_state</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `member_state`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_state</span> <span class="o">=</span> <span class="n">member_state</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">repository_utilization_warn_threshold</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the repository_utilization_warn_threshold of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The repository utilization warning threshold percentage as of the sample end time.</span>
+
+<span class="sd">        :return: The repository_utilization_warn_threshold of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repository_utilization_warn_threshold</span>
+
+    <span class="nd">@repository_utilization_warn_threshold</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">repository_utilization_warn_threshold</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">repository_utilization_warn_threshold</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the repository_utilization_warn_threshold of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The repository utilization warning threshold percentage as of the sample end time.</span>
+
+<span class="sd">        :param repository_utilization_warn_threshold: The repository_utilization_warn_threshold of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_repository_utilization_warn_threshold</span> <span class="o">=</span> <span class="n">repository_utilization_warn_threshold</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">repository_utilization_percentage</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the repository_utilization_percentage of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The repository utilization percentage as of the sample end time (0-100).</span>
+
+<span class="sd">        :return: The repository_utilization_percentage of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repository_utilization_percentage</span>
+
+    <span class="nd">@repository_utilization_percentage</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">repository_utilization_percentage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">repository_utilization_percentage</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the repository_utilization_percentage of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The repository utilization percentage as of the sample end time (0-100).</span>
+
+<span class="sd">        :param repository_utilization_percentage: The repository_utilization_percentage of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_repository_utilization_percentage</span> <span class="o">=</span> <span class="n">repository_utilization_percentage</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sync_interval_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sync_interval_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Synchronization interval configured (in minutes), as of the sample end time.</span>
+
+<span class="sd">        :return: The sync_interval_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sync_interval_minutes</span>
+
+    <span class="nd">@sync_interval_minutes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sync_interval_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sync_interval_minutes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sync_interval_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Synchronization interval configured (in minutes), as of the sample end time.</span>
+
+<span class="sd">        :param sync_interval_minutes: The sync_interval_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_interval_minutes</span> <span class="o">=</span> <span class="n">sync_interval_minutes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sync_duration_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sync_duration_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Time spent thus far in the synchronization as of the sample end time.</span>
+
+<span class="sd">        :return: The sync_duration_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sync_duration_minutes</span>
+
+    <span class="nd">@sync_duration_minutes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sync_duration_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sync_duration_minutes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sync_duration_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Time spent thus far in the synchronization as of the sample end time.</span>
+
+<span class="sd">        :param sync_duration_minutes: The sync_duration_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_duration_minutes</span> <span class="o">=</span> <span class="n">sync_duration_minutes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sync_completion_time_alert_threshold_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sync_completion_time_alert_threshold_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Configured time allowed for the synchronization as of the sample end time.</span>
+
+<span class="sd">        :return: The sync_completion_time_alert_threshold_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sync_completion_time_alert_threshold_minutes</span>
+
+    <span class="nd">@sync_completion_time_alert_threshold_minutes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sync_completion_time_alert_threshold_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sync_completion_time_alert_threshold_minutes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sync_completion_time_alert_threshold_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        Configured time allowed for the synchronization as of the sample end time.</span>
+
+<span class="sd">        :param sync_completion_time_alert_threshold_minutes: The sync_completion_time_alert_threshold_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sync_completion_time_alert_threshold_minutes</span> <span class="o">=</span> <span class="n">sync_completion_time_alert_threshold_minutes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">recovery_point_age_alert_threshold_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the recovery_point_age_alert_threshold_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The recovery point age warning threshold as of the sample end time.</span>
+
+<span class="sd">        :return: The recovery_point_age_alert_threshold_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_recovery_point_age_alert_threshold_minutes</span>
+
+    <span class="nd">@recovery_point_age_alert_threshold_minutes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">recovery_point_age_alert_threshold_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">recovery_point_age_alert_threshold_minutes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the recovery_point_age_alert_threshold_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The recovery point age warning threshold as of the sample end time.</span>
+
+<span class="sd">        :param recovery_point_age_alert_threshold_minutes: The recovery_point_age_alert_threshold_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_recovery_point_age_alert_threshold_minutes</span> <span class="o">=</span> <span class="n">recovery_point_age_alert_threshold_minutes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">recovery_point_age_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the recovery_point_age_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The recovery point age (in minutes) as of the sample end time.</span>
+
+<span class="sd">        :return: The recovery_point_age_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_recovery_point_age_minutes</span>
+
+    <span class="nd">@recovery_point_age_minutes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">recovery_point_age_minutes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">recovery_point_age_minutes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the recovery_point_age_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The recovery point age (in minutes) as of the sample end time.</span>
+
+<span class="sd">        :param recovery_point_age_minutes: The recovery_point_age_minutes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_recovery_point_age_minutes</span> <span class="o">=</span> <span class="n">recovery_point_age_minutes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cumulative_bytes_sent</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cumulative_bytes_sent of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The total bytes transferred during the time covered by this sample.</span>
+
+<span class="sd">        :return: The cumulative_bytes_sent of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cumulative_bytes_sent</span>
+
+    <span class="nd">@cumulative_bytes_sent</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cumulative_bytes_sent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cumulative_bytes_sent</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cumulative_bytes_sent of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The total bytes transferred during the time covered by this sample.</span>
+
+<span class="sd">        :param cumulative_bytes_sent: The cumulative_bytes_sent of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cumulative_bytes_sent</span> <span class="o">=</span> <span class="n">cumulative_bytes_sent</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cumulative_io_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cumulative_io_time of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The total time spent sending data to the secondary for the duration of this sample (in microseconds). This is measured from the time each I/O is sent to the secondary until the response is received.</span>
+
+<span class="sd">        :return: The cumulative_io_time of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cumulative_io_time</span>
+
+    <span class="nd">@cumulative_io_time</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cumulative_io_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cumulative_io_time</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cumulative_io_time of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The total time spent sending data to the secondary for the duration of this sample (in microseconds). This is measured from the time each I/O is sent to the secondary until the response is received.</span>
+
+<span class="sd">        :param cumulative_io_time: The cumulative_io_time of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cumulative_io_time</span> <span class="o">=</span> <span class="n">cumulative_io_time</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">total_io_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the total_io_count of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The total count of I/O requests to the secondary in this sample.</span>
+
+<span class="sd">        :return: The total_io_count of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_total_io_count</span>
+
+    <span class="nd">@total_io_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">total_io_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">total_io_count</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the total_io_count of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The total count of I/O requests to the secondary in this sample.</span>
+
+<span class="sd">        :param total_io_count: The total_io_count of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_total_io_count</span> <span class="o">=</span> <span class="n">total_io_count</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">longest_response_time_micro_seconds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the longest_response_time_micro_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The longest response time from the secondary array observed for one request during the time covered by this sample (in microseconds).</span>
+
+<span class="sd">        :return: The longest_response_time_micro_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_longest_response_time_micro_seconds</span>
+
+    <span class="nd">@longest_response_time_micro_seconds</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">longest_response_time_micro_seconds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">longest_response_time_micro_seconds</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the longest_response_time_micro_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The longest response time from the secondary array observed for one request during the time covered by this sample (in microseconds).</span>
+
+<span class="sd">        :param longest_response_time_micro_seconds: The longest_response_time_micro_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_longest_response_time_micro_seconds</span> <span class="o">=</span> <span class="n">longest_response_time_micro_seconds</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">longest_response_time_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the longest_response_time_bytes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The number of bytes transferred on the longest request.</span>
+
+<span class="sd">        :return: The longest_response_time_bytes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_longest_response_time_bytes</span>
+
+    <span class="nd">@longest_response_time_bytes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">longest_response_time_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">longest_response_time_bytes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the longest_response_time_bytes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The number of bytes transferred on the longest request.</span>
+
+<span class="sd">        :param longest_response_time_bytes: The longest_response_time_bytes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_longest_response_time_bytes</span> <span class="o">=</span> <span class="n">longest_response_time_bytes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">shortest_response_time_micro_seconds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the shortest_response_time_micro_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The shortest response time from the secondary array observed for one request during the time covered by this sample (in microseconds).</span>
+
+<span class="sd">        :return: The shortest_response_time_micro_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_shortest_response_time_micro_seconds</span>
+
+    <span class="nd">@shortest_response_time_micro_seconds</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">shortest_response_time_micro_seconds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">shortest_response_time_micro_seconds</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the shortest_response_time_micro_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The shortest response time from the secondary array observed for one request during the time covered by this sample (in microseconds).</span>
+
+<span class="sd">        :param shortest_response_time_micro_seconds: The shortest_response_time_micro_seconds of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_shortest_response_time_micro_seconds</span> <span class="o">=</span> <span class="n">shortest_response_time_micro_seconds</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">shortest_response_time_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the shortest_response_time_bytes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The number of bytes sent on shortest request.</span>
+
+<span class="sd">        :return: The shortest_response_time_bytes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_shortest_response_time_bytes</span>
+
+    <span class="nd">@shortest_response_time_bytes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">shortest_response_time_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">shortest_response_time_bytes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the shortest_response_time_bytes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The number of bytes sent on shortest request.</span>
+
+<span class="sd">        :param shortest_response_time_bytes: The shortest_response_time_bytes of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_shortest_response_time_bytes</span> <span class="o">=</span> <span class="n">shortest_response_time_bytes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">highest_throughput_in_bytes_per_second</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the highest_throughput_in_bytes_per_second of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The highest recorded throughput (in bytes/second) to the remote array for this mirror during this sample period.</span>
+
+<span class="sd">        :return: The highest_throughput_in_bytes_per_second of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_highest_throughput_in_bytes_per_second</span>
+
+    <span class="nd">@highest_throughput_in_bytes_per_second</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">highest_throughput_in_bytes_per_second</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">highest_throughput_in_bytes_per_second</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the highest_throughput_in_bytes_per_second of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The highest recorded throughput (in bytes/second) to the remote array for this mirror during this sample period.</span>
+
+<span class="sd">        :param highest_throughput_in_bytes_per_second: The highest_throughput_in_bytes_per_second of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_highest_throughput_in_bytes_per_second</span> <span class="o">=</span> <span class="n">highest_throughput_in_bytes_per_second</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">lowest_throughput_in_bytes_per_second</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the lowest_throughput_in_bytes_per_second of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The lowest recorded throughput (in bytes/second) to the remote array for this mirror during this sample period.</span>
+
+<span class="sd">        :return: The lowest_throughput_in_bytes_per_second of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lowest_throughput_in_bytes_per_second</span>
+
+    <span class="nd">@lowest_throughput_in_bytes_per_second</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">lowest_throughput_in_bytes_per_second</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lowest_throughput_in_bytes_per_second</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the lowest_throughput_in_bytes_per_second of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        The lowest recorded throughput (in bytes/second) to the remote array for this mirror during this sample period.</span>
+
+<span class="sd">        :param lowest_throughput_in_bytes_per_second: The lowest_throughput_in_bytes_per_second of this AsyncMirrorPrimarySyncStatisticsSample.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_lowest_throughput_in_bytes_per_second</span> <span class="o">=</span> <span class="n">lowest_throughput_in_bytes_per_second</span>
+
+<div class="viewcode-block" id="AsyncMirrorPrimarySyncStatisticsSample.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.async_mirror_primary_sync_statistics_sample.AsyncMirrorPrimarySyncStatisticsSample.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="AsyncMirrorPrimarySyncStatisticsSample.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.async_mirror_primary_sync_statistics_sample.AsyncMirrorPrimarySyncStatisticsSample.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

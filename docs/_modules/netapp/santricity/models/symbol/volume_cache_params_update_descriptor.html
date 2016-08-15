@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.volume_cache_params_update_descriptor &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.volume_cache_params_update_descriptor</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">VolumeCacheParamsUpdateDescriptor.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="VolumeCacheParamsUpdateDescriptor"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.volume_cache_params_update_descriptor.VolumeCacheParamsUpdateDescriptor">[docs]</a><span class="k">class</span> <span class="nc">VolumeCacheParamsUpdateDescriptor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        VolumeCacheParamsUpdateDescriptor - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;volume_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cwob&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;mirror_enable&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;read_cache_enable&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;write_cache_enable&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cache_flush_modifier&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;read_ahead_multiplier&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;volume_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;volumeRef&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cwob&#39;</span><span class="p">:</span> <span class="s1">&#39;cwob&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;mirror_enable&#39;</span><span class="p">:</span> <span class="s1">&#39;mirrorEnable&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;read_cache_enable&#39;</span><span class="p">:</span> <span class="s1">&#39;readCacheEnable&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;write_cache_enable&#39;</span><span class="p">:</span> <span class="s1">&#39;writeCacheEnable&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;cache_flush_modifier&#39;</span><span class="p">:</span> <span class="s1">&#39;cacheFlushModifier&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;read_ahead_multiplier&#39;</span><span class="p">:</span> <span class="s1">&#39;readAheadMultiplier&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_ref</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cwob</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mirror_enable</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_read_cache_enable</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_cache_enable</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_flush_modifier</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_read_ahead_multiplier</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">volume_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the volume_ref of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        The reference value that identifies the volume whose cache parameters are to be updated.</span>
+
+<span class="sd">        :return: The volume_ref of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_volume_ref</span>
+
+    <span class="nd">@volume_ref</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">volume_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_ref</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the volume_ref of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        The reference value that identifies the volume whose cache parameters are to be updated.</span>
+
+<span class="sd">        :param volume_ref: The volume_ref of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_ref</span> <span class="o">=</span> <span class="n">volume_ref</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cwob</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cwob of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true/false indication of whether caching without batteries should be allowed for this volume. Note that setting this attribute to true may result in data loss if the array&#39;s cache hold-up battery fails, and then a disorderly power-down of the array occurs. This feature should be used only with extreme caution.</span>
+
+<span class="sd">        :return: The cwob of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cwob</span>
+
+    <span class="nd">@cwob</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cwob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cwob</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cwob of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true/false indication of whether caching without batteries should be allowed for this volume. Note that setting this attribute to true may result in data loss if the array&#39;s cache hold-up battery fails, and then a disorderly power-down of the array occurs. This feature should be used only with extreme caution.</span>
+
+<span class="sd">        :param cwob: The cwob of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cwob</span> <span class="o">=</span> <span class="n">cwob</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">mirror_enable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the mirror_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true/false indication of whether cache mirroring should be enabled for this volume. If enabled, all cache data will be mirrored across controllers to provide increased resilience to potential controller failures.</span>
+
+<span class="sd">        :return: The mirror_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mirror_enable</span>
+
+    <span class="nd">@mirror_enable</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">mirror_enable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mirror_enable</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the mirror_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true/false indication of whether cache mirroring should be enabled for this volume. If enabled, all cache data will be mirrored across controllers to provide increased resilience to potential controller failures.</span>
+
+<span class="sd">        :param mirror_enable: The mirror_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mirror_enable</span> <span class="o">=</span> <span class="n">mirror_enable</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">read_cache_enable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the read_cache_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true/false indication of whether read caching should be enabled for the volume.</span>
+
+<span class="sd">        :return: The read_cache_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_cache_enable</span>
+
+    <span class="nd">@read_cache_enable</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">read_cache_enable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">read_cache_enable</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the read_cache_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true/false indication of whether read caching should be enabled for the volume.</span>
+
+<span class="sd">        :param read_cache_enable: The read_cache_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_read_cache_enable</span> <span class="o">=</span> <span class="n">read_cache_enable</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">write_cache_enable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the write_cache_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true/false indication of whether write-back caching should be enabled for the volume.</span>
+
+<span class="sd">        :return: The write_cache_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_write_cache_enable</span>
+
+    <span class="nd">@write_cache_enable</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">write_cache_enable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">write_cache_enable</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the write_cache_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true/false indication of whether write-back caching should be enabled for the volume.</span>
+
+<span class="sd">        :param write_cache_enable: The write_cache_enable of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_cache_enable</span> <span class="o">=</span> <span class="n">write_cache_enable</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cache_flush_modifier</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cache_flush_modifier of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        The cache flush modifier value, which is used to specify the maximum amount of time that dirty data for this volume may be retained in the controller&#39;s write cache prior to being flushed to disk.</span>
+
+<span class="sd">        :return: The cache_flush_modifier of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache_flush_modifier</span>
+
+    <span class="nd">@cache_flush_modifier</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cache_flush_modifier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cache_flush_modifier</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cache_flush_modifier of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        The cache flush modifier value, which is used to specify the maximum amount of time that dirty data for this volume may be retained in the controller&#39;s write cache prior to being flushed to disk.</span>
+
+<span class="sd">        :param cache_flush_modifier: The cache_flush_modifier of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;flushImmediate&quot;</span><span class="p">,</span> <span class="s2">&quot;flush250Msec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush500Msec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush750Msec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush1Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush1500Msec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush2Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush5Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush10Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush20Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush60Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush120Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush300Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush1200Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flush3600Sec&quot;</span><span class="p">,</span> <span class="s2">&quot;flushInfinite&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">cache_flush_modifier</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `cache_flush_modifier`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_flush_modifier</span> <span class="o">=</span> <span class="n">cache_flush_modifier</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">read_ahead_multiplier</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the read_ahead_multiplier of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true (non-zero) / false (zero) indicator of whether or not automatic cache read-ahead is enabled.</span>
+
+<span class="sd">        :return: The read_ahead_multiplier of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_ahead_multiplier</span>
+
+    <span class="nd">@read_ahead_multiplier</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">read_ahead_multiplier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">read_ahead_multiplier</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the read_ahead_multiplier of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        A true (non-zero) / false (zero) indicator of whether or not automatic cache read-ahead is enabled.</span>
+
+<span class="sd">        :param read_ahead_multiplier: The read_ahead_multiplier of this VolumeCacheParamsUpdateDescriptor.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_read_ahead_multiplier</span> <span class="o">=</span> <span class="n">read_ahead_multiplier</span>
+
+<div class="viewcode-block" id="VolumeCacheParamsUpdateDescriptor.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.volume_cache_params_update_descriptor.VolumeCacheParamsUpdateDescriptor.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="VolumeCacheParamsUpdateDescriptor.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.volume_cache_params_update_descriptor.VolumeCacheParamsUpdateDescriptor.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

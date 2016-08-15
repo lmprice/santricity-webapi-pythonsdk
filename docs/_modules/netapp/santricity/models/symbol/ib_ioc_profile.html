@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.ib_ioc_profile &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.ib_ioc_profile</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">IbIocProfile.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="IbIocProfile"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.ib_ioc_profile.IbIocProfile">[docs]</a><span class="k">class</span> <span class="nc">IbIocProfile</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        IbIocProfile - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;ioc_guid&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;io_device_id&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;device_version&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;subsystem_vendor_id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;subsystem_id&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;io_class&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;io_subclass&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;protocol&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;protocol_version&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;send_message_queue_depth&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rdma_read_queue_depth&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;send_message_size&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rdma_transfer_size&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;controller_ops_capability_mask&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;service_entries&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;id_string&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;ioc_guid&#39;</span><span class="p">:</span> <span class="s1">&#39;iocGuid&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;vendor_id&#39;</span><span class="p">:</span> <span class="s1">&#39;vendorId&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;io_device_id&#39;</span><span class="p">:</span> <span class="s1">&#39;ioDeviceId&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;device_version&#39;</span><span class="p">:</span> <span class="s1">&#39;deviceVersion&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;subsystem_vendor_id&#39;</span><span class="p">:</span> <span class="s1">&#39;subsystemVendorId&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;subsystem_id&#39;</span><span class="p">:</span> <span class="s1">&#39;subsystemId&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;io_class&#39;</span><span class="p">:</span> <span class="s1">&#39;ioClass&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;io_subclass&#39;</span><span class="p">:</span> <span class="s1">&#39;ioSubclass&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;protocol&#39;</span><span class="p">:</span> <span class="s1">&#39;protocol&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;protocol_version&#39;</span><span class="p">:</span> <span class="s1">&#39;protocolVersion&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;send_message_queue_depth&#39;</span><span class="p">:</span> <span class="s1">&#39;sendMessageQueueDepth&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rdma_read_queue_depth&#39;</span><span class="p">:</span> <span class="s1">&#39;rdmaReadQueueDepth&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;send_message_size&#39;</span><span class="p">:</span> <span class="s1">&#39;sendMessageSize&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;rdma_transfer_size&#39;</span><span class="p">:</span> <span class="s1">&#39;rdmaTransferSize&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;controller_ops_capability_mask&#39;</span><span class="p">:</span> <span class="s1">&#39;controllerOpsCapabilityMask&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;service_entries&#39;</span><span class="p">:</span> <span class="s1">&#39;serviceEntries&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;id_string&#39;</span><span class="p">:</span> <span class="s1">&#39;idString&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ioc_guid</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_io_device_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_device_version</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_subsystem_vendor_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_subsystem_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_io_class</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_io_subclass</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_protocol</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_protocol_version</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_send_message_queue_depth</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rdma_read_queue_depth</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_send_message_size</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rdma_transfer_size</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_controller_ops_capability_mask</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_service_entries</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id_string</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ioc_guid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ioc_guid of this IbIocProfile.</span>
+<span class="sd">        The EUI-64 GUID used to uniquely identify the I/O controller.</span>
+
+<span class="sd">        :return: The ioc_guid of this IbIocProfile.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ioc_guid</span>
+
+    <span class="nd">@ioc_guid</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ioc_guid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ioc_guid</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ioc_guid of this IbIocProfile.</span>
+<span class="sd">        The EUI-64 GUID used to uniquely identify the I/O controller.</span>
+
+<span class="sd">        :param ioc_guid: The ioc_guid of this IbIocProfile.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ioc_guid</span> <span class="o">=</span> <span class="n">ioc_guid</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vendor_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the vendor_id of this IbIocProfile.</span>
+<span class="sd">        The I/O controller vendor ID in IEEE format.</span>
+
+<span class="sd">        :return: The vendor_id of this IbIocProfile.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_id</span>
+
+    <span class="nd">@vendor_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vendor_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vendor_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the vendor_id of this IbIocProfile.</span>
+<span class="sd">        The I/O controller vendor ID in IEEE format.</span>
+
+<span class="sd">        :param vendor_id: The vendor_id of this IbIocProfile.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vendor_id</span> <span class="o">=</span> <span class="n">vendor_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">io_device_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the io_device_id of this IbIocProfile.</span>
+<span class="sd">        A number assigned by vendor to identify the type of I/O controller</span>
+
+<span class="sd">        :return: The io_device_id of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_device_id</span>
+
+    <span class="nd">@io_device_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">io_device_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">io_device_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the io_device_id of this IbIocProfile.</span>
+<span class="sd">        A number assigned by vendor to identify the type of I/O controller</span>
+
+<span class="sd">        :param io_device_id: The io_device_id of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_io_device_id</span> <span class="o">=</span> <span class="n">io_device_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">device_version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the device_version of this IbIocProfile.</span>
+<span class="sd">        A number assigned by the vendor to identify the device version.</span>
+
+<span class="sd">        :return: The device_version of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_device_version</span>
+
+    <span class="nd">@device_version</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">device_version</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">device_version</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the device_version of this IbIocProfile.</span>
+<span class="sd">        A number assigned by the vendor to identify the device version.</span>
+
+<span class="sd">        :param device_version: The device_version of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_device_version</span> <span class="o">=</span> <span class="n">device_version</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">subsystem_vendor_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the subsystem_vendor_id of this IbIocProfile.</span>
+<span class="sd">        The ID of the enclosure vendor in IEEE format, or else all zeros if there is no vendor ID.</span>
+
+<span class="sd">        :return: The subsystem_vendor_id of this IbIocProfile.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_subsystem_vendor_id</span>
+
+    <span class="nd">@subsystem_vendor_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">subsystem_vendor_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">subsystem_vendor_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the subsystem_vendor_id of this IbIocProfile.</span>
+<span class="sd">        The ID of the enclosure vendor in IEEE format, or else all zeros if there is no vendor ID.</span>
+
+<span class="sd">        :param subsystem_vendor_id: The subsystem_vendor_id of this IbIocProfile.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_subsystem_vendor_id</span> <span class="o">=</span> <span class="n">subsystem_vendor_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">subsystem_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the subsystem_id of this IbIocProfile.</span>
+<span class="sd">        A number identifying the subsystem where the I/O controller resides.</span>
+
+<span class="sd">        :return: The subsystem_id of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_subsystem_id</span>
+
+    <span class="nd">@subsystem_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">subsystem_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">subsystem_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the subsystem_id of this IbIocProfile.</span>
+<span class="sd">        A number identifying the subsystem where the I/O controller resides.</span>
+
+<span class="sd">        :param subsystem_id: The subsystem_id of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_subsystem_id</span> <span class="o">=</span> <span class="n">subsystem_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">io_class</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the io_class of this IbIocProfile.</span>
+<span class="sd">        The I/O class of the controller. 0x0000 -0xFFFE is reserved for I/O classes encompassed by the InfiniBand architecture. 0xFFFF is vendor-specific.</span>
+
+<span class="sd">        :return: The io_class of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_class</span>
+
+    <span class="nd">@io_class</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">io_class</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">io_class</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the io_class of this IbIocProfile.</span>
+<span class="sd">        The I/O class of the controller. 0x0000 -0xFFFE is reserved for I/O classes encompassed by the InfiniBand architecture. 0xFFFF is vendor-specific.</span>
+
+<span class="sd">        :param io_class: The io_class of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_io_class</span> <span class="o">=</span> <span class="n">io_class</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">io_subclass</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the io_subclass of this IbIocProfile.</span>
+<span class="sd">        The I/O sub-class of the controller. 0x0000 -0xFFFE is reserved for I/O sub-classes encompassed by the InfiniBand architecture. 0xFFFF is vendor-specific.</span>
+
+<span class="sd">        :return: The io_subclass of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_subclass</span>
+
+    <span class="nd">@io_subclass</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">io_subclass</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">io_subclass</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the io_subclass of this IbIocProfile.</span>
+<span class="sd">        The I/O sub-class of the controller. 0x0000 -0xFFFE is reserved for I/O sub-classes encompassed by the InfiniBand architecture. 0xFFFF is vendor-specific.</span>
+
+<span class="sd">        :param io_subclass: The io_subclass of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_io_subclass</span> <span class="o">=</span> <span class="n">io_subclass</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">protocol</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the protocol of this IbIocProfile.</span>
+<span class="sd">        The I/O protocol of the controller. 0x0000 -0xFFFE is reserved for I/O protocols encompassed by the InfiniBand architecture. 0xFFFF is vendor-specific.</span>
+
+<span class="sd">        :return: The protocol of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_protocol</span>
+
+    <span class="nd">@protocol</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">protocol</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">protocol</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the protocol of this IbIocProfile.</span>
+<span class="sd">        The I/O protocol of the controller. 0x0000 -0xFFFE is reserved for I/O protocols encompassed by the InfiniBand architecture. 0xFFFF is vendor-specific.</span>
+
+<span class="sd">        :param protocol: The protocol of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_protocol</span> <span class="o">=</span> <span class="n">protocol</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">protocol_version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the protocol_version of this IbIocProfile.</span>
+<span class="sd">        The protocol version (protocol-specific).</span>
+
+<span class="sd">        :return: The protocol_version of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_protocol_version</span>
+
+    <span class="nd">@protocol_version</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">protocol_version</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">protocol_version</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the protocol_version of this IbIocProfile.</span>
+<span class="sd">        The protocol version (protocol-specific).</span>
+
+<span class="sd">        :param protocol_version: The protocol_version of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_protocol_version</span> <span class="o">=</span> <span class="n">protocol_version</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">send_message_queue_depth</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the send_message_queue_depth of this IbIocProfile.</span>
+<span class="sd">        The maximum depth of the Send Message Queue.</span>
+
+<span class="sd">        :return: The send_message_queue_depth of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_message_queue_depth</span>
+
+    <span class="nd">@send_message_queue_depth</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">send_message_queue_depth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">send_message_queue_depth</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the send_message_queue_depth of this IbIocProfile.</span>
+<span class="sd">        The maximum depth of the Send Message Queue.</span>
+
+<span class="sd">        :param send_message_queue_depth: The send_message_queue_depth of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_send_message_queue_depth</span> <span class="o">=</span> <span class="n">send_message_queue_depth</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rdma_read_queue_depth</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rdma_read_queue_depth of this IbIocProfile.</span>
+<span class="sd">        The maximum depth of the per-channel RDMA Read Queue</span>
+
+<span class="sd">        :return: The rdma_read_queue_depth of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rdma_read_queue_depth</span>
+
+    <span class="nd">@rdma_read_queue_depth</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rdma_read_queue_depth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rdma_read_queue_depth</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rdma_read_queue_depth of this IbIocProfile.</span>
+<span class="sd">        The maximum depth of the per-channel RDMA Read Queue</span>
+
+<span class="sd">        :param rdma_read_queue_depth: The rdma_read_queue_depth of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rdma_read_queue_depth</span> <span class="o">=</span> <span class="n">rdma_read_queue_depth</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">send_message_size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the send_message_size of this IbIocProfile.</span>
+<span class="sd">        The maximum size of Send Messages in bytes.</span>
+
+<span class="sd">        :return: The send_message_size of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_message_size</span>
+
+    <span class="nd">@send_message_size</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">send_message_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">send_message_size</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the send_message_size of this IbIocProfile.</span>
+<span class="sd">        The maximum size of Send Messages in bytes.</span>
+
+<span class="sd">        :param send_message_size: The send_message_size of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_send_message_size</span> <span class="o">=</span> <span class="n">send_message_size</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rdma_transfer_size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the rdma_transfer_size of this IbIocProfile.</span>
+<span class="sd">        The maximum size of outbound RDMA transfers initiated by the controller.</span>
+
+<span class="sd">        :return: The rdma_transfer_size of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rdma_transfer_size</span>
+
+    <span class="nd">@rdma_transfer_size</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rdma_transfer_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rdma_transfer_size</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the rdma_transfer_size of this IbIocProfile.</span>
+<span class="sd">        The maximum size of outbound RDMA transfers initiated by the controller.</span>
+
+<span class="sd">        :param rdma_transfer_size: The rdma_transfer_size of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rdma_transfer_size</span> <span class="o">=</span> <span class="n">rdma_transfer_size</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">controller_ops_capability_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the controller_ops_capability_mask of this IbIocProfile.</span>
+<span class="sd">        Supported operation types of this controller.: Bit 0 on = Send Messages to IOCs Bit 1 on = Send Messages from IOCs Bit 2 on = RDMA Read Requests to IOCs Bit 3 on = RDMA Read Requests from IOCs Bit 4 on = RDMA Write Requests to IOCs Bit 5 on = RDMA Write Requests from IOCs Bit 6 on = Atomic operations to IOCs Bit 7 on = Atomic operations from IOCs</span>
+
+<span class="sd">        :return: The controller_ops_capability_mask of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_controller_ops_capability_mask</span>
+
+    <span class="nd">@controller_ops_capability_mask</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">controller_ops_capability_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">controller_ops_capability_mask</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the controller_ops_capability_mask of this IbIocProfile.</span>
+<span class="sd">        Supported operation types of this controller.: Bit 0 on = Send Messages to IOCs Bit 1 on = Send Messages from IOCs Bit 2 on = RDMA Read Requests to IOCs Bit 3 on = RDMA Read Requests from IOCs Bit 4 on = RDMA Write Requests to IOCs Bit 5 on = RDMA Write Requests from IOCs Bit 6 on = Atomic operations to IOCs Bit 7 on = Atomic operations from IOCs</span>
+
+<span class="sd">        :param controller_ops_capability_mask: The controller_ops_capability_mask of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_controller_ops_capability_mask</span> <span class="o">=</span> <span class="n">controller_ops_capability_mask</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">service_entries</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the service_entries of this IbIocProfile.</span>
+<span class="sd">        The number of entries in the service entries table</span>
+
+<span class="sd">        :return: The service_entries of this IbIocProfile.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_service_entries</span>
+
+    <span class="nd">@service_entries</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">service_entries</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">service_entries</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the service_entries of this IbIocProfile.</span>
+<span class="sd">        The number of entries in the service entries table</span>
+
+<span class="sd">        :param service_entries: The service_entries of this IbIocProfile.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_service_entries</span> <span class="o">=</span> <span class="n">service_entries</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">id_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the id_string of this IbIocProfile.</span>
+<span class="sd">        A UTF-8 encoded string for identifying the controller to user.</span>
+
+<span class="sd">        :return: The id_string of this IbIocProfile.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_id_string</span>
+
+    <span class="nd">@id_string</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">id_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">id_string</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the id_string of this IbIocProfile.</span>
+<span class="sd">        A UTF-8 encoded string for identifying the controller to user.</span>
+
+<span class="sd">        :param id_string: The id_string of this IbIocProfile.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_id_string</span> <span class="o">=</span> <span class="n">id_string</span>
+
+<div class="viewcode-block" id="IbIocProfile.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.ib_ioc_profile.IbIocProfile.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="IbIocProfile.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.ib_ioc_profile.IbIocProfile.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

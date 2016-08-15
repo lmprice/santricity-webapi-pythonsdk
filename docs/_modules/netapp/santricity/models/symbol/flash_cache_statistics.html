@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.flash_cache_statistics &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.flash_cache_statistics</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">FlashCacheStatistics.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="FlashCacheStatistics"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.flash_cache_statistics.FlashCacheStatistics">[docs]</a><span class="k">class</span> <span class="nc">FlashCacheStatistics</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        FlashCacheStatistics - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reads&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;read_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;writes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;write_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;full_cache_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;full_cache_hit_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;partial_cache_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;partial_cache_hit_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;complete_cache_miss&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;complete_cache_miss_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populate_on_reads&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populate_on_read_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populate_on_writes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populate_on_write_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;invalidates&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;recycles&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;available_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;allocated_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populated_clean_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populated_dirty_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="s1">&#39;timestamp&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;reads&#39;</span><span class="p">:</span> <span class="s1">&#39;reads&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;read_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;readBlocks&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;writes&#39;</span><span class="p">:</span> <span class="s1">&#39;writes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;write_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;writeBlocks&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;full_cache_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;fullCacheHits&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;full_cache_hit_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;fullCacheHitBlocks&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;partial_cache_hits&#39;</span><span class="p">:</span> <span class="s1">&#39;partialCacheHits&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;partial_cache_hit_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;partialCacheHitBlocks&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;complete_cache_miss&#39;</span><span class="p">:</span> <span class="s1">&#39;completeCacheMiss&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;complete_cache_miss_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;completeCacheMissBlocks&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populate_on_reads&#39;</span><span class="p">:</span> <span class="s1">&#39;populateOnReads&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populate_on_read_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;populateOnReadBlocks&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populate_on_writes&#39;</span><span class="p">:</span> <span class="s1">&#39;populateOnWrites&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populate_on_write_blocks&#39;</span><span class="p">:</span> <span class="s1">&#39;populateOnWriteBlocks&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;invalidates&#39;</span><span class="p">:</span> <span class="s1">&#39;invalidates&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;recycles&#39;</span><span class="p">:</span> <span class="s1">&#39;recycles&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;available_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;availableBytes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;allocated_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;allocatedBytes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populated_clean_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;populatedCleanBytes&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;populated_dirty_bytes&#39;</span><span class="p">:</span> <span class="s1">&#39;populatedDirtyBytes&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_timestamp</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reads</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_read_blocks</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_writes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_blocks</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_full_cache_hits</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_full_cache_hit_blocks</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_partial_cache_hits</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_partial_cache_hit_blocks</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_complete_cache_miss</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_complete_cache_miss_blocks</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_reads</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_read_blocks</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_writes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_write_blocks</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_invalidates</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_recycles</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_available_bytes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_allocated_bytes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populated_clean_bytes</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populated_dirty_bytes</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">timestamp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the timestamp of this FlashCacheStatistics.</span>
+<span class="sd">        The time these statistics were recorded measured in seconds since midnight January 1, 1970.</span>
+
+<span class="sd">        :return: The timestamp of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timestamp</span>
+
+    <span class="nd">@timestamp</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">timestamp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timestamp</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the timestamp of this FlashCacheStatistics.</span>
+<span class="sd">        The time these statistics were recorded measured in seconds since midnight January 1, 1970.</span>
+
+<span class="sd">        :param timestamp: The timestamp of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_timestamp</span> <span class="o">=</span> <span class="n">timestamp</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">reads</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the reads of this FlashCacheStatistics.</span>
+<span class="sd">        The number of read operations.</span>
+
+<span class="sd">        :return: The reads of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reads</span>
+
+    <span class="nd">@reads</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">reads</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reads</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the reads of this FlashCacheStatistics.</span>
+<span class="sd">        The number of read operations.</span>
+
+<span class="sd">        :param reads: The reads of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reads</span> <span class="o">=</span> <span class="n">reads</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">read_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the read_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of block read operations.</span>
+
+<span class="sd">        :return: The read_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_read_blocks</span>
+
+    <span class="nd">@read_blocks</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">read_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">read_blocks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the read_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of block read operations.</span>
+
+<span class="sd">        :param read_blocks: The read_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_read_blocks</span> <span class="o">=</span> <span class="n">read_blocks</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">writes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the writes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of write operations.</span>
+
+<span class="sd">        :return: The writes of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_writes</span>
+
+    <span class="nd">@writes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">writes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">writes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the writes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of write operations.</span>
+
+<span class="sd">        :param writes: The writes of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_writes</span> <span class="o">=</span> <span class="n">writes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">write_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the write_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of block write operations.</span>
+
+<span class="sd">        :return: The write_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_write_blocks</span>
+
+    <span class="nd">@write_blocks</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">write_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">write_blocks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the write_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of block write operations.</span>
+
+<span class="sd">        :param write_blocks: The write_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_blocks</span> <span class="o">=</span> <span class="n">write_blocks</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">full_cache_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the full_cache_hits of this FlashCacheStatistics.</span>
+<span class="sd">        The number of full cache hits.</span>
+
+<span class="sd">        :return: The full_cache_hits of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_full_cache_hits</span>
+
+    <span class="nd">@full_cache_hits</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">full_cache_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">full_cache_hits</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the full_cache_hits of this FlashCacheStatistics.</span>
+<span class="sd">        The number of full cache hits.</span>
+
+<span class="sd">        :param full_cache_hits: The full_cache_hits of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_full_cache_hits</span> <span class="o">=</span> <span class="n">full_cache_hits</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">full_cache_hit_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the full_cache_hit_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of full cache hit blocks.</span>
+
+<span class="sd">        :return: The full_cache_hit_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_full_cache_hit_blocks</span>
+
+    <span class="nd">@full_cache_hit_blocks</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">full_cache_hit_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">full_cache_hit_blocks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the full_cache_hit_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of full cache hit blocks.</span>
+
+<span class="sd">        :param full_cache_hit_blocks: The full_cache_hit_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_full_cache_hit_blocks</span> <span class="o">=</span> <span class="n">full_cache_hit_blocks</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">partial_cache_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the partial_cache_hits of this FlashCacheStatistics.</span>
+<span class="sd">        The number of partial cache hits.</span>
+
+<span class="sd">        :return: The partial_cache_hits of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_partial_cache_hits</span>
+
+    <span class="nd">@partial_cache_hits</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">partial_cache_hits</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">partial_cache_hits</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the partial_cache_hits of this FlashCacheStatistics.</span>
+<span class="sd">        The number of partial cache hits.</span>
+
+<span class="sd">        :param partial_cache_hits: The partial_cache_hits of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_partial_cache_hits</span> <span class="o">=</span> <span class="n">partial_cache_hits</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">partial_cache_hit_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the partial_cache_hit_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of partial cache hit blocks.</span>
+
+<span class="sd">        :return: The partial_cache_hit_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_partial_cache_hit_blocks</span>
+
+    <span class="nd">@partial_cache_hit_blocks</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">partial_cache_hit_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">partial_cache_hit_blocks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the partial_cache_hit_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of partial cache hit blocks.</span>
+
+<span class="sd">        :param partial_cache_hit_blocks: The partial_cache_hit_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_partial_cache_hit_blocks</span> <span class="o">=</span> <span class="n">partial_cache_hit_blocks</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">complete_cache_miss</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the complete_cache_miss of this FlashCacheStatistics.</span>
+<span class="sd">        The number of complete cache misses.</span>
+
+<span class="sd">        :return: The complete_cache_miss of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_complete_cache_miss</span>
+
+    <span class="nd">@complete_cache_miss</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">complete_cache_miss</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">complete_cache_miss</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the complete_cache_miss of this FlashCacheStatistics.</span>
+<span class="sd">        The number of complete cache misses.</span>
+
+<span class="sd">        :param complete_cache_miss: The complete_cache_miss of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_complete_cache_miss</span> <span class="o">=</span> <span class="n">complete_cache_miss</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">complete_cache_miss_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the complete_cache_miss_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of complete cache miss blocks.</span>
+
+<span class="sd">        :return: The complete_cache_miss_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_complete_cache_miss_blocks</span>
+
+    <span class="nd">@complete_cache_miss_blocks</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">complete_cache_miss_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">complete_cache_miss_blocks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the complete_cache_miss_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of complete cache miss blocks.</span>
+
+<span class="sd">        :param complete_cache_miss_blocks: The complete_cache_miss_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_complete_cache_miss_blocks</span> <span class="o">=</span> <span class="n">complete_cache_miss_blocks</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">populate_on_reads</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the populate_on_reads of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populate on reads.</span>
+
+<span class="sd">        :return: The populate_on_reads of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_reads</span>
+
+    <span class="nd">@populate_on_reads</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">populate_on_reads</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">populate_on_reads</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the populate_on_reads of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populate on reads.</span>
+
+<span class="sd">        :param populate_on_reads: The populate_on_reads of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_reads</span> <span class="o">=</span> <span class="n">populate_on_reads</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">populate_on_read_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the populate_on_read_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populate on read blocks.</span>
+
+<span class="sd">        :return: The populate_on_read_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_read_blocks</span>
+
+    <span class="nd">@populate_on_read_blocks</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">populate_on_read_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">populate_on_read_blocks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the populate_on_read_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populate on read blocks.</span>
+
+<span class="sd">        :param populate_on_read_blocks: The populate_on_read_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_read_blocks</span> <span class="o">=</span> <span class="n">populate_on_read_blocks</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">populate_on_writes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the populate_on_writes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populate on writes.</span>
+
+<span class="sd">        :return: The populate_on_writes of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_writes</span>
+
+    <span class="nd">@populate_on_writes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">populate_on_writes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">populate_on_writes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the populate_on_writes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populate on writes.</span>
+
+<span class="sd">        :param populate_on_writes: The populate_on_writes of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_writes</span> <span class="o">=</span> <span class="n">populate_on_writes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">populate_on_write_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the populate_on_write_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populate on write blocks.</span>
+
+<span class="sd">        :return: The populate_on_write_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_write_blocks</span>
+
+    <span class="nd">@populate_on_write_blocks</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">populate_on_write_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">populate_on_write_blocks</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the populate_on_write_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populate on write blocks.</span>
+
+<span class="sd">        :param populate_on_write_blocks: The populate_on_write_blocks of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populate_on_write_blocks</span> <span class="o">=</span> <span class="n">populate_on_write_blocks</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">invalidates</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the invalidates of this FlashCacheStatistics.</span>
+<span class="sd">        The number of invalidates on host writes.</span>
+
+<span class="sd">        :return: The invalidates of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_invalidates</span>
+
+    <span class="nd">@invalidates</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">invalidates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">invalidates</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the invalidates of this FlashCacheStatistics.</span>
+<span class="sd">        The number of invalidates on host writes.</span>
+
+<span class="sd">        :param invalidates: The invalidates of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_invalidates</span> <span class="o">=</span> <span class="n">invalidates</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">recycles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the recycles of this FlashCacheStatistics.</span>
+<span class="sd">        The number of times data is removed from the LRU.</span>
+
+<span class="sd">        :return: The recycles of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_recycles</span>
+
+    <span class="nd">@recycles</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">recycles</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">recycles</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the recycles of this FlashCacheStatistics.</span>
+<span class="sd">        The number of times data is removed from the LRU.</span>
+
+<span class="sd">        :param recycles: The recycles of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_recycles</span> <span class="o">=</span> <span class="n">recycles</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">available_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the available_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of available bytes.</span>
+
+<span class="sd">        :return: The available_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_available_bytes</span>
+
+    <span class="nd">@available_bytes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">available_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">available_bytes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the available_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of available bytes.</span>
+
+<span class="sd">        :param available_bytes: The available_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_available_bytes</span> <span class="o">=</span> <span class="n">available_bytes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">allocated_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the allocated_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of allocated bytes.</span>
+
+<span class="sd">        :return: The allocated_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allocated_bytes</span>
+
+    <span class="nd">@allocated_bytes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">allocated_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">allocated_bytes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the allocated_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of allocated bytes.</span>
+
+<span class="sd">        :param allocated_bytes: The allocated_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_allocated_bytes</span> <span class="o">=</span> <span class="n">allocated_bytes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">populated_clean_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the populated_clean_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populated clean bytes.</span>
+
+<span class="sd">        :return: The populated_clean_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_populated_clean_bytes</span>
+
+    <span class="nd">@populated_clean_bytes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">populated_clean_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">populated_clean_bytes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the populated_clean_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populated clean bytes.</span>
+
+<span class="sd">        :param populated_clean_bytes: The populated_clean_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populated_clean_bytes</span> <span class="o">=</span> <span class="n">populated_clean_bytes</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">populated_dirty_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the populated_dirty_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populated dirty bytes.</span>
+
+<span class="sd">        :return: The populated_dirty_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_populated_dirty_bytes</span>
+
+    <span class="nd">@populated_dirty_bytes</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">populated_dirty_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">populated_dirty_bytes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the populated_dirty_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        The number of populated dirty bytes.</span>
+
+<span class="sd">        :param populated_dirty_bytes: The populated_dirty_bytes of this FlashCacheStatistics.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_populated_dirty_bytes</span> <span class="o">=</span> <span class="n">populated_dirty_bytes</span>
+
+<div class="viewcode-block" id="FlashCacheStatistics.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.flash_cache_statistics.FlashCacheStatistics.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="FlashCacheStatistics.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.flash_cache_statistics.FlashCacheStatistics.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

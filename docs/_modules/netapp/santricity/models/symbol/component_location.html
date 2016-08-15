@@ -1,0 +1,1364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.component_location &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.component_location</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">ComponentLocation.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="ComponentLocation"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.component_location.ComponentLocation">[docs]</a><span class="k">class</span> <span class="nc">ComponentLocation</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        ComponentLocation - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;event_component_type&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;alarm_location&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;battery_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cache_backup_device_location&#39;</span><span class="p">:</span> <span class="s1">&#39;CacheBackupDeviceLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cache_memory_dimm_location&#39;</span><span class="p">:</span> <span class="s1">&#39;CacheMemoryDimmLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;channel_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;ChannelLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;channel_port&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;chip_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;controller_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;ctlr_sfp_location&#39;</span><span class="p">:</span> <span class="s1">&#39;ControllerSfpLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;soc_location&#39;</span><span class="p">:</span> <span class="s1">&#39;SocLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;drive_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;enclosure_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;esm_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;fan_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;host_io_card_location&#39;</span><span class="p">:</span> <span class="s1">&#39;HostIoCardLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;initiator_location&#39;</span><span class="p">:</span> <span class="s1">&#39;InitiatorLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;interconnect_cru_location&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;isns_server_location&#39;</span><span class="p">:</span> <span class="s1">&#39;IsnsServerLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;minihub_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;MinihubLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;port_cru_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;power_supply_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;sfp_location&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;support_cru_location&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;target_location&#39;</span><span class="p">:</span> <span class="s1">&#39;TargetLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;temp_sensor_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;group_number&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;host_location&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;host_port_location&#39;</span><span class="p">:</span> <span class="s1">&#39;HostPortLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;drawer_location&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;component_relative_location&#39;</span><span class="p">:</span> <span class="s1">&#39;ComponentRelativeLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;schedule&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;disk_pool&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;async_mirror_group&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;pit_label&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cg_label&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cg_pit_label&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cg_view_label&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;flash_cache_label&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;community_name_string&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;destination_ip_address&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;fc_target_location&#39;</span><span class="p">:</span> <span class="s1">&#39;FibreChannelTargetLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;fan_cru_location&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;power_supply_cru_location&#39;</span><span class="p">:</span> <span class="s1">&#39;TraySlot&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;event_component_type&#39;</span><span class="p">:</span> <span class="s1">&#39;eventComponentType&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;alarm_location&#39;</span><span class="p">:</span> <span class="s1">&#39;alarmLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;battery_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;batteryTray&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cache_backup_device_location&#39;</span><span class="p">:</span> <span class="s1">&#39;cacheBackupDeviceLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cache_memory_dimm_location&#39;</span><span class="p">:</span> <span class="s1">&#39;cacheMemoryDimmLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;channel_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;channelLoc&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;channel_port&#39;</span><span class="p">:</span> <span class="s1">&#39;channelPort&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;chip_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;chipLoc&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;controller_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;controllerLoc&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;ctlr_sfp_location&#39;</span><span class="p">:</span> <span class="s1">&#39;ctlrSfpLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;soc_location&#39;</span><span class="p">:</span> <span class="s1">&#39;socLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;drive_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;driveLoc&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;enclosure_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;enclosureTray&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;esm_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;esmTray&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;fan_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;fanTray&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;host_io_card_location&#39;</span><span class="p">:</span> <span class="s1">&#39;hostIoCardLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;initiator_location&#39;</span><span class="p">:</span> <span class="s1">&#39;initiatorLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;interconnect_cru_location&#39;</span><span class="p">:</span> <span class="s1">&#39;interconnectCruLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;isns_server_location&#39;</span><span class="p">:</span> <span class="s1">&#39;isnsServerLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;minihub_loc&#39;</span><span class="p">:</span> <span class="s1">&#39;minihubLoc&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;port_cru_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;portCruTray&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;power_supply_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;powerSupplyTray&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;sfp_location&#39;</span><span class="p">:</span> <span class="s1">&#39;sfpLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;support_cru_location&#39;</span><span class="p">:</span> <span class="s1">&#39;supportCruLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;target_location&#39;</span><span class="p">:</span> <span class="s1">&#39;targetLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;temp_sensor_tray&#39;</span><span class="p">:</span> <span class="s1">&#39;tempSensorTray&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;label&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;group_number&#39;</span><span class="p">:</span> <span class="s1">&#39;groupNumber&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;host_location&#39;</span><span class="p">:</span> <span class="s1">&#39;hostLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;host_port_location&#39;</span><span class="p">:</span> <span class="s1">&#39;hostPortLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;drawer_location&#39;</span><span class="p">:</span> <span class="s1">&#39;drawerLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;component_relative_location&#39;</span><span class="p">:</span> <span class="s1">&#39;componentRelativeLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;schedule&#39;</span><span class="p">:</span> <span class="s1">&#39;schedule&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;disk_pool&#39;</span><span class="p">:</span> <span class="s1">&#39;diskPool&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;async_mirror_group&#39;</span><span class="p">:</span> <span class="s1">&#39;asyncMirrorGroup&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;pit_label&#39;</span><span class="p">:</span> <span class="s1">&#39;pitLabel&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cg_label&#39;</span><span class="p">:</span> <span class="s1">&#39;cgLabel&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cg_pit_label&#39;</span><span class="p">:</span> <span class="s1">&#39;cgPitLabel&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;cg_view_label&#39;</span><span class="p">:</span> <span class="s1">&#39;cgViewLabel&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;flash_cache_label&#39;</span><span class="p">:</span> <span class="s1">&#39;flashCacheLabel&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;community_name_string&#39;</span><span class="p">:</span> <span class="s1">&#39;communityNameString&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;destination_ip_address&#39;</span><span class="p">:</span> <span class="s1">&#39;destinationIpAddress&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;fc_target_location&#39;</span><span class="p">:</span> <span class="s1">&#39;fcTargetLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;fan_cru_location&#39;</span><span class="p">:</span> <span class="s1">&#39;fanCruLocation&#39;</span><span class="p">,</span>  
+            <span class="s1">&#39;power_supply_cru_location&#39;</span><span class="p">:</span> <span class="s1">&#39;powerSupplyCruLocation&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_component_type</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_alarm_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_backup_device_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_memory_dimm_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_channel_loc</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_channel_port</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_chip_loc</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_controller_loc</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ctlr_sfp_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_soc_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_loc</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enclosure_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fan_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_io_card_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initiator_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_interconnect_cru_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_isns_server_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_minihub_loc</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_port_cru_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_power_supply_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sfp_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_support_cru_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_target_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_temp_sensor_tray</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_label</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_group_number</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_port_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drawer_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_component_relative_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_schedule</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_disk_pool</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_async_mirror_group</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pit_label</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cg_label</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cg_pit_label</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cg_view_label</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_flash_cache_label</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_community_name_string</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_destination_ip_address</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fc_target_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fan_cru_location</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_power_supply_cru_location</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">event_component_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the event_component_type of this ComponentLocation.</span>
+<span class="sd">        This enumeration object is used to specify the different component types that can be associated with entries in the Major Event Log.</span>
+
+<span class="sd">        :return: The event_component_type of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_event_component_type</span>
+
+    <span class="nd">@event_component_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">event_component_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_component_type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the event_component_type of this ComponentLocation.</span>
+<span class="sd">        This enumeration object is used to specify the different component types that can be associated with entries in the Major Event Log.</span>
+
+<span class="sd">        :param event_component_type: The event_component_type of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;unknown&quot;</span><span class="p">,</span> <span class="s2">&quot;drive&quot;</span><span class="p">,</span> <span class="s2">&quot;powerSply&quot;</span><span class="p">,</span> <span class="s2">&quot;fan&quot;</span><span class="p">,</span> <span class="s2">&quot;minihub&quot;</span><span class="p">,</span> <span class="s2">&quot;tempSensor&quot;</span><span class="p">,</span> <span class="s2">&quot;channel&quot;</span><span class="p">,</span> <span class="s2">&quot;esm&quot;</span><span class="p">,</span> <span class="s2">&quot;controller&quot;</span><span class="p">,</span> <span class="s2">&quot;battery&quot;</span><span class="p">,</span> <span class="s2">&quot;enclosure&quot;</span><span class="p">,</span> <span class="s2">&quot;ups&quot;</span><span class="p">,</span> <span class="s2">&quot;chip&quot;</span><span class="p">,</span> <span class="s2">&quot;volume&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeGrp&quot;</span><span class="p">,</span> <span class="s2">&quot;portCru&quot;</span><span class="p">,</span> <span class="s2">&quot;interconnectCru&quot;</span><span class="p">,</span> <span class="s2">&quot;supportCru&quot;</span><span class="p">,</span> <span class="s2">&quot;alarm&quot;</span><span class="p">,</span> <span class="s2">&quot;channelPort&quot;</span><span class="p">,</span> <span class="s2">&quot;sfpPort&quot;</span><span class="p">,</span> <span class="s2">&quot;hostBoard&quot;</span><span class="p">,</span> <span class="s2">&quot;newFormat&quot;</span><span class="p">,</span> <span class="s2">&quot;ctlrSfp&quot;</span><span class="p">,</span> <span class="s2">&quot;ctlrSoc&quot;</span><span class="p">,</span> <span class="s2">&quot;initiator&quot;</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">,</span> <span class="s2">&quot;isnsServer&quot;</span><span class="p">,</span> <span class="s2">&quot;hostIoCard&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheBackupDevice&quot;</span><span class="p">,</span> <span class="s2">&quot;cacheMemDimm&quot;</span><span class="p">,</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;hostPort&quot;</span><span class="p">,</span> <span class="s2">&quot;drawer&quot;</span><span class="p">,</span> <span class="s2">&quot;relative&quot;</span><span class="p">,</span> <span class="s2">&quot;schedule&quot;</span><span class="p">,</span> <span class="s2">&quot;asyncMirrorGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;diskPool&quot;</span><span class="p">,</span> <span class="s2">&quot;pit&quot;</span><span class="p">,</span> <span class="s2">&quot;pitConsistencyGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;cgpit&quot;</span><span class="p">,</span> <span class="s2">&quot;cgview&quot;</span><span class="p">,</span> <span class="s2">&quot;flashCache&quot;</span><span class="p">,</span> <span class="s2">&quot;snmpCommunity&quot;</span><span class="p">,</span> <span class="s2">&quot;snmpTrapDestination&quot;</span><span class="p">,</span> <span class="s2">&quot;fcTarget&quot;</span><span class="p">,</span> <span class="s2">&quot;fanOnlyCru&quot;</span><span class="p">,</span> <span class="s2">&quot;psuCru&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">event_component_type</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `event_component_type`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_event_component_type</span> <span class="o">=</span> <span class="n">event_component_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">alarm_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the alarm_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_ALARM.</span>
+
+<span class="sd">        :return: The alarm_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_alarm_location</span>
+
+    <span class="nd">@alarm_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">alarm_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">alarm_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the alarm_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_ALARM.</span>
+
+<span class="sd">        :param alarm_location: The alarm_location of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_alarm_location</span> <span class="o">=</span> <span class="n">alarm_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">battery_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the battery_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the battery for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_BATTERY.</span>
+
+<span class="sd">        :return: The battery_tray of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_battery_tray</span>
+
+    <span class="nd">@battery_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">battery_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">battery_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the battery_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the battery for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_BATTERY.</span>
+
+<span class="sd">        :param battery_tray: The battery_tray of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_battery_tray</span> <span class="o">=</span> <span class="n">battery_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cache_backup_device_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cache_backup_device_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal toEVENT_COMP_TYPE_CACHE_BACKUP_DEVICE. It identifies the location of the cache backup device to which the event applies.</span>
+
+<span class="sd">        :return: The cache_backup_device_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: CacheBackupDeviceLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache_backup_device_location</span>
+
+    <span class="nd">@cache_backup_device_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cache_backup_device_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cache_backup_device_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cache_backup_device_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal toEVENT_COMP_TYPE_CACHE_BACKUP_DEVICE. It identifies the location of the cache backup device to which the event applies.</span>
+
+<span class="sd">        :param cache_backup_device_location: The cache_backup_device_location of this ComponentLocation.</span>
+<span class="sd">        :type: CacheBackupDeviceLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_backup_device_location</span> <span class="o">=</span> <span class="n">cache_backup_device_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cache_memory_dimm_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cache_memory_dimm_location of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType value is equal to EVENT_COMP_TYPE_CACHE_MEM_DIMM. It identifies the location of the cache memory DIMM to which the event applies.</span>
+
+<span class="sd">        :return: The cache_memory_dimm_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: CacheMemoryDimmLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache_memory_dimm_location</span>
+
+    <span class="nd">@cache_memory_dimm_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cache_memory_dimm_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cache_memory_dimm_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cache_memory_dimm_location of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType value is equal to EVENT_COMP_TYPE_CACHE_MEM_DIMM. It identifies the location of the cache memory DIMM to which the event applies.</span>
+
+<span class="sd">        :param cache_memory_dimm_location: The cache_memory_dimm_location of this ComponentLocation.</span>
+<span class="sd">        :type: CacheMemoryDimmLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_memory_dimm_location</span> <span class="o">=</span> <span class="n">cache_memory_dimm_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">channel_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the channel_loc of this ComponentLocation.</span>
+<span class="sd">        The location of the channel. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CHANNEL.</span>
+
+<span class="sd">        :return: The channel_loc of this ComponentLocation.</span>
+<span class="sd">        :rtype: ChannelLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_channel_loc</span>
+
+    <span class="nd">@channel_loc</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">channel_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel_loc</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the channel_loc of this ComponentLocation.</span>
+<span class="sd">        The location of the channel. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CHANNEL.</span>
+
+<span class="sd">        :param channel_loc: The channel_loc of this ComponentLocation.</span>
+<span class="sd">        :type: ChannelLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_channel_loc</span> <span class="o">=</span> <span class="n">channel_loc</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">channel_port</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the channel_port of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CHANNEL_PORT.</span>
+
+<span class="sd">        :return: The channel_port of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_channel_port</span>
+
+    <span class="nd">@channel_port</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">channel_port</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">channel_port</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the channel_port of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CHANNEL_PORT.</span>
+
+<span class="sd">        :param channel_port: The channel_port of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_channel_port</span> <span class="o">=</span> <span class="n">channel_port</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">chip_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the chip_loc of this ComponentLocation.</span>
+<span class="sd">        The physical location of the controller that owns the chip for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CHIP.</span>
+
+<span class="sd">        :return: The chip_loc of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chip_loc</span>
+
+    <span class="nd">@chip_loc</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">chip_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chip_loc</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the chip_loc of this ComponentLocation.</span>
+<span class="sd">        The physical location of the controller that owns the chip for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CHIP.</span>
+
+<span class="sd">        :param chip_loc: The chip_loc of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_chip_loc</span> <span class="o">=</span> <span class="n">chip_loc</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">controller_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the controller_loc of this ComponentLocation.</span>
+<span class="sd">        The physical location of the controller for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CONTROLLER.</span>
+
+<span class="sd">        :return: The controller_loc of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_controller_loc</span>
+
+    <span class="nd">@controller_loc</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">controller_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">controller_loc</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the controller_loc of this ComponentLocation.</span>
+<span class="sd">        The physical location of the controller for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CONTROLLER.</span>
+
+<span class="sd">        :param controller_loc: The controller_loc of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_controller_loc</span> <span class="o">=</span> <span class="n">controller_loc</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ctlr_sfp_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the ctlr_sfp_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CTLR_SFP.</span>
+
+<span class="sd">        :return: The ctlr_sfp_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: ControllerSfpLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ctlr_sfp_location</span>
+
+    <span class="nd">@ctlr_sfp_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ctlr_sfp_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ctlr_sfp_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the ctlr_sfp_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CTLR_SFP.</span>
+
+<span class="sd">        :param ctlr_sfp_location: The ctlr_sfp_location of this ComponentLocation.</span>
+<span class="sd">        :type: ControllerSfpLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ctlr_sfp_location</span> <span class="o">=</span> <span class="n">ctlr_sfp_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">soc_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the soc_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CTLR_SOC.</span>
+
+<span class="sd">        :return: The soc_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: SocLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_soc_location</span>
+
+    <span class="nd">@soc_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">soc_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">soc_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the soc_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_CTLR_SOC.</span>
+
+<span class="sd">        :param soc_location: The soc_location of this ComponentLocation.</span>
+<span class="sd">        :type: SocLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_soc_location</span> <span class="o">=</span> <span class="n">soc_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drive_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drive_loc of this ComponentLocation.</span>
+<span class="sd">        The physical location of the drive for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_DRIVE.</span>
+
+<span class="sd">        :return: The drive_loc of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drive_loc</span>
+
+    <span class="nd">@drive_loc</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drive_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drive_loc</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drive_loc of this ComponentLocation.</span>
+<span class="sd">        The physical location of the drive for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_DRIVE.</span>
+
+<span class="sd">        :param drive_loc: The drive_loc of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drive_loc</span> <span class="o">=</span> <span class="n">drive_loc</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">enclosure_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the enclosure_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_ENCLOSURE.</span>
+
+<span class="sd">        :return: The enclosure_tray of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enclosure_tray</span>
+
+    <span class="nd">@enclosure_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">enclosure_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enclosure_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the enclosure_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_ENCLOSURE.</span>
+
+<span class="sd">        :param enclosure_tray: The enclosure_tray of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enclosure_tray</span> <span class="o">=</span> <span class="n">enclosure_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">esm_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the esm_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the ESM card for which the MEL entry was generated. This field is not used and is considered deprecated. Instead the ESM tray/slot location is given by the ExtendedComponentLocation field.</span>
+
+<span class="sd">        :return: The esm_tray of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_esm_tray</span>
+
+    <span class="nd">@esm_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">esm_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">esm_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the esm_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the ESM card for which the MEL entry was generated. This field is not used and is considered deprecated. Instead the ESM tray/slot location is given by the ExtendedComponentLocation field.</span>
+
+<span class="sd">        :param esm_tray: The esm_tray of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_esm_tray</span> <span class="o">=</span> <span class="n">esm_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fan_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fan_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the fan for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_FAN.</span>
+
+<span class="sd">        :return: The fan_tray of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fan_tray</span>
+
+    <span class="nd">@fan_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fan_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fan_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fan_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the fan for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_FAN.</span>
+
+<span class="sd">        :param fan_tray: The fan_tray of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fan_tray</span> <span class="o">=</span> <span class="n">fan_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">host_io_card_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the host_io_card_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_HOST_IO_CARD. It identifies the location of the host I/O card to which the event applies.</span>
+
+<span class="sd">        :return: The host_io_card_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: HostIoCardLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_host_io_card_location</span>
+
+    <span class="nd">@host_io_card_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">host_io_card_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">host_io_card_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the host_io_card_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_HOST_IO_CARD. It identifies the location of the host I/O card to which the event applies.</span>
+
+<span class="sd">        :param host_io_card_location: The host_io_card_location of this ComponentLocation.</span>
+<span class="sd">        :type: HostIoCardLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_io_card_location</span> <span class="o">=</span> <span class="n">host_io_card_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">initiator_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the initiator_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_INITIATOR. It identifies the iSCSI initiator to which the event applies.</span>
+
+<span class="sd">        :return: The initiator_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: InitiatorLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_initiator_location</span>
+
+    <span class="nd">@initiator_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">initiator_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">initiator_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the initiator_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_INITIATOR. It identifies the iSCSI initiator to which the event applies.</span>
+
+<span class="sd">        :param initiator_location: The initiator_location of this ComponentLocation.</span>
+<span class="sd">        :type: InitiatorLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_initiator_location</span> <span class="o">=</span> <span class="n">initiator_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">interconnect_cru_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the interconnect_cru_location of this ComponentLocation.</span>
+<span class="sd">        No information is returned</span>
+
+<span class="sd">        :return: The interconnect_cru_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_interconnect_cru_location</span>
+
+    <span class="nd">@interconnect_cru_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">interconnect_cru_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interconnect_cru_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the interconnect_cru_location of this ComponentLocation.</span>
+<span class="sd">        No information is returned</span>
+
+<span class="sd">        :param interconnect_cru_location: The interconnect_cru_location of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_interconnect_cru_location</span> <span class="o">=</span> <span class="n">interconnect_cru_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">isns_server_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the isns_server_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_ISNS_SERVER. It identifies the iSNS server to which the event applies.</span>
+
+<span class="sd">        :return: The isns_server_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: IsnsServerLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_isns_server_location</span>
+
+    <span class="nd">@isns_server_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">isns_server_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">isns_server_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the isns_server_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_ISNS_SERVER. It identifies the iSNS server to which the event applies.</span>
+
+<span class="sd">        :param isns_server_location: The isns_server_location of this ComponentLocation.</span>
+<span class="sd">        :type: IsnsServerLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_isns_server_location</span> <span class="o">=</span> <span class="n">isns_server_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">minihub_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the minihub_loc of this ComponentLocation.</span>
+<span class="sd">        The location of the minihub. This filed is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_MINIHUB.</span>
+
+<span class="sd">        :return: The minihub_loc of this ComponentLocation.</span>
+<span class="sd">        :rtype: MinihubLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minihub_loc</span>
+
+    <span class="nd">@minihub_loc</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">minihub_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">minihub_loc</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the minihub_loc of this ComponentLocation.</span>
+<span class="sd">        The location of the minihub. This filed is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_MINIHUB.</span>
+
+<span class="sd">        :param minihub_loc: The minihub_loc of this ComponentLocation.</span>
+<span class="sd">        :type: MinihubLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_minihub_loc</span> <span class="o">=</span> <span class="n">minihub_loc</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">port_cru_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the port_cru_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the Fibre Channel port CRU for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_PORT_CRU. This field is deprecated.</span>
+
+<span class="sd">        :return: The port_cru_tray of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_port_cru_tray</span>
+
+    <span class="nd">@port_cru_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">port_cru_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">port_cru_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the port_cru_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the Fibre Channel port CRU for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_PORT_CRU. This field is deprecated.</span>
+
+<span class="sd">        :param port_cru_tray: The port_cru_tray of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_port_cru_tray</span> <span class="o">=</span> <span class="n">port_cru_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">power_supply_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the power_supply_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the power supply for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_POWER_SPLY.</span>
+
+<span class="sd">        :return: The power_supply_tray of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_power_supply_tray</span>
+
+    <span class="nd">@power_supply_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">power_supply_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">power_supply_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the power_supply_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the power supply for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_POWER_SPLY.</span>
+
+<span class="sd">        :param power_supply_tray: The power_supply_tray of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_power_supply_tray</span> <span class="o">=</span> <span class="n">power_supply_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">sfp_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the sfp_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_SFP_PORT.</span>
+
+<span class="sd">        :return: The sfp_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sfp_location</span>
+
+    <span class="nd">@sfp_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">sfp_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sfp_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the sfp_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_SFP_PORT.</span>
+
+<span class="sd">        :param sfp_location: The sfp_location of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sfp_location</span> <span class="o">=</span> <span class="n">sfp_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">support_cru_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the support_cru_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_SUPPORT_CRU.</span>
+
+<span class="sd">        :return: The support_cru_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_support_cru_location</span>
+
+    <span class="nd">@support_cru_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">support_cru_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">support_cru_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the support_cru_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_SUPPORT_CRU.</span>
+
+<span class="sd">        :param support_cru_location: The support_cru_location of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_support_cru_location</span> <span class="o">=</span> <span class="n">support_cru_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">target_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the target_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_TARGET. It identifies the iSCSI target to which the event applies.</span>
+
+<span class="sd">        :return: The target_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: TargetLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_target_location</span>
+
+    <span class="nd">@target_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">target_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the target_location of this ComponentLocation.</span>
+<span class="sd">        This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_TARGET. It identifies the iSCSI target to which the event applies.</span>
+
+<span class="sd">        :param target_location: The target_location of this ComponentLocation.</span>
+<span class="sd">        :type: TargetLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_target_location</span> <span class="o">=</span> <span class="n">target_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">temp_sensor_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the temp_sensor_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the temperature sensor for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_TEMP_SENSOR.</span>
+
+<span class="sd">        :return: The temp_sensor_tray of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_temp_sensor_tray</span>
+
+    <span class="nd">@temp_sensor_tray</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">temp_sensor_tray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">temp_sensor_tray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the temp_sensor_tray of this ComponentLocation.</span>
+<span class="sd">        The tray ID of the tray containing the temperature sensor for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_TEMP_SENSOR.</span>
+
+<span class="sd">        :param temp_sensor_tray: The temp_sensor_tray of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_temp_sensor_tray</span> <span class="o">=</span> <span class="n">temp_sensor_tray</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">label</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the label of this ComponentLocation.</span>
+<span class="sd">        The user-assigned label of the volume for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_VOLUME</span>
+
+<span class="sd">        :return: The label of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_label</span>
+
+    <span class="nd">@label</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the label of this ComponentLocation.</span>
+<span class="sd">        The user-assigned label of the volume for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_VOLUME</span>
+
+<span class="sd">        :param label: The label of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_label</span> <span class="o">=</span> <span class="n">label</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">group_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the group_number of this ComponentLocation.</span>
+<span class="sd">        The volume group sequence number of the volume group for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_VOLUME_GRP.</span>
+
+<span class="sd">        :return: The group_number of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_group_number</span>
+
+    <span class="nd">@group_number</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">group_number</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">group_number</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the group_number of this ComponentLocation.</span>
+<span class="sd">        The volume group sequence number of the volume group for which the MEL entry was generated. This field is valid only when the eventComponentType value is equal to EVENT_COMP_TYPE_VOLUME_GRP.</span>
+
+<span class="sd">        :param group_number: The group_number of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_group_number</span> <span class="o">=</span> <span class="n">group_number</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">host_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the host_location of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_HOST. It is the user-assigned label of the host for which the MEL entry is reporting a problem.</span>
+
+<span class="sd">        :return: The host_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_host_location</span>
+
+    <span class="nd">@host_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">host_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">host_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the host_location of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_HOST. It is the user-assigned label of the host for which the MEL entry is reporting a problem.</span>
+
+<span class="sd">        :param host_location: The host_location of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_location</span> <span class="o">=</span> <span class="n">host_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">host_port_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the host_port_location of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_HOST_PORT. It identifies the host port to which the event applies.</span>
+
+<span class="sd">        :return: The host_port_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: HostPortLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_host_port_location</span>
+
+    <span class="nd">@host_port_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">host_port_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">host_port_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the host_port_location of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_HOST_PORT. It identifies the host port to which the event applies.</span>
+
+<span class="sd">        :param host_port_location: The host_port_location of this ComponentLocation.</span>
+<span class="sd">        :type: HostPortLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_host_port_location</span> <span class="o">=</span> <span class="n">host_port_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">drawer_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the drawer_location of this ComponentLocation.</span>
+<span class="sd">        The physical location of the drawer for which the MEL event was generated. This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_DRAWER.</span>
+
+<span class="sd">        :return: The drawer_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_drawer_location</span>
+
+    <span class="nd">@drawer_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">drawer_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drawer_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the drawer_location of this ComponentLocation.</span>
+<span class="sd">        The physical location of the drawer for which the MEL event was generated. This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_DRAWER.</span>
+
+<span class="sd">        :param drawer_location: The drawer_location of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_drawer_location</span> <span class="o">=</span> <span class="n">drawer_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">component_relative_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the component_relative_location of this ComponentLocation.</span>
+<span class="sd">        The component type and location are described in this field. This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_RELATIVE.</span>
+
+<span class="sd">        :return: The component_relative_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: ComponentRelativeLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_component_relative_location</span>
+
+    <span class="nd">@component_relative_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">component_relative_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">component_relative_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the component_relative_location of this ComponentLocation.</span>
+<span class="sd">        The component type and location are described in this field. This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_RELATIVE.</span>
+
+<span class="sd">        :param component_relative_location: The component_relative_location of this ComponentLocation.</span>
+<span class="sd">        :type: ComponentRelativeLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_component_relative_location</span> <span class="o">=</span> <span class="n">component_relative_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">schedule</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the schedule of this ComponentLocation.</span>
+<span class="sd">        The user-assigned label of the schedule. This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_SCHEDULE.</span>
+
+<span class="sd">        :return: The schedule of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_schedule</span>
+
+    <span class="nd">@schedule</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">schedule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">schedule</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the schedule of this ComponentLocation.</span>
+<span class="sd">        The user-assigned label of the schedule. This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_SCHEDULE.</span>
+
+<span class="sd">        :param schedule: The schedule of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_schedule</span> <span class="o">=</span> <span class="n">schedule</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">disk_pool</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the disk_pool of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_DISK_POOL.</span>
+
+<span class="sd">        :return: The disk_pool of this ComponentLocation.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_disk_pool</span>
+
+    <span class="nd">@disk_pool</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">disk_pool</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">disk_pool</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the disk_pool of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_DISK_POOL.</span>
+
+<span class="sd">        :param disk_pool: The disk_pool of this ComponentLocation.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_disk_pool</span> <span class="o">=</span> <span class="n">disk_pool</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">async_mirror_group</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the async_mirror_group of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_ASYNC_MIRROR_GROUP.</span>
+
+<span class="sd">        :return: The async_mirror_group of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_async_mirror_group</span>
+
+    <span class="nd">@async_mirror_group</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">async_mirror_group</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">async_mirror_group</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the async_mirror_group of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_ASYNC_MIRROR_GROUP.</span>
+
+<span class="sd">        :param async_mirror_group: The async_mirror_group of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_async_mirror_group</span> <span class="o">=</span> <span class="n">async_mirror_group</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">pit_label</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the pit_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_PIT. Note that events for PITs also include extended component location information beyond just the associated PiT Group label (PITs themselves are identified by a combination of the label of the associated PiT Group plus a sequence number).</span>
+
+<span class="sd">        :return: The pit_label of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pit_label</span>
+
+    <span class="nd">@pit_label</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">pit_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pit_label</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the pit_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_PIT. Note that events for PITs also include extended component location information beyond just the associated PiT Group label (PITs themselves are identified by a combination of the label of the associated PiT Group plus a sequence number).</span>
+
+<span class="sd">        :param pit_label: The pit_label of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pit_label</span> <span class="o">=</span> <span class="n">pit_label</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cg_label</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cg_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_PIT_CONSISTENCY_GROUP.</span>
+
+<span class="sd">        :return: The cg_label of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cg_label</span>
+
+    <span class="nd">@cg_label</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cg_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cg_label</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cg_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_PIT_CONSISTENCY_GROUP.</span>
+
+<span class="sd">        :param cg_label: The cg_label of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cg_label</span> <span class="o">=</span> <span class="n">cg_label</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cg_pit_label</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cg_pit_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_CGPIT. Note that events for CGPITs also include extended component location information beyond just the associated CG label (CGPITs themselves are identified by a combination of the label of the associated Consistency Group plus a sequence number).</span>
+
+<span class="sd">        :return: The cg_pit_label of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cg_pit_label</span>
+
+    <span class="nd">@cg_pit_label</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cg_pit_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cg_pit_label</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cg_pit_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_CGPIT. Note that events for CGPITs also include extended component location information beyond just the associated CG label (CGPITs themselves are identified by a combination of the label of the associated Consistency Group plus a sequence number).</span>
+
+<span class="sd">        :param cg_pit_label: The cg_pit_label of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cg_pit_label</span> <span class="o">=</span> <span class="n">cg_pit_label</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cg_view_label</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the cg_view_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_CGVIEW.</span>
+
+<span class="sd">        :return: The cg_view_label of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cg_view_label</span>
+
+    <span class="nd">@cg_view_label</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">cg_view_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cg_view_label</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the cg_view_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_CGVIEW.</span>
+
+<span class="sd">        :param cg_view_label: The cg_view_label of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cg_view_label</span> <span class="o">=</span> <span class="n">cg_view_label</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">flash_cache_label</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the flash_cache_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_FLASH_CACHE. It identifies the flash cache device to which this event applies.</span>
+
+<span class="sd">        :return: The flash_cache_label of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_flash_cache_label</span>
+
+    <span class="nd">@flash_cache_label</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">flash_cache_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">flash_cache_label</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the flash_cache_label of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_FLASH_CACHE. It identifies the flash cache device to which this event applies.</span>
+
+<span class="sd">        :param flash_cache_label: The flash_cache_label of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_flash_cache_label</span> <span class="o">=</span> <span class="n">flash_cache_label</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">community_name_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the community_name_string of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_SNMP_COMMUNITY. The community name string can contain up to 31 characters.</span>
+
+<span class="sd">        :return: The community_name_string of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_community_name_string</span>
+
+    <span class="nd">@community_name_string</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">community_name_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">community_name_string</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the community_name_string of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_SNMP_COMMUNITY. The community name string can contain up to 31 characters.</span>
+
+<span class="sd">        :param community_name_string: The community_name_string of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_community_name_string</span> <span class="o">=</span> <span class="n">community_name_string</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">destination_ip_address</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the destination_ip_address of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_SNMP_TRAP_DESTINATION. It contains an ASCII representation of the destination address (the maximum number of characters is 40 for IPV6, 15 characters for IPV4.</span>
+
+<span class="sd">        :return: The destination_ip_address of this ComponentLocation.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_destination_ip_address</span>
+
+    <span class="nd">@destination_ip_address</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">destination_ip_address</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">destination_ip_address</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the destination_ip_address of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_SNMP_TRAP_DESTINATION. It contains an ASCII representation of the destination address (the maximum number of characters is 40 for IPV6, 15 characters for IPV4.</span>
+
+<span class="sd">        :param destination_ip_address: The destination_ip_address of this ComponentLocation.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_destination_ip_address</span> <span class="o">=</span> <span class="n">destination_ip_address</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fc_target_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fc_target_location of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_FC_TARGET. It contains location data that is an 8-byte binary SCSI name.</span>
+
+<span class="sd">        :return: The fc_target_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: FibreChannelTargetLocation</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fc_target_location</span>
+
+    <span class="nd">@fc_target_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fc_target_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fc_target_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fc_target_location of this ComponentLocation.</span>
+<span class="sd">        This field is only valid when the eventComponentType field is equal to EVENT_COMP_TYPE_FC_TARGET. It contains location data that is an 8-byte binary SCSI name.</span>
+
+<span class="sd">        :param fc_target_location: The fc_target_location of this ComponentLocation.</span>
+<span class="sd">        :type: FibreChannelTargetLocation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fc_target_location</span> <span class="o">=</span> <span class="n">fc_target_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fan_cru_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the fan_cru_location of this ComponentLocation.</span>
+<span class="sd">        Location information for fan CRU.</span>
+
+<span class="sd">        :return: The fan_cru_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fan_cru_location</span>
+
+    <span class="nd">@fan_cru_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fan_cru_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fan_cru_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the fan_cru_location of this ComponentLocation.</span>
+<span class="sd">        Location information for fan CRU.</span>
+
+<span class="sd">        :param fan_cru_location: The fan_cru_location of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fan_cru_location</span> <span class="o">=</span> <span class="n">fan_cru_location</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">power_supply_cru_location</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the power_supply_cru_location of this ComponentLocation.</span>
+<span class="sd">        Power supply CRU location.</span>
+
+<span class="sd">        :return: The power_supply_cru_location of this ComponentLocation.</span>
+<span class="sd">        :rtype: TraySlot</span>
+<span class="sd">        :required/optional: optional</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_power_supply_cru_location</span>
+
+    <span class="nd">@power_supply_cru_location</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">power_supply_cru_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">power_supply_cru_location</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the power_supply_cru_location of this ComponentLocation.</span>
+<span class="sd">        Power supply CRU location.</span>
+
+<span class="sd">        :param power_supply_cru_location: The power_supply_cru_location of this ComponentLocation.</span>
+<span class="sd">        :type: TraySlot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_power_supply_cru_location</span> <span class="o">=</span> <span class="n">power_supply_cru_location</span>
+
+<div class="viewcode-block" id="ComponentLocation.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.component_location.ComponentLocation.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="ComponentLocation.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.component_location.ComponentLocation.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

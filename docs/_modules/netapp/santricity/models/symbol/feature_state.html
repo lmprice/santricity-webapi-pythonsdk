@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>netapp.santricity.models.symbol.feature_state &mdash; NetApp Santricity Python SDK  documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="NetApp Santricity Python SDK  documentation" href="../../../../../index.html" />
+    <link rel="up" title="Module code" href="../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for netapp.santricity.models.symbol.feature_state</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">FeatureState.py</span>
+
+<span class="sd"> The Clear BSD License</span>
+
+<span class="sd"> Copyright (c) – 2016, NetApp, Inc. All rights reserved.</span>
+
+<span class="sd"> Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:</span>
+
+<span class="sd"> * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span>
+
+<span class="sd"> * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span>
+
+<span class="sd"> * Neither the name of NetApp, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</span>
+
+<span class="sd"> NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pformat</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="k">import</span> <span class="n">iteritems</span>
+
+
+<div class="viewcode-block" id="FeatureState"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.feature_state.FeatureState">[docs]</a><span class="k">class</span> <span class="nc">FeatureState</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    NOTE: This class is auto generated by the swagger code generator program.</span>
+<span class="sd">    Do not edit the class manually.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        FeatureState - a model defined in Swagger</span>
+
+<span class="sd">        :param dict swaggerTypes: The key is attribute name</span>
+<span class="sd">                                  and the value is attribute type.</span>
+<span class="sd">        :param dict attributeMap: The key is attribute name</span>
+<span class="sd">                                  and the value is json key in definition.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;capability&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;is_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;is_compliant&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;is_within_limits&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;feature_id&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;feature_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;str&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;limit&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;duration&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;enabled_time&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;supported_feature_bundle_id&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;permanent_license_applied&#39;</span><span class="p">:</span> <span class="s1">&#39;bool&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">attribute_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;capability&#39;</span><span class="p">:</span> <span class="s1">&#39;capability&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;is_enabled&#39;</span><span class="p">:</span> <span class="s1">&#39;isEnabled&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;is_compliant&#39;</span><span class="p">:</span> <span class="s1">&#39;isCompliant&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;is_within_limits&#39;</span><span class="p">:</span> <span class="s1">&#39;isWithinLimits&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;feature_id&#39;</span><span class="p">:</span> <span class="s1">&#39;featureId&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;feature_ref&#39;</span><span class="p">:</span> <span class="s1">&#39;featureRef&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;limit&#39;</span><span class="p">:</span> <span class="s1">&#39;limit&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;duration&#39;</span><span class="p">:</span> <span class="s1">&#39;duration&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;enabled_time&#39;</span><span class="p">:</span> <span class="s1">&#39;enabledTime&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;supported_feature_bundle_id&#39;</span><span class="p">:</span> <span class="s1">&#39;supportedFeatureBundleId&#39;</span><span class="p">,</span>  <span class="c1"># (required parameter)</span>
+            <span class="s1">&#39;permanent_license_applied&#39;</span><span class="p">:</span> <span class="s1">&#39;permanentLicenseApplied&#39;</span>
+        <span class="p">}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_capability</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_enabled</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_compliant</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_within_limits</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_feature_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_feature_ref</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_limit</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_duration</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enabled_time</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_supported_feature_bundle_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_permanent_license_applied</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">capability</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the capability of this FeatureState.</span>
+<span class="sd">        This field will contain the value of the premium feature being described.</span>
+
+<span class="sd">        :return: The capability of this FeatureState.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_capability</span>
+
+    <span class="nd">@capability</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">capability</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">capability</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the capability of this FeatureState.</span>
+<span class="sd">        This field will contain the value of the premium feature being described.</span>
+
+<span class="sd">        :param capability: The capability of this FeatureState.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="s2">&quot;sharedVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo4&quot;</span><span class="p">,</span> <span class="s2">&quot;mixedRaidlevel&quot;</span><span class="p">,</span> <span class="s2">&quot;autoCodeSync&quot;</span><span class="p">,</span> <span class="s2">&quot;autoLunTransfer&quot;</span><span class="p">,</span> <span class="s2">&quot;subLunsAllowed&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo8&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo2&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsToMax&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo64&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo16&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshots&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteMirroring&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeCopy&quot;</span><span class="p">,</span> <span class="s2">&quot;stagedDownload&quot;</span><span class="p">,</span> <span class="s2">&quot;mixedDriveTypes&quot;</span><span class="p">,</span> <span class="s2">&quot;goldKey&quot;</span><span class="p">,</span> <span class="s2">&quot;driveTrayExpansion&quot;</span><span class="p">,</span> <span class="s2">&quot;bundleMigration&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo128&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo256&quot;</span><span class="p">,</span> <span class="s2">&quot;raid6&quot;</span><span class="p">,</span> <span class="s2">&quot;performanceTier&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo32&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo96&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo192&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsTo512&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteMirrorsTo16&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteMirrorsTo32&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteMirrorsTo64&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteMirrorsTo128&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotsPerVolTo4&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotsPerVolTo8&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotsPerVolTo16&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotsPerVolTo2&quot;</span><span class="p">,</span> <span class="s2">&quot;secureVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;protectionInformation&quot;</span><span class="p">,</span> <span class="s2">&quot;ssdSupport&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo112&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo120&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo256&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo448&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo480&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitToMax&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimit&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo12&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo16&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo24&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo32&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo48&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo60&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo64&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo72&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo96&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo128&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo136&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo144&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo180&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo192&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo272&quot;</span><span class="p">,</span> <span class="s2">&quot;fdeProxyKeyManagement&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteMirrorsTo8&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo384&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo300&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo360&quot;</span><span class="p">,</span> <span class="s2">&quot;flashReadCache&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePoolsType2&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteMirroringType2&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfArvmMirrorsPerArray&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfPitsPerArray&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfThinVolumesPerArray&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimitTo240&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotsType2&quot;</span><span class="p">,</span> <span class="s2">&quot;targetPortLunMapping&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">capability</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `capability`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_capability</span> <span class="o">=</span> <span class="n">capability</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the is_enabled of this FeatureState.</span>
+<span class="sd">        A true value in this field indicates that the feature is enabled (regardless of compliance)</span>
+
+<span class="sd">        :return: The is_enabled of this FeatureState.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_enabled</span>
+
+    <span class="nd">@is_enabled</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">is_enabled</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">is_enabled</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the is_enabled of this FeatureState.</span>
+<span class="sd">        A true value in this field indicates that the feature is enabled (regardless of compliance)</span>
+
+<span class="sd">        :param is_enabled: The is_enabled of this FeatureState.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_enabled</span> <span class="o">=</span> <span class="n">is_enabled</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_compliant</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the is_compliant of this FeatureState.</span>
+<span class="sd">        A true value in this field indicates that the feature has been purchased (in compliance). A false value indicates that the feature has not been purchased. The user will receive warning messages indicating that they are not in compliance. The warning message will continue until the feature is purchased or the feature is disabled.</span>
+
+<span class="sd">        :return: The is_compliant of this FeatureState.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_compliant</span>
+
+    <span class="nd">@is_compliant</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">is_compliant</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">is_compliant</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the is_compliant of this FeatureState.</span>
+<span class="sd">        A true value in this field indicates that the feature has been purchased (in compliance). A false value indicates that the feature has not been purchased. The user will receive warning messages indicating that they are not in compliance. The warning message will continue until the feature is purchased or the feature is disabled.</span>
+
+<span class="sd">        :param is_compliant: The is_compliant of this FeatureState.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_compliant</span> <span class="o">=</span> <span class="n">is_compliant</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_within_limits</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the is_within_limits of this FeatureState.</span>
+<span class="sd">        This field is deprecated. Use isCompliant field instead.</span>
+
+<span class="sd">        :return: The is_within_limits of this FeatureState.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_within_limits</span>
+
+    <span class="nd">@is_within_limits</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">is_within_limits</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">is_within_limits</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the is_within_limits of this FeatureState.</span>
+<span class="sd">        This field is deprecated. Use isCompliant field instead.</span>
+
+<span class="sd">        :param is_within_limits: The is_within_limits of this FeatureState.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_is_within_limits</span> <span class="o">=</span> <span class="n">is_within_limits</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">feature_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the feature_id of this FeatureState.</span>
+<span class="sd">        This field contains the value of the feature ID associated with the feature.</span>
+
+<span class="sd">        :return: The feature_id of this FeatureState.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_feature_id</span>
+
+    <span class="nd">@feature_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">feature_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feature_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the feature_id of this FeatureState.</span>
+<span class="sd">        This field contains the value of the feature ID associated with the feature.</span>
+
+<span class="sd">        :param feature_id: The feature_id of this FeatureState.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">allowed_values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;volumesPerPartition&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfVolumes&quot;</span><span class="p">,</span> <span class="s2">&quot;storagePartitions&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshot&quot;</span><span class="p">,</span> <span class="s2">&quot;volumeCopy&quot;</span><span class="p">,</span> <span class="s2">&quot;remoteMirroring&quot;</span><span class="p">,</span> <span class="s2">&quot;driveTrayExpansion&quot;</span><span class="p">,</span> <span class="s2">&quot;mixedDriveTypes&quot;</span><span class="p">,</span> <span class="s2">&quot;mgmtApplication&quot;</span><span class="p">,</span> <span class="s2">&quot;supportedDrives&quot;</span><span class="p">,</span> <span class="s2">&quot;supportedDriveTrays&quot;</span><span class="p">,</span> <span class="s2">&quot;performanceTier&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfSnapshots&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfVolCopies&quot;</span><span class="p">,</span> <span class="s2">&quot;goldKey&quot;</span><span class="p">,</span> <span class="s2">&quot;snapshotsPerVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfMirrors&quot;</span><span class="p">,</span> <span class="s2">&quot;raid6&quot;</span><span class="p">,</span> <span class="s2">&quot;stateCapture&quot;</span><span class="p">,</span> <span class="s2">&quot;sataStrLen&quot;</span><span class="p">,</span> <span class="s2">&quot;secureVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;protectionInformation&quot;</span><span class="p">,</span> <span class="s2">&quot;solidStateDisk&quot;</span><span class="p">,</span> <span class="s2">&quot;driveSlotLimit&quot;</span><span class="p">,</span> <span class="s2">&quot;fdeProxyKeyManagement&quot;</span><span class="p">,</span> <span class="s2">&quot;supportedInterposer&quot;</span><span class="p">,</span> <span class="s2">&quot;vendorSupportedDrives&quot;</span><span class="p">,</span> <span class="s2">&quot;flashReadCache&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfAsyncMirrorGroups&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfAsyncMirrorsPerGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfArvmMirrorsPerArray&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfPitsPerArray&quot;</span><span class="p">,</span> <span class="s2">&quot;pitGroupsPerVolume&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfPitGroups&quot;</span><span class="p">,</span> <span class="s2">&quot;pitsPerPitGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;memberVolsPerPitConsistencyGroup&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfPitConsistencyGroups&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfPitViews&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfThinVolumesPerArray&quot;</span><span class="p">,</span> <span class="s2">&quot;nativeSataDriveSupport&quot;</span><span class="p">,</span> <span class="s2">&quot;solidStateDiskLimit&quot;</span><span class="p">,</span> <span class="s2">&quot;totalNumberOfRemoteMirrorsPerArray&quot;</span><span class="p">,</span> <span class="s2">&quot;asup&quot;</span><span class="p">,</span> <span class="s2">&quot;ectSelector&quot;</span><span class="p">,</span> <span class="s2">&quot;embeddedSnmpOid&quot;</span><span class="p">,</span> <span class="s2">&quot;asupOnDemand&quot;</span><span class="p">,</span> <span class="s2">&quot;dacstoreCompatId&quot;</span><span class="p">,</span> <span class="s2">&quot;samoaHicProtocol&quot;</span><span class="p">,</span> <span class="s2">&quot;targetPortLunMapping&quot;</span><span class="p">,</span> <span class="s2">&quot;hildaBaseboardProtocol&quot;</span><span class="p">,</span> <span class="s2">&quot;denali2Protocol&quot;</span><span class="p">,</span> <span class="s2">&quot;__UNDEFINED&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">feature_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">allowed_values</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid value for `feature_id`, must be one of </span><span class="si">{0}</span><span class="s2">&quot;</span>
+                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">allowed_values</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_feature_id</span> <span class="o">=</span> <span class="n">feature_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">feature_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the feature_ref of this FeatureState.</span>
+<span class="sd">        This field contains a reference to the feature.</span>
+
+<span class="sd">        :return: The feature_ref of this FeatureState.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_feature_ref</span>
+
+    <span class="nd">@feature_ref</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">feature_ref</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feature_ref</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the feature_ref of this FeatureState.</span>
+<span class="sd">        This field contains a reference to the feature.</span>
+
+<span class="sd">        :param feature_ref: The feature_ref of this FeatureState.</span>
+<span class="sd">        :type: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_feature_ref</span> <span class="o">=</span> <span class="n">feature_ref</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">limit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the limit of this FeatureState.</span>
+<span class="sd">        A numerical description associated with this FeatureState object, describing the level or tier for this feature. A zero value represents a feature that does not support tiering. Non-zero implies a tiering level.</span>
+
+<span class="sd">        :return: The limit of this FeatureState.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_limit</span>
+
+    <span class="nd">@limit</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">limit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">limit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the limit of this FeatureState.</span>
+<span class="sd">        A numerical description associated with this FeatureState object, describing the level or tier for this feature. A zero value represents a feature that does not support tiering. Non-zero implies a tiering level.</span>
+
+<span class="sd">        :param limit: The limit of this FeatureState.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_limit</span> <span class="o">=</span> <span class="n">limit</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">duration</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the duration of this FeatureState.</span>
+<span class="sd">        Describes the timeframe this feature will be available. A zero value describes an infinite duration. The unit of duration is in days.</span>
+
+<span class="sd">        :return: The duration of this FeatureState.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_duration</span>
+
+    <span class="nd">@duration</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">duration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the duration of this FeatureState.</span>
+<span class="sd">        Describes the timeframe this feature will be available. A zero value describes an infinite duration. The unit of duration is in days.</span>
+
+<span class="sd">        :param duration: The duration of this FeatureState.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_duration</span> <span class="o">=</span> <span class="n">duration</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">enabled_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the enabled_time of this FeatureState.</span>
+<span class="sd">        Describes the time when this feature was enabled.</span>
+
+<span class="sd">        :return: The enabled_time of this FeatureState.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enabled_time</span>
+
+    <span class="nd">@enabled_time</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">enabled_time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enabled_time</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the enabled_time of this FeatureState.</span>
+<span class="sd">        Describes the time when this feature was enabled.</span>
+
+<span class="sd">        :param enabled_time: The enabled_time of this FeatureState.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_enabled_time</span> <span class="o">=</span> <span class="n">enabled_time</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">supported_feature_bundle_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the supported_feature_bundle_id of this FeatureState.</span>
+<span class="sd">        The supported Feature Bundle ID. When not in use this value will be zero.</span>
+
+<span class="sd">        :return: The supported_feature_bundle_id of this FeatureState.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_supported_feature_bundle_id</span>
+
+    <span class="nd">@supported_feature_bundle_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">supported_feature_bundle_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">supported_feature_bundle_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the supported_feature_bundle_id of this FeatureState.</span>
+<span class="sd">        The supported Feature Bundle ID. When not in use this value will be zero.</span>
+
+<span class="sd">        :param supported_feature_bundle_id: The supported_feature_bundle_id of this FeatureState.</span>
+<span class="sd">        :type: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_supported_feature_bundle_id</span> <span class="o">=</span> <span class="n">supported_feature_bundle_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">permanent_license_applied</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gets the permanent_license_applied of this FeatureState.</span>
+<span class="sd">        TRUE if a permanent license for this feature has been applied. FALSE if the feature is being evaluated or is not enabled at all.</span>
+
+<span class="sd">        :return: The permanent_license_applied of this FeatureState.</span>
+<span class="sd">        :rtype: bool</span>
+<span class="sd">        :required/optional: required</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_permanent_license_applied</span>
+
+    <span class="nd">@permanent_license_applied</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">permanent_license_applied</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">permanent_license_applied</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the permanent_license_applied of this FeatureState.</span>
+<span class="sd">        TRUE if a permanent license for this feature has been applied. FALSE if the feature is being evaluated or is not enabled at all.</span>
+
+<span class="sd">        :param permanent_license_applied: The permanent_license_applied of this FeatureState.</span>
+<span class="sd">        :type: bool</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_permanent_license_applied</span> <span class="o">=</span> <span class="n">permanent_license_applied</span>
+
+<div class="viewcode-block" id="FeatureState.to_dict"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.feature_state.FeatureState.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the model properties as a dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">for</span> <span class="n">attr</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">swagger_types</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">,</span>
+                    <span class="n">value</span>
+                <span class="p">))</span>
+            <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+                    <span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;to_dict&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">item</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="FeatureState.to_str"><a class="viewcode-back" href="../../../../../netapp.santricity.models.symbol.html#netapp.santricity.models.symbol.feature_state.FeatureState.to_str">[docs]</a>    <span class="k">def</span> <span class="nf">to_str</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the string representation of the model</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">pformat</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        For `print` and `pprint`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+           <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_str</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">other</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict__</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">__dict__</span>
+
+    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if both objects are not equal</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span> <span class="o">==</span> <span class="n">other</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">NetApp Santricity Python SDK  documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, NetApp.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

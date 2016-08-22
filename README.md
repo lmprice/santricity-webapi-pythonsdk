@@ -32,6 +32,9 @@ import netapp.santricity
 To get started using the NetApp SANtricity WebAPI - Python SDK, access the ``api_client.py`` file and specify
 the host URL for your REST service.
 
+Here's a sample code for using NetApp SANtricity WebAPI - Python SDK:
+
+
 ```python
 #/usr/bin/python
 

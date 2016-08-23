@@ -1,5 +1,6 @@
 #NetApp SANtricity WebAPI - Python SDK
 
+[![Build Status](https://travis-ci.org/NetApp/santricity-webapi-pythonsdk.svg?branch=master)](https://travis-ci.org/NetApp/santricity-webapi-pythonsdk)
 
 ##Requirements
 

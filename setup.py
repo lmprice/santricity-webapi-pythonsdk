@@ -22,14 +22,14 @@ setup(
     version=VERSION,
     description="Python SDK for accessing NetApp Santricity Web Services",
     author="NetApp",
-    author_email="",
-    url="",
+    author_email="ng-hsg-engcustomer-esolutions-support@netapp.com",
+    url="https://github.com/NetApp/santricity-webapi-pythonsdk",
     keywords=["Swagger", "NetApp", "Santricity"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
-    
+    NetApp E-Series SANtricity Python SDK for Web Services
     """
 )
 

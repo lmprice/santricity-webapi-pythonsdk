@@ -22,6 +22,7 @@ setup(
     version=VERSION,
     description="Python SDK for accessing NetApp Santricity Web Services",
     author="NetApp",
+    license = "The Clear BSD License",
     author_email="ng-hsg-engcustomer-esolutions-support@netapp.com",
     url="https://github.com/NetApp/santricity-webapi-pythonsdk",
     keywords=["Swagger", "NetApp", "Santricity"],

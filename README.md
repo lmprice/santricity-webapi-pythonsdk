@@ -57,3 +57,35 @@ storage_system = StorageSystemsApi(api_client=api_client)
 
 ssr = storage_system.get_all_storage_systems()
 ```
+
+### Generating Documentation
+API documentation can be generated in a format that suites you.
+
+Available formats are:
+* html
+* pickle
+* json
+* applehelp  
+* epub
+* epub3
+* latex
+* text
+* man
+* texinfo
+* gettext
+* xml
+
+For all options run:
+```make
+make -f docs/Makefile help
+```
+To generate html documentation:
+```
+cd docs
+make -f Makefile html
+```
+#### Prerequisites
+* Python3 interpreter
+* urllib3
+* Sphinx (apt-get install python-sphinx)
+

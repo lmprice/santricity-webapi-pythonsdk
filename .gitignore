@@ -1,2 +1,7 @@
-
+*~
+*.sw?
 .idea/
+*.pyc
+build/
+dist/
+docs/_build

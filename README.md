@@ -7,7 +7,10 @@
 The NetApp SANtricity WebAPI - Python SDK client library requires Python 2.7 or later.
 
 ##Installation
-
+###From PyPI
+```python
+pip install netapp.santricity
+```
 ###setuptools Installation
 
 Installation of the Python bindings can be performed through [setuptools](http://pypi.python.org/pypi/setuptools).
